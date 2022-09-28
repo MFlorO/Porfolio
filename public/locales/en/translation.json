@@ -1,0 +1,28 @@
+{
+    "landing":{
+       "hellow": "Hellow, I am",
+       "thanks": "Thank you for your interest in meeting me",
+       "ingresar": "get in"
+    },
+    "navbar":{
+        "started":"Started",
+        "welcome":"Welcome, nice to meet you",
+        "about": "About Me",
+        "proyects":"Proyects",
+        "contact":"Contact" 
+    },
+    "home":{
+        "greeting":"Welcome home"
+    },
+    "proyects":{
+        "title":"What I Do",
+        "description":"In the application you can search for different countries in the world and enter the details for more information. In addition, it has a controlled form to create tourist activities and associate them with different countries. This application has an entire CRUD regarding tourist activities. It is they can see, create, edit and delete. The country data is brought from a rest API (https://restcountries.com) and stored in my own database"
+    },
+    "contact":{
+        "name":"Name",
+        "message":"Message",
+        "contactMe":"Contact Me",
+        "succes":"Email sent successfully",
+        "error":"Ups! the form could not be submited. Try again "
+    }
+}

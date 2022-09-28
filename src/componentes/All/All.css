@@ -1,0 +1,15 @@
+
+.navigation{
+   transform: translate(-50%) !important;
+   z-index: 10 !important;
+}
+
+.navigations li{
+   width: 10px;
+   height: 10px;
+   transition: all 0.3s;
+} 
+
+.navigations li.selected{
+   transform: scale(1.8);
+} 

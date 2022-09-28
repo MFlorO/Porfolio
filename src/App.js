@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import LandingPage from "./componentes/LandingPage/LandingPage";
+import All from "./componentes/All/All";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <React.Fragment>
+
+
+      <Routes> {/*Reemplaza el Swich de React-Router-Dom v5. Tampoco se ponen mas los exact*/}
+
+        <Route path="/" element={<LandingPage />} />
+
+        <Route path="/all" element={<All />} />
+
+        {/* <Route path="*" component={Error} /> */}
+
+      </Routes>
+
+
+    </React.Fragment>
   );
 }
 
 export default App;
+
