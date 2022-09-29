@@ -55,7 +55,7 @@ function Proyects() {
 
 
   return (
-    <Stack height={"100vh"} bgcolor={"black"} marginTop={"3.5rem"} >
+    <Stack height={"100vh"} backgroundColor="background.dark" marginTop={"3.5rem"} >
       <h2>{t("proyects.title")}</h2>
       {proyects_data.map((p) => (
         <ProyectsCard p={p} />

@@ -14,7 +14,7 @@ export default function NavBar() {
 
   return (
     
-    <Stack direction="row" bgcolor={"red"} position={"fixed"} marginTop={"3.5rem"} justifyContent={"flex-end"} width={"100%"} alignItems={"center"}>
+    <Stack direction="row" position={"fixed"} marginTop={"3.5rem"} justifyContent={"flex-end"} width={"100%"} alignItems={"center"} backgroundColor="background.dark">
       <Typography width={"57%"} justifyContent={"flex-start"}>
         FLORENCIA OLDANI
       </Typography>

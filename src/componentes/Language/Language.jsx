@@ -4,7 +4,7 @@ import { changeLanguage } from "i18next";
 import banderaArgentina from "./arg.png";
 import banderaEeuu from "./eeuu.png";
 
-function ExtraFunctions() {
+export default function Language() {
 
 
   return (
@@ -20,4 +20,3 @@ function ExtraFunctions() {
   );
 }
 
-export default ExtraFunctions;

@@ -4,7 +4,7 @@ import { Stack, Box, Button, Typography } from "@mui/material/";
 
 function AboutMe() {
   return (
-    <Stack height={"100vh"} bgcolor={"black"} marginTop={"3.5rem"} >
+    <Stack height={"100vh"} backgroundColor="background.dark" marginTop={"3.5rem"} >
       <Box>
         <Typography>
           Como te dije, voy a contarte un poco sobre mi para que puedas conocerme. Soy Desarroladora Full Stack. 

@@ -1,17 +1,20 @@
 import React, { Suspense } from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import ToggleColorMode from './ToggleColorMode/ToggleColorMode';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router } from 'react-router-dom';
-import "./componentes/ExtraFunctions/i18n.js"
+
+//IDIOMAS
+import "./componentes/Language/i18n.js"
+
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <Suspense fallback={null}>
     <Router>
-      <App />
+      <ToggleColorMode />
     </Router>
   </Suspense>
 );

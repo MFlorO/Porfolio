@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router";
-import ExtraFunctions from "../ExtraFunctions/ExtraFunctions.jsx";
+import Language from "../Language/Language.jsx";
 
 //Translation
 import { useTranslation } from "react-i18next";
@@ -8,9 +8,12 @@ import { useTranslation } from "react-i18next";
 //MUI-EFECTS
 import { useTypewriter, Cursor} from 'react-simple-typewriter'
 import { Stack, Button, Typography } from "@mui/material/";
+import Theme from "../Theme/Theme.jsx";
 
 
-function LandingPage() {
+
+
+function LandingPage({ColorModeContext}) {
 
   const navigate = useNavigate();
   const { t } = useTranslation();
@@ -35,16 +38,19 @@ function LandingPage() {
       width="100%"
       height={"100vh"}
       maxHeight={"100vh"}
-      bgcolor={"#212121"}
+      backgroundColor="background.dark"
       justifyContent="flex-start"
       alignItems="center"
+      color="primary.dark"
     >
-      <ExtraFunctions />
+      <Language />
+      <Theme ColorModeContext={ColorModeContext}/>
       
       <Stack direction="column">
-      <Typography variant='h5' component='h1' color={'white'}>{t('landing.hellow')} Florencia Oldani</Typography>
-      <Typography variant='h6' component='h2' color={'white'}>{t('landing.thanks')}</Typography>
-      <Typography variant='h6'style={{ paddingTop: '5rem', margin: 'auto 0', fontWeight: 'normal' }} color={'white'}>
+      <Typography variant='h5' component='h1' color='text.primary'>{t('landing.hellow')}</Typography>
+      <Typography variant='h5' component='h1' color='text.secondary'>Florencia Oldani</Typography>
+      <Typography variant='h6' component='h2' color='text.seconday'>{t('landing.thanks')}</Typography>
+      <Typography variant='h6'style={{ paddingTop: '5rem', margin: 'auto 0', fontWeight: 'normal' }} color='text.dark'>
         {/* Life is simple{' '} */}
       <span>{text}</span>
       <Cursor />

@@ -16,7 +16,7 @@ function Home() {
 
 
   return (
-    <Stack height={"100vh"} bgcolor={"gray"} marginTop={"3rem"} >
+    <Stack height={"100vh"} backgroundColor="background.dark" marginTop={"3rem"} >
 
       {t("home.greeting")}  
 

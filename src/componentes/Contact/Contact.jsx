@@ -75,7 +75,7 @@ function Contact() {
   };
 
   return (
-    <Stack height={"100vh"} bgcolor={"gray"} marginTop={"3.5rem"} >
+    <Stack height={"100vh"} backgroundColor="background.dark" marginTop={"3.5rem"} >
 
       <Typography variant='h1' > Contact Whit Me </Typography>
 
