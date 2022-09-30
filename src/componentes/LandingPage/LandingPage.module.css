@@ -1,0 +1,64 @@
+
+
+.extras{
+    position: absolute;
+    top: 1.5rem;
+    right: 3rem;
+    height: 3rem;
+    width: 7rem;
+    align-items: center;
+}
+
+
+.img{
+    position: absolute;
+    top: 11rem;
+    right: 5rem;
+    width: 32rem;
+    height: 25rem;
+    opacity: 1;
+}
+
+.video{
+    position: absolute;
+    top: 6rem;
+    right: 6rem;
+    width: 30rem;
+    height: 30rem;
+    z-index: 10;
+    opacity: 1;
+}
+
+.fondoImagen{
+    position: absolute;
+    top: 11rem;
+    right: 5rem;
+    width: 32rem;
+    height: 25rem;
+    opacity: 0.5;
+    z-index: 8;
+}
+
+
+
+
+
+
+@media screen and (max-width: 844px) {
+
+     .video {
+        display:none;
+        visibility: hidden;
+     }
+
+     .img {
+        display:none;
+        visibility: hidden;
+     }
+
+     .fondoImagen{
+        display:none;
+        visibility: hidden;
+     }
+
+}

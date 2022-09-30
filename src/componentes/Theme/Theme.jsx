@@ -27,9 +27,9 @@ function Theme({ColorModeContext}) {
         position="absolute"
       >
         {theme.palette.mode === "dark" ? (
-          <Brightness7Icon />
+          <Brightness7Icon color="secondary"/>
         ) : (
-          <Brightness4Icon />
+          <Brightness4Icon color="secondary"/>
         )}
       </IconButton>
     </Stack>

@@ -2,8 +2,9 @@
 
 {
     "landing":{
-            "hellow": "Hola! soy",
+            "hellow": "Hola! Soy",
             "thanks": "Gracias por tu interés en conocerme",
+            "message": "Te invito a que ingreses para seguir conociendome.",
             "ingresar": "ingresar"
     },
     "navbar":{

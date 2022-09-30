@@ -8,7 +8,31 @@ import { useTranslation } from "react-i18next";
 //MUI-EFECTS
 import { useTypewriter, Cursor} from 'react-simple-typewriter'
 import { Stack, Button, Typography } from "@mui/material/";
-import Theme from "../Theme/Theme.jsx";
+import Themes from "../Theme/Theme.jsx";
+import videoPorfolio from "./videoPorfolio.mp4"
+import compuNegra from "./compuNegra.png"
+import s from "./LandingPage.module.css"
+
+// import { styled } from '@mui/material/styles';
+
+
+
+// const RootThypography = styled('div')(({ theme }) => ({
+
+//   color:'text.secondary',
+//   fontFamily: "Raleway",
+//   fontWeight: 200,
+ 
+//   [theme.breakpoints.only('xs')]: {
+//     fontSize: "3rem",
+//     marginBottom: "2rem"
+//   },
+//   [theme.breakpoints.only('xl')]: {
+
+//     fontSize: "5rem",
+//   },
+
+// }));
 
 
 
@@ -19,9 +43,7 @@ function LandingPage({ColorModeContext}) {
   const { t } = useTranslation();
 
   const [text] = useTypewriter({
-    words: [`${t('landing.hellow')} Florencia Oldani`, `${t('landing.thanks')}`],
-    // loop: {0},
-    // onLoopDone: () => console.log(`loop completed after 3 runs.`),
+    words: [`${t('landing.thanks')}`, `${t('landing.message')}`],
   })
 
 
@@ -33,32 +55,145 @@ function LandingPage({ColorModeContext}) {
 
   return (
     <Stack
-      direction="row"
-      spacing={12}
-      width="100%"
-      height={"100vh"}
-      maxHeight={"100vh"}
-      backgroundColor="background.dark"
-      justifyContent="flex-start"
-      alignItems="center"
-      color="primary.dark"
-    >
-      <Language />
-      <Theme ColorModeContext={ColorModeContext}/>
-      
-      <Stack direction="column">
-      <Typography variant='h5' component='h1' color='text.primary'>{t('landing.hellow')}</Typography>
-      <Typography variant='h5' component='h1' color='text.secondary'>Florencia Oldani</Typography>
-      <Typography variant='h6' component='h2' color='text.seconday'>{t('landing.thanks')}</Typography>
-      <Typography variant='h6'style={{ paddingTop: '5rem', margin: 'auto 0', fontWeight: 'normal' }} color='text.dark'>
-        {/* Life is simple{' '} */}
-      <span>{text}</span>
-      <Cursor />
-      </Typography>
-      </Stack>
+    display="flex"
+    direction="column"
+    sx={{ 
+      width:"100%",
+      height:{
+        xs:"100vh",
+        sm:"150vh",
+        md:"100vh",
+        lg:"100vh",
+        xl:"100vh"
+      },
+      backgroundColor:"background.dark"
+    }}
     
-      <Button variant="outlined" onClick={login} size="large">{t("landing.ingresar")}</Button>
-    </Stack>
+
+    >
+      <Stack direction="row" className={s.extras}>
+      <Language />
+      <Themes ColorModeContext={ColorModeContext}/>
+      </Stack>
+
+      <Stack 
+      display="flex"
+      direction="column"
+          sx={{      
+            direction:"column",
+            width:{
+              xs:"70%",
+              sm:"70%",
+              md:"70%",
+              lg:"70%",
+              xl:"70%"
+            },
+            height:{
+              xs:"45rem",
+              sm:"30rem",
+              md:"24rem",
+              lg:"24rem",
+              xl:"24rem"
+            },
+            marginLeft:{
+              xs:"5rem",
+              sm:"2rem",
+              md:"4rem",
+              lg: "6rem",
+              xl: "6rem"
+            },
+            marginTop:{
+              xs:"6rem",
+              sm:"10rem",
+              md:"10.rem",
+              lg: "10.5rem",
+              xl: "10.5rem"
+            },
+            backgroundColor:"background.dark"
+          }} 
+           >
+
+        <Typography variant='h6' component='h1' color='text.secondary'
+        sx={{ 
+         fontSize:{
+          xs:"3rem",
+          sm:"4rem",
+          md:"5rem",
+          lg: "5rem",
+          xl: "5rem"
+        }
+        }} >{t('landing.hellow')}</Typography>
+
+        <Typography variant='h1' component='h3' color='text.primary' 
+        sx={{ 
+          fontSize:{
+           xs:"3rem",
+           sm:"4rem",
+           md:"5rem",
+           lg: "5rem",
+           xl: "5rem"
+         },
+         lineHeight: {
+          xs:"4rem",
+        },
+        marginTop: {
+         xs: "0.2rem",
+         sm:"0.7rem",
+         md:"0.6rem",
+         lg: "0.5rem",
+         xl: "0.1rem"
+       },
+         }}>Developer Full Stack</Typography>
+         
+        <Typography variant='h5' color='secondary.dark'sx={{ 
+          marginTop:{
+           xs:"3rem",
+           sm:"3rem",
+           md:"3rem",
+           lg: "4rem",
+           xl: "3rem"
+         },
+         }}>
+        <span>{text}</span>
+        <Cursor />
+        </Typography>
+
+        
+        <Stack className={s.fondoImagen} backgroundColor="background.dark"></Stack>
+        <video className={s.video} autoPlay loop muted>
+          <source src={videoPorfolio} type="video/mp4"/>
+        </video>
+        <img src={compuNegra} alt="" className={s.img} />
+        
+
+      </Stack>
+
+      <Stack 
+      sx={{ 
+         marginTop:{
+          xs:"-15rem",
+          sm:"4rem",
+          md:"5rem",
+          lg: "6rem",
+          xl: "-3.5rem"
+        }, 
+         marginLeft:{
+          xs:"7rem",
+          sm:"4rem",
+          md:"5rem",
+          lg: "6rem",
+          xl: "6rem"
+        }, 
+         width:{
+          xs:"45%",
+          sm:"14%",
+          md:"13%",
+          lg: "12%",
+          xl: "12%"
+        },
+        }} >
+        <Button variant="outlined" size="large" color="secondary" onClick={login}>{t("landing.ingresar")}</Button></Stack>
+      </Stack>
   );
 }
 

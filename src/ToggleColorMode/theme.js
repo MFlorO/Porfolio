@@ -1,70 +1,16 @@
 
 
-// const theme = createTheme({
-//   palette:{
-//     mode:"dark",
-//     primary:{
-//       main: "#7A297B",
-//       light: "#f06292",
-//       dark: "#f8bbd0",
-//     },
-//     seconday:{
-//         main: "#7A297B",
-//         light: "#f06292",
-//         dark: "#f8bbd0",
-//     },
-//     error: {
-//           main: "#e53935"
-//         },
-//     success: {
-//         main: "#81c784"
-//     },   
-//     text:{
-//         primary: "#D0CDD2",
-//         secondary: "#807D84",
-//     },
-//     background:{
-//         main: "#999",
-//         light:"#ECECEC",
-//         dark:"#19141B"
-//     },
-//     // action:{
-//     //   hover:{
-//     //     main: pink[300],
-//     //   },
-//     //   focus:{
-//     //     main: pink[300],
-//     //   },
-
-//     },
-// //   },
-// //   shadows:[
-// //     // 0:"",
-// //   ],
-//   typography:{
-//     h1:{
-//       fontFamily:"",
-//       fontWeight: 10,
-//       fontSize:"",
-//     },
-//     h2:{
-//       fontFamily:"",
-//       fontWeight: 10,
-//       fontSize:"",
-//     },
-//     h5:{
-//       fontFamily:"",
-//       fontWeight: 10,
-//       fontSize:"",
-//     }
-//   }
-
-// })
-
-// export default theme;
-
 
 const getDesignTokens = (mode) => ({
+  breakpoints:{
+    values:{
+      xs: 0,
+      sm: 600,
+      md: 900,
+      lg: 1200,
+      xl: 1536
+    }
+  },
   palette: {
     mode,
     ...(mode === 'light'
@@ -74,9 +20,9 @@ const getDesignTokens = (mode) => ({
           main: "#7A297B",
           light: "#f06292",
         },
-        seconday: {
-          main: "#7A297B",
-          light: "#f06292",
+        secondary: {
+          main: "#ec407a",
+          light: "#ec407a",
         },
         error: {
           main: "#e53935"
@@ -85,39 +31,83 @@ const getDesignTokens = (mode) => ({
           main: "#81c784"
         },
         text: {
-          primary: "#D0CDD2",
-          secondary: "#807D84",
+          primary: "#000000",
+          secondary: "#404040",
         },
         background: {
-          main: "#999",
+          main: "#ECECEC",
           light: "#ECECEC",
-        }}
+        },
+        action:{
+          active: "#ec407a",
+          hover: "#ec407a",
+          focus: "#ec407a",
+        }
+    }
         : {
         // palette values for dark mode
         primary: {
-          main: "#7A297B",
-        dark: "#f8bbd0",
+          main: "#D0CDD2",
+          dark: "#D0CDD2",  //blando
         },
-        seconday: {
-          main: "#7A297B",
-        dark: "#f8bbd0",
+        secondary: {
+          main: "#f8bbd0",
+          dark: "#f8bbd0",   //rosa
         },
         error: {
-          main: "#e53935"
+          main: "#e53935"   //rojo
         },
         success: {
-          main: "#81c784"
+          main: "#81c784"  //verde
         },
         text: {
-          primary: "#D0CDD2",
-          secondary: "#807D84",
+          primary: "#D0CDD2",  //blando
+          secondary: "#807D84",  //gris
         },
         background: {
           main: "#999",
-          dark: "#19141B"
+          dark: "#151012"
         },
+        action:{
+          active:"#f8bbd0",
+          hover: "#f8bbd0",
+          focus: "#f8bbd0"
+        }
       }),
   },
+    typography:{
+        h1:{ 
+          fontFamily: "Raleway",
+          fontWeight: 600,
+          fontSize: "5rem",
+          lineHeight: "0.5"
+        },
+        h2:{
+          fontFamily: "Raleway",
+          fontWeight: 10,
+          fontSize:"",
+        },
+        h5:{
+          fontFamily:"Raleway",
+          fontWeight: 300,
+          fontSize:"2rem",
+        },
+        h6:{
+          fontFamily: "Raleway",
+          fontWeight: 200,
+          fontSize: "5rem",
+        },
+        subtitle1:{
+          fontFamily: "Raleway",
+          fontWeight: 200,
+          fontSize: "5rem",
+        },
+        body1:{
+          fontFamily: "Raleway",
+          fontWeight: 10,
+          fontSize:"",
+        }
+      }
 });
 
 
