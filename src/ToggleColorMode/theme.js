@@ -88,8 +88,8 @@ const getDesignTokens = (mode) => ({
         },
         h2:{
           fontFamily: "Raleway",
-          fontWeight: 10,
-          fontSize:"",
+          fontWeight: 400,
+          fontSize:"2rem",
         },
         h5:{
           fontFamily:"Raleway",

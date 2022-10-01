@@ -15,8 +15,6 @@ import {
 
 
 
-
-
 export default function NavBar() {
   const { t } = useTranslation();
   const navigate = useNavigate();
@@ -56,7 +54,7 @@ export default function NavBar() {
 
       <Stack
         direction="row"
-        alignItems={"center"}
+        alignItems="center"
         sx={{
           width: "40%",
           marginRight: {
@@ -66,49 +64,42 @@ export default function NavBar() {
             // lg:"100vh",
             xl: "25rem",
           },
-          fontSize: {
-            xs: "3rem",
-            sm: "4rem",
-            md: "5rem",
-            lg: "5rem",
-            xl: "1rem",
-          },
-          color: "text.secondary",
-          "& button.Mui-selected": {backgroundColor: "red"}
+          color: "secondary.dark",
+          fontFamily: "Raleway",
         }}
       >
-        <ListItem disablePadding>
-          <ListItemButton onClick={landingPage}>
+        <ListItem disablePadding >
+          <ListItemButton onClick={landingPage}   sx={{"&:hover": {backgroundColor: "text.secondary"}, textAlign:"center",}}>
             <ListItemText primary={t("navbar.started")} />
           </ListItemButton>
         </ListItem>
 
         <ListItem disablePadding>
-          <ListItemButton href="#home">
+          <ListItemButton href="#home"  sx={{"&:active": {backgroundColor: "red"},"&:hover": {backgroundColor: "text.secondary"}, textAlign:"center",}} >
             <ListItemText primary="Home" />
           </ListItemButton>
         </ListItem>
 
         <ListItem disablePadding>
-          <ListItemButton href="#about">
+          <ListItemButton href="#about" sx={{"&:active": {backgroundColor: "red"},"&:hover": {backgroundColor: "text.secondary"}, textAlign:"center",}}>
             <ListItemText primary={t("navbar.about")} />
           </ListItemButton>
         </ListItem>
 
         <ListItem disablePadding>
-          <ListItemButton href="#skills">
+          <ListItemButton href="#skills" sx={{"&:active": {backgroundColor: "red"},"&:hover": {backgroundColor: "text.secondary"}, textAlign:"center",}}>
             <ListItemText primary="Skills" />
           </ListItemButton>
         </ListItem>
 
         <ListItem disablePadding>
-          <ListItemButton href="#proyects">
+          <ListItemButton href="#proyects" sx={{"&:active": {backgroundColor: "red"},"&:hover": {backgroundColor: "text.secondary"}, textAlign:"center",}}>
             <ListItemText primary={t("navbar.proyects")} />
           </ListItemButton>
         </ListItem>
 
         <ListItem disablePadding>
-          <ListItemButton href="#contact">
+          <ListItemButton href="#contact" sx={{"&:active": {backgroundColor: "red"},"&:hover": {backgroundColor: "text.secondary"}, textAlign:"center",}}>
             <ListItemText primary={t("navbar.contact")} />
           </ListItemButton>
         </ListItem>

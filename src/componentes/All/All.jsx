@@ -11,6 +11,7 @@ import Theme from "../Theme/Theme.jsx"
 //MUI
 import { Stack } from "@mui/material/";
 import s from"./All.module.css"
+import ButtonNavigateTop from "./ButtonNavigateTop/ButtonNavigateTop.jsx";
 
 
 
@@ -41,8 +42,22 @@ function All({ColorModeContext}) {
       <Theme ColorModeContext={ColorModeContext}/>
       </Stack>
 
+      <Stack position="fixed"
+    sx={{
+        position:"fixed",
+        bottom:{
+          sx:"",
+          xl: "2rem"
+        },
+        right:{
+            sx:"",
+            xl: "3rem"
+        }
+    }}><ButtonNavigateTop /></Stack>
 
-      <NavBar />
+
+     <NavBar />
+      
       
 
       <section id="home">
