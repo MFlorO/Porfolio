@@ -24,7 +24,15 @@ function All({ColorModeContext}) {
     <Stack  display="flex"
     direction="column" 
     width="100%"
-    height="auto"
+    sx={{
+      height: {
+        xs: "100vh",
+        sm: "100vh",
+        md: "100vh",
+        lg: "100vh",
+        xl: "100vh",
+      },
+    }}
     backgroundColor="background.dark"
     >
 

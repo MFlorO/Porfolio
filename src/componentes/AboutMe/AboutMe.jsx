@@ -20,18 +20,18 @@ function AboutMe() {
       direction="column"
       justifyContent={"center"}
       alignItems={"center"}
-      backgroundColor="background.dark"
+      // backgroundColor="background.dark"
       sx={{
         width: "100%",
         height: {
-          xs: "100vh",
-          sm: "100vh",
-          md: "100vh",
-          lg: "100vh",
+          xs: "110vh",
+          // sm: "100vh",
+          // md: "100vh",
+          // lg: "100vh",
           xl: "100vh",
         },
       }}
-      // backgroundColor="red"
+      backgroundColor="red"
     >
       <Stack
         // direction="row"
@@ -42,17 +42,18 @@ function AboutMe() {
           width: "90%",
           flexDirection:{
             xs:"column",
-            lg:"row",
+            // lg:"row",
             xl:"row"
           },
           height: {
-            xs: "10rem",
+            xs: "45rem",
             // sm: "100vh",
             // md: "100vh",
             // lg: "100vh",
             xl: "35rem",
           },
           marginTop: {
+            xs: "2rem",
             xl: "1rem",
           },
         }}
@@ -77,19 +78,13 @@ function AboutMe() {
               xl:"10rem",
             },
             marginTop: {
-              xs: "2rem",
+              xs: "0rem",
               xl: "6rem",
             },
             marginLeft: {
               xs: "6rem",
             },
-            fontSize:{
-              xs: "100vh",
-              sm: "150vh",
-              md: "100vh",
-              lg: "100vh",
-              xl: "5rem",
-            }
+            fontSize:"5rem" 
           }}
           // backgroundColor="green"
         >
@@ -123,7 +118,7 @@ function AboutMe() {
               xl: "65%",
             },
             marginTop: {
-              xs:"3rem",
+              xs:"5rem",
               xl: "4rem",
             },
             marginLeft: {

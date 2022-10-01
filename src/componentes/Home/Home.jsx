@@ -4,7 +4,7 @@ import React from "react";
 // import { useTranslation } from "react-i18next";
 
 //MUI-CSS-ICONS
-import { Stack } from "@mui/material/";
+import { Stack, Typography } from "@mui/material/";
 import styles from "./Home.module.css";
 // import {SiGmail, SiGithub} from "react-icons/si"
 
@@ -21,9 +21,9 @@ function Home() {
       width: "100%",
       height: {
         xs: "100vh",
-        sm: "150vh",
-        md: "100vh",
-        lg: "100vh",
+        // sm: "150vh",
+        // md: "100vh",
+        // lg: "100vh",
         xl: "100vh",
       },
     }}>
@@ -53,6 +53,8 @@ function Home() {
              <div className={styles.tooltip}>/MFlorO</div>
              <span className={styles.span}><SiGithub className="github" size="2rem"/></span>
           </div> */}
+                    <Typography variant="h1" color="info.dark">ESTOY EN HOME</Typography>
+          
       </Stack>
       </Stack>
 
