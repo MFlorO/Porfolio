@@ -8,7 +8,7 @@ import { useTranslation } from "react-i18next";
 
 //React Icons
 import { CgFigma } from "react-icons/cg"
-import {SiCss3, SiChakraui, SiHtml5, SiRedux, SiSequelize, SiPostgresql, SiTrello,SiJavascript} from "react-icons/si"
+import {SiCss3, SiChakraui, SiHtml5, SiRedux, SiSequelize, SiPostgresql, SiTrello, SiJavascript} from "react-icons/si"
 import { FaReact } from "react-icons/fa"
 import {DiNodejs} from "react-icons/di"
 import {HiOutlineMailOpen} from "react-icons/hi"

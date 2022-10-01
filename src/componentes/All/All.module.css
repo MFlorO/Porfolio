@@ -1,26 +1,7 @@
 
 
 .extras{
-   position: absolute;
-   top: 0.5rem;
    right: 4rem;
    height: 3rem;
    width: 7rem;
-   align-items: center;
 }
-
-
-.navigation{
-   transform: translate(-50%) !important;
-   z-index: 10 !important;
-}
-
-.navigations li{
-   width: 10px;
-   height: 10px;
-   transition: all 0.3s;
-} 
-
-.navigations li.selected{
-   transform: scale(1.8);
-} 

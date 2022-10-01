@@ -37,7 +37,7 @@ function All({ColorModeContext}) {
     backgroundColor="background.dark"
     >
 
-      <Stack direction="row" position="fixed" marginTop="0.5rem" zIndex={300} className={s.extras}>
+      <Stack direction="row" position="fixed" marginTop="1rem" alignItems="center" zIndex={300} className={s.extras}>
       <Language />
       <Theme ColorModeContext={ColorModeContext}/>
       </Stack>
@@ -53,7 +53,8 @@ function All({ColorModeContext}) {
             sx:"",
             xl: "3rem"
         }
-    }}><ButtonNavigateTop /></Stack>
+    }}><ButtonNavigateTop />
+    </Stack>
 
 
      <NavBar />

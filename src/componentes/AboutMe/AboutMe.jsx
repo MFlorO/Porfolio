@@ -20,7 +20,7 @@ function AboutMe() {
       direction="column"
       justifyContent={"center"}
       alignItems={"center"}
-      // backgroundColor="background.dark"
+      backgroundColor="background.dark"
       sx={{
         width: "100%",
         height: {
@@ -31,7 +31,7 @@ function AboutMe() {
           xl: "100vh",
         },
       }}
-      backgroundColor="red"
+      // backgroundColor="red"
     >
       <Stack
         // direction="row"
@@ -57,7 +57,7 @@ function AboutMe() {
             xl: "1rem",
           },
         }}
-        backgroundColor="blue"
+        // backgroundColor="blue"
       >
 
 

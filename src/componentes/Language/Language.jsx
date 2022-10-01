@@ -10,8 +10,8 @@ export default function Language() {
   return (
     <Stack>
         <FormControl fullWidth size="small" >
-        <Select defaultValue={"es"} onFocusColor="action.active" >
-          <MenuItem value={"es"} onHoverColor="action.hover" onClick={() => changeLanguage("es")}><img src={banderaArgentina} alt="" /></MenuItem>
+        <Select defaultValue={"es"}>
+          <MenuItem value={"es"} onClick={() => changeLanguage("es")}><img src={banderaArgentina} alt="" /></MenuItem>
           <MenuItem value={"en"} onClick={() => changeLanguage("en")}><img src={banderaEeuu} alt="" /></MenuItem>
         </Select>
       </FormControl>
