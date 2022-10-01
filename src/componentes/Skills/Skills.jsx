@@ -47,7 +47,7 @@ function Skills() {
         width: "100%",
         height: {
           xs: "100vh",
-          sm: "150vh",
+          sm: "100vh",
           md: "100vh",
           lg: "100vh",
           xl: "100vh",
@@ -63,14 +63,19 @@ function Skills() {
         sx={{
           width: "90%",
           height: {
-            xs: "100vh",
+            xs: "35rem",
             sm: "150vh",
             md: "100vh",
             lg: "100vh",
             xl: "35rem",
           },
           marginTop: {
+            xs: "-12rem",
             xl: "4rem",
+          },
+          marginLeft: {
+            xs: "5rem",
+            // xl: "4rem",
           },
         }}
         // backgroundColor="blue"
@@ -83,19 +88,17 @@ function Skills() {
           alignItems="center"
           sx={{
             width: {
-              xs: "100vh",
+              xs: "30%",
               sm: "150vh",
               md: "100vh",
               lg: "100vh",
               xl: "30%",
             },
-            fontSize:{
-              xs: "100vh",
-              sm: "150vh",
-              md: "100vh",
-              lg: "100vh",
-              xl: "5rem",
-            }
+            marginLeft: {
+              xs: "1rem",
+            },
+            fontSize:"5rem",
+            
           }}
         >
 
@@ -114,9 +117,15 @@ function Skills() {
           // backgroundColor="red"
           gap="2rem"
           sx={{
-            height: "20rem",
+            height: {
+              xs: "24rem",
+              // sm: "150vh",
+              // md: "100vh",
+              // lg: "100vh",
+              xl: "20rem",
+            },
             width: {
-              xs: "100vh",
+              xs: "90%",
               sm: "150vh",
               md: "100vh",
               lg: "100vh",
@@ -125,6 +134,9 @@ function Skills() {
             marginLeft: {
               xl: "2rem",
             },
+            // gap:{
+            //   xs:
+            // }
             
           }}
         >

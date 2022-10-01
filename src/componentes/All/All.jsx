@@ -22,18 +22,11 @@ function All({ColorModeContext}) {
   return (
 
     <Stack  display="flex"
-    direction="column"
-    sx={{ 
-      width:"100%",
-      height:{
-        xs:"100vh",
-        sm:"150vh",
-        md:"100vh",
-        lg:"100vh",
-        xl:"100vh"
-      },
-      backgroundColor:"background.dark"
-    }}>
+    direction="column" 
+    width="100%"
+    height="auto"
+    backgroundColor="background.dark"
+    >
 
       <Stack direction="row" position="fixed" marginTop="0.5rem" className={s.extras}>
       <Language />

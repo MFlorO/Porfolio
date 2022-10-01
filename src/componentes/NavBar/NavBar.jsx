@@ -34,20 +34,8 @@ export default function NavBar() {
       backgroundColor="background.dark"
       sx={{
         width: "100%",
-        height: {
-          xs: "100vh",
-          sm: "150vh",
-          md: "100vh",
-          lg: "100vh",
-          xl: "3.5rem",
-        },
-        marginTop: {
-          // xs:"100vh",
-          // sm:"150vh",
-          // md:"100vh",
-          // lg:"100vh",
-          xl: "0.5rem",
-        },
+        height: "3.5",
+        marginTop: "1rem",
       }}
     >
 
@@ -61,15 +49,7 @@ export default function NavBar() {
         <Typography
           variant="h1"
           color="secondary.dark"
-          sx={{
-            fontSize: {
-              // xs:"100vh",
-              // sm:"150vh",
-              // md:"100vh",
-              // lg:"100vh",
-              xl: "1rem",
-            },
-          }}
+          fontSize="1rem"
         >
           {t("navbar.welcome")}
         </Typography>

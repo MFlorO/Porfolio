@@ -74,9 +74,8 @@ function Proyects() {
   >
     <Stack
       direction="column"
-      justifyContent="space-around"
+      justifyContent="center"
       alignItems="center"
-      marginRight="5.5rem"
       sx={{
         width: "90%",
         height: {
@@ -84,10 +83,10 @@ function Proyects() {
           sm: "150vh",
           md: "100vh",
           lg: "100vh",
-          xl: "35rem",
+          xl: "38rem",
         },
         marginTop: {
-          xl: "1rem",
+          xl: "5rem",
         },
       }}
       // backgroundColor="blue"
@@ -96,7 +95,7 @@ function Proyects() {
 
       <Stack
         direction="column"
-        justifyContent="space-around"
+        justifyContent="center"
         alignItems="center"
         sx={{
           width: {
@@ -106,10 +105,6 @@ function Proyects() {
             lg: "100vh",
             xl: "30%",
           },
-          height:"10rem",
-          marginTop: {
-            xl: "6rem",
-          },
           fontSize:{
             xs: "100vh",
             sm: "150vh",
@@ -118,38 +113,41 @@ function Proyects() {
             xl: "5rem",
           }
         }}
-        // backgroundColor="green"
-      >
-
-        <Stack direction="column" justifyContent="space-around" alignItems="center"
-        color="secondary" >
+      >  
         <Typography variant="h1" color="text.secondary">{t("proyects.titleOne")}</Typography>
         <Typography variant="h1" color="secondary.dark">{t("proyects.titletwo")}</Typography>
-        </Stack>
+    
           
       </Stack>
 
       <Stack
-        direction="column"
-        justifyContent={"center"}
+        flexWrap="wrap"
+        justifyContent="center"
+        alignContent="center"
+        // backgroundColor="red"
         color="info.dark"
-        textAlign="justify"
+        height="70%"
+        gap="5rem"
         sx={{
           width: {
             xs: "100vh",
             sm: "150vh",
             md: "100vh",
             lg: "100vh",
-            xl: "65%",
+            xl: "100%",
           },
           marginTop: {
             xl: "4rem",
           },
         }}
       >
+        
+        
               {proyects_data.map((p) => (
         <ProyectsCard p={p} />
       ))}
+        
+
       </Stack>
     </Stack>
 

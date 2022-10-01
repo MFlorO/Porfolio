@@ -22,8 +22,8 @@ function AboutMe() {
       sx={{
         width: "100%",
         height: {
-          xs: "100vh",
-          sm: "150vh",
+          xs: "120vh",
+          sm: "100vh",
           md: "100vh",
           lg: "100vh",
           xl: "100vh",
@@ -32,15 +32,20 @@ function AboutMe() {
       // backgroundColor="red"
     >
       <Stack
-        direction="row"
+        // direction="row"
         justifyContent="space-around"
         alignItems="center"
         marginRight="5.5rem"
         sx={{
           width: "90%",
+          flexDirection:{
+            xs:"column",
+            lg:"row",
+            xl:"row"
+          },
           height: {
             xs: "100vh",
-            sm: "150vh",
+            sm: "100vh",
             md: "100vh",
             lg: "100vh",
             xl: "35rem",
@@ -59,7 +64,7 @@ function AboutMe() {
           alignItems="center"
           sx={{
             width: {
-              xs: "100vh",
+              xs: "30%",
               sm: "150vh",
               md: "100vh",
               lg: "100vh",
@@ -68,6 +73,9 @@ function AboutMe() {
             height:"10rem",
             marginTop: {
               xl: "6rem",
+            },
+            marginLeft: {
+              xs: "6rem",
             },
             fontSize:{
               xs: "100vh",
@@ -94,19 +102,25 @@ function AboutMe() {
 
         <Stack
           direction="column"
-          justifyContent={"center"}
+          justifyContent="center"
           color="info.dark"
           textAlign="justify"
+          // backgroundColor="red"
           sx={{
             width: {
-              xs: "100vh",
+              xs: "96%",
               sm: "150vh",
               md: "100vh",
               lg: "100vh",
               xl: "65%",
             },
             marginTop: {
+              xs:"3rem",
               xl: "4rem",
+            },
+            marginLeft: {
+              xs:"5rem",
+              // xl: "4rem",
             },
           }}
         >
