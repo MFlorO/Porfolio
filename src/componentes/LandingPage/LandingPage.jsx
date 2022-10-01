@@ -39,9 +39,9 @@ function LandingPage({ColorModeContext}) {
       width:"100%",
       height:{
         xs:"100vh",
-        sm:"150vh",
-        md:"100vh",
-        lg:"100vh",
+        // sm:"150vh",
+        // md:"100vh",
+        // lg:"100vh",
         xl:"100vh"
       },
       backgroundColor:"background.dark"

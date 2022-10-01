@@ -7,8 +7,6 @@ import { useTranslation } from "react-i18next";
 //MUI
 import {
   Stack,
-  Box,
-  // List,
   ListItem,
   ListItemButton,
   ListItemText,
@@ -30,13 +28,14 @@ export default function NavBar() {
       direction="row"
       position="fixed"
       justifyContent={"space-between"}
-      alignItems={"center"}
+      alignItems="center"
       backgroundColor="background.dark"
       sx={{
         width: "100%",
         height: "3.5",
         marginTop: "1rem",
       }}
+      zIndex={200}
     >
 
 
@@ -75,6 +74,7 @@ export default function NavBar() {
             xl: "1rem",
           },
           color: "text.secondary",
+          "& button.Mui-selected": {backgroundColor: "red"}
         }}
       >
         <ListItem disablePadding>

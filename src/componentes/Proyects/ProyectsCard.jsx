@@ -15,18 +15,22 @@ function ProyectsCard({p}) {
     <Zoom>
     <Stack direction="column" justifyContent="space-around" alignContent="center"
     sx={{
+      marginTop:"2rem",
       borderColor:"secondary.dark",
+      borderStyle:"solid",
+      borderWidth:"2px",
+      cover: "object-fit",
       width: {
-        xs: "100vh",
+        xs: "20rem",
         sm: "150vh",
         md: "100vh",
         lg: "100vh",
         xl: "32rem",
       },
       height: {
-        xs: "100vh",
+        xs: "20rem",
         sm: "150vh",
-        md: "100vh",
+        md: "100vh", 
         lg: "100vh",
         xl: "20rem",
       },

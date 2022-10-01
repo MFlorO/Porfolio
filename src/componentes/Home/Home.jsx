@@ -1,7 +1,7 @@
 import React from "react";
 
 //Translation
-import { useTranslation } from "react-i18next";
+// import { useTranslation } from "react-i18next";
 
 //MUI-CSS-ICONS
 import { Stack } from "@mui/material/";
@@ -12,7 +12,7 @@ import styles from "./Home.module.css";
 
 
 function Home() {
-  const { t } = useTranslation();
+  // const { t } = useTranslation();
 
 
   return (
@@ -35,10 +35,6 @@ function Home() {
         lg:"77%"
       },
       marginTop: {
-        // xs:"100vh",
-        // sm:"150vh",
-        // md:"100vh",
-        // lg:"100vh",
         xl: "8rem",
       },
     }}>

@@ -13,6 +13,8 @@ import Zoom from 'react-reveal/Zoom';
 
 function AboutMe() {
   const { t } = useTranslation();
+
+
   return (
     <Stack
       direction="column"
@@ -22,7 +24,7 @@ function AboutMe() {
       sx={{
         width: "100%",
         height: {
-          xs: "120vh",
+          xs: "100vh",
           sm: "100vh",
           md: "100vh",
           lg: "100vh",
@@ -44,17 +46,17 @@ function AboutMe() {
             xl:"row"
           },
           height: {
-            xs: "100vh",
-            sm: "100vh",
-            md: "100vh",
-            lg: "100vh",
+            xs: "10rem",
+            // sm: "100vh",
+            // md: "100vh",
+            // lg: "100vh",
             xl: "35rem",
           },
           marginTop: {
             xl: "1rem",
           },
         }}
-        // backgroundColor="blue"
+        backgroundColor="blue"
       >
 
 
@@ -70,8 +72,12 @@ function AboutMe() {
               lg: "100vh",
               xl: "30%",
             },
-            height:"10rem",
+            height:{
+              xs:"5rem",
+              xl:"10rem",
+            },
             marginTop: {
+              xs: "2rem",
               xl: "6rem",
             },
             marginLeft: {
@@ -95,7 +101,9 @@ function AboutMe() {
           </Stack>
 
           <Zoom><Stack marginTop="2rem">
-            <Button variant="outlined" color="secondary">Descargar CV</Button>
+            <a style={{textDecoration:"none"}} href="MFlorenciaOldaniDeveloperFullStackCV.pdf" download="MFlorenciaOldaniDeveloperFullStackCV.pdf">
+              <Button variant="outlined" color="secondary">Descargar CV</Button>
+            </a>
           </Stack></Zoom>
             
         </Stack>

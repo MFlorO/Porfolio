@@ -87,13 +87,7 @@ function Contact() {
       backgroundColor="background.dark"
       sx={{
         width: "100%",
-        height: {
-          xs: "100vh",
-          sm: "150vh",
-          md: "100vh",
-          lg: "100vh",
-          xl: "100vh",
-        },
+        height: "100vh"
       }}
       // backgroundColor="red"
     >
@@ -101,18 +95,26 @@ function Contact() {
         direction="row"
         justifyContent="space-around"
         alignItems="center"
-        marginLeft="1.5rem"
         sx={{
+          flexDirection:{
+            xs: "column",
+            xl: "row"
+          },
           width: "90%",
           height: {
-            xs: "100vh",
+            xs: "35rem",
             sm: "150vh",
             md: "100vh",
             lg: "100vh",
             xl: "35rem",
           },
           marginTop: {
+            xs: "-12rem",
             xl: "1rem",
+          },
+          marginLeft: {
+            xs: "0rem",
+            xl: "1.5rem",
           },
         }}
         // backgroundColor="blue"
@@ -125,31 +127,24 @@ function Contact() {
           alignItems="center"
           sx={{
             width: {
-              xs: "100vh",
-              sm: "150vh",
-              md: "100vh",
-              lg: "100vh",
+              xs: "30%",
+              // sm: "150vh",
+              // md: "100vh",
+              // lg: "100vh",
               xl: "30%",
             },
             height:"6rem",
             marginTop: {
               xl: "2rem",
             },
-            fontSize:{
-              xs: "100vh",
-              sm: "150vh",
-              md: "100vh",
-              lg: "100vh",
-              xl: "5rem",
-            }
+            
           }}
-          // backgroundColor="green"
         >
 
           <Stack direction="column" justifyContent="space-around" alignItems="center"
           color="secondary" >
-          <Typography variant="h1" color="text.secondary">{t("contact.titleOne")}</Typography>
-          <Typography variant="h1" color="secondary.dark">{t("contact.titletwo")}</Typography>
+          <Typography variant="h1" fontSize={{ xs: "4rem", xl: "5rem" }} color="text.secondary">{t("contact.titleOne")}</Typography>
+          <Typography variant="h1"fontSize={{ xs: "4rem", xl: "5rem" }} color="secondary.dark">{t("contact.titletwo")}</Typography>
           </Stack>
 
             
@@ -160,26 +155,32 @@ function Contact() {
           justifyContent={"center"}
           color="info.dark"
           textAlign="justify"
+          // backgroundColor="red"
           sx={{
             width: {
-              xs: "100vh",
-              sm: "150vh",
-              md: "100vh",
-              lg: "100vh",
+              xs: "100%",
+              // sm: "150vh",
+              // md: "100vh",
+              // lg: "100vh",
               xl: "60%",
             },
             marginTop: {
+              xs: "0rem",
               xl: "4rem",
             }
           }}
         >
-                <Box
+        <Box
         component="form"
         sx={{
           marginLeft: {
             xl: "2em",
           },
-          "& .MuiTextField-root": { m: 1, width: "40rem" },
+          "& .MuiTextField-root": {
+            xs: { m: 1, width: "22rem"},
+            xl: { m: 1, width: "40rem"}
+          }
+
         }}
         noValidate
         autoComplete="off"
@@ -232,7 +233,17 @@ function Contact() {
           <FormHelperText error>{error.message}</FormHelperText>
         )}
 
-         <Stack width="40rem"  marginLeft="0.5rem">
+         <Stack width="40rem"
+           sx={{
+             width: {
+             xs: "100%",
+             // sm: "150vh",
+            // md: "100vh",
+            // lg: "100vh",
+            xl: "81%",
+            }
+          }}
+         >
           <Button type="submit" value="Send" variant="contained" color="secondary" 
           disabled={
                  JSON.stringify(error) === "{}" && 

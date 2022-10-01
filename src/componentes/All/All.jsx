@@ -28,7 +28,7 @@ function All({ColorModeContext}) {
     backgroundColor="background.dark"
     >
 
-      <Stack direction="row" position="fixed" marginTop="0.5rem" className={s.extras}>
+      <Stack direction="row" position="fixed" marginTop="0.5rem" zIndex={300} className={s.extras}>
       <Language />
       <Theme ColorModeContext={ColorModeContext}/>
       </Stack>
