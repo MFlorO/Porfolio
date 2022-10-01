@@ -13,26 +13,6 @@ import videoPorfolio from "./videoPorfolio.mp4"
 import compuNegra from "./compuNegra.png"
 import s from "./LandingPage.module.css"
 
-// import { styled } from '@mui/material/styles';
-
-
-
-// const RootThypography = styled('div')(({ theme }) => ({
-
-//   color:'text.secondary',
-//   fontFamily: "Raleway",
-//   fontWeight: 200,
- 
-//   [theme.breakpoints.only('xs')]: {
-//     fontSize: "3rem",
-//     marginBottom: "2rem"
-//   },
-//   [theme.breakpoints.only('xl')]: {
-
-//     fontSize: "5rem",
-//   },
-
-// }));
 
 
 
@@ -48,9 +28,7 @@ function LandingPage({ColorModeContext}) {
 
 
 
-  function login() {
-    navigate("/all");
-  }
+  const login = () => navigate("/all")
 
 
   return (

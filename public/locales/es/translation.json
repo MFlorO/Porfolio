@@ -10,22 +10,34 @@
     "navbar":{
         "started":"Inicio",
         "welcome":"Bienvenido, un gusto conocerte",
-        "about": "Sobre mi",
+        "about": "Sobre Mi",
         "proyects":"Proyectos",
         "contact":"Contacto"     
     },
     "home":{
         "greeting":"Bienvenido al home"
     },
+    "AboutMe":{
+        "titleOne":"SOBRE",
+        "titletwo":"MI"
+    },
+    "skills":{
+        "titleOne":"MI",
+        "titletwo":"SKILLS"
+    },
     "proyects":{
+        "titleOne":"MI",
+        "titletwo":"PROYECTOS",
         "title":"Que hice",
         "description":"La aplicación tiene como finalidad poder buscar diferentes países del mundo y entrar al detalle para mas información. Además, cuenta con un formulario controlado para crear actividades turísticas y asociarlas a diferentes países. Esta app tiene un CRUD entero con respecto a las actividades turísticas. Se pueden ver, crear, editar y eliminar. Los datos de los países los traigo de una API rest (https://restcountries.com) y los guarde en mi propia base de datos."
     },
     "contact":{
         "name":"Nombre",
         "message":"Mensaje",
-        "contactMe":"Contactame",
+        "titleOne":"MI",
+        "titletwo":"CONTACTO",
         "succes":"Email enviado con éxito",
-        "error":"Hubo un error! Intente de nuevo"
+        "error":"Hubo un error! Intente de nuevo",
+        "contactMe":"Contactame"
     }
 }

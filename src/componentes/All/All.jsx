@@ -10,55 +10,39 @@ import Theme from "../Theme/Theme.jsx"
 
 //MUI
 import { Stack } from "@mui/material/";
-import "./All.css"
+import s from"./All.module.css"
 
 
 
 
 function All({ColorModeContext}) {
-  // const sections = document.querySelector("section");
-  // const windowsHeight = window.innerHeight;
-  // const navigation = document.querySelector(".navigations");
-  // console.log(windowsHeight);
 
-  // const reset = () => {
-  //   for (var i=0; i< navigation.children.length ; i++){
-  //     navigation.children[i].classList.remove("selected")
-  //   }
-  // };
-
-  // window.addEventListener("scroll", function(){
-
-  //   const scrollTop = window.scrollY;
-
-  //   sections.forEach( (section, i) => {
-  //     if(section.offsetTop < scrollTop + windowsHeight/2 && scrollTop < section.offsetTop + windowsHeight/2){
-  //       reset()
-  //       navigation.children[i].classList.add("selected")
-  //     }
-  //   })
-  //   }
-  // )
-
+  
 
   return (
 
+    <Stack  display="flex"
+    direction="column"
+    sx={{ 
+      width:"100%",
+      height:{
+        xs:"100vh",
+        sm:"150vh",
+        md:"100vh",
+        lg:"100vh",
+        xl:"100vh"
+      },
+      backgroundColor:"background.dark"
+    }}>
 
-    <Stack>
-            <Theme ColorModeContext={ColorModeContext}/>
- 
+      <Stack direction="row" position="fixed" marginTop="0.5rem" className={s.extras}>
       <Language />
+      <Theme ColorModeContext={ColorModeContext}/>
+      </Stack>
+
 
       <NavBar />
-
-      <Stack position={"fixed"} top={"50%"} zIndex={"10"}>
-        <ul className="navigations">
-          <li className="selected"></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-      </Stack>
+      
 
       <section id="home">
         <Home />
@@ -66,7 +50,7 @@ function All({ColorModeContext}) {
       <section id="about">
         <AboutMe />
       </section>
-      <section id="Skills">
+      <section id="skills">
         <Skills />
       </section>
       <section id="proyects">

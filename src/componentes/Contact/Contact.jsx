@@ -16,6 +16,10 @@ import {
 
 import validate from "./validate.js";
 
+
+
+
+
 function Contact() {
   const { t } = useTranslation();
   const form = useRef();
@@ -75,14 +79,107 @@ function Contact() {
   };
 
   return (
-    <Stack height={"100vh"} backgroundColor="background.dark" marginTop={"3.5rem"} >
 
-      <Typography variant='h1' > Contact Whit Me </Typography>
+    <Stack
+      direction="column"
+      justifyContent={"center"}
+      alignItems={"center"}
+      backgroundColor="background.dark"
+      sx={{
+        width: "100%",
+        height: {
+          xs: "100vh",
+          sm: "150vh",
+          md: "100vh",
+          lg: "100vh",
+          xl: "100vh",
+        },
+      }}
+      // backgroundColor="red"
+    >
+      <Stack
+        direction="row"
+        justifyContent="space-around"
+        alignItems="center"
+        marginLeft="1.5rem"
+        sx={{
+          width: "90%",
+          height: {
+            xs: "100vh",
+            sm: "150vh",
+            md: "100vh",
+            lg: "100vh",
+            xl: "35rem",
+          },
+          marginTop: {
+            xl: "1rem",
+          },
+        }}
+        // backgroundColor="blue"
+      >
 
-      <Box
+
+        <Stack
+          direction="column"
+          justifyContent="space-around"
+          alignItems="center"
+          sx={{
+            width: {
+              xs: "100vh",
+              sm: "150vh",
+              md: "100vh",
+              lg: "100vh",
+              xl: "30%",
+            },
+            height:"6rem",
+            marginTop: {
+              xl: "2rem",
+            },
+            fontSize:{
+              xs: "100vh",
+              sm: "150vh",
+              md: "100vh",
+              lg: "100vh",
+              xl: "5rem",
+            }
+          }}
+          // backgroundColor="green"
+        >
+
+          <Stack direction="column" justifyContent="space-around" alignItems="center"
+          color="secondary" >
+          <Typography variant="h1" color="text.secondary">{t("contact.titleOne")}</Typography>
+          <Typography variant="h1" color="secondary.dark">{t("contact.titletwo")}</Typography>
+          </Stack>
+
+            
+        </Stack>
+
+        <Stack
+          direction="column"
+          justifyContent={"center"}
+          color="info.dark"
+          textAlign="justify"
+          sx={{
+            width: {
+              xs: "100vh",
+              sm: "150vh",
+              md: "100vh",
+              lg: "100vh",
+              xl: "60%",
+            },
+            marginTop: {
+              xl: "4rem",
+            }
+          }}
+        >
+                <Box
         component="form"
         sx={{
-          "& .MuiTextField-root": { m: 1, width: "25ch" },
+          marginLeft: {
+            xl: "2em",
+          },
+          "& .MuiTextField-root": { m: 1, width: "40rem" },
         }}
         noValidate
         autoComplete="off"
@@ -99,7 +196,7 @@ function Contact() {
           name="user_name"
           value={value.user_name}
           onChange={handleChange}
-          // onFocusColor={error.user_name && 'red'}
+          color="secondary"
         />
         {error.user_name && (
           <FormHelperText error>{error.user_name}</FormHelperText>
@@ -113,6 +210,7 @@ function Contact() {
           type="email"
           name="user_email"
           value={value.user_email}
+          color="secondary"
           onChange={handleChange}
         />
         {error.user_email && (
@@ -127,23 +225,42 @@ function Contact() {
           multiline
           rows={4}
           value={value.message}
+          color="secondary"
           onChange={handleChange}
         />
         {error.message && (
           <FormHelperText error>{error.message}</FormHelperText>
         )}
 
-        <Button type="submit" value="Send" variant="contained" 
-        disabled={
+         <Stack width="40rem"  marginLeft="0.5rem">
+          <Button type="submit" value="Send" variant="contained" color="secondary" 
+          disabled={
                  JSON.stringify(error) === "{}" && 
                  value.user_name.trim() && value.user_email.trim() && value.message.trim()? false : true
                 }>
-          {t("contact.contactMe")}
-        </Button>
-        {!alertSucces && (<Alert variant="outlined" severity="success" >{t("contact.succes")}</Alert>)}
-        {!alertError && (<Alert variant="outlined" severity="error" >{t("contact.error")}</Alert>)}
+             {t("contact.contactMe")}
+          </Button>
+        </Stack>
+
+        {!alertSucces && 
+        (<Stack width="40rem"  marginTop="1rem" marginLeft="0.5rem">
+          <Alert variant="outlined" severity="success">{t("contact.succes")}</Alert>
+        </Stack>
+        )}
+        
+        {!alertError && (
+        <Stack width="40rem"  marginTop="1rem" marginLeft="0.5rem">
+          <Alert variant="outlined" severity="error" width="40rem">{t("contact.error")}</Alert>
+        </Stack>
+        )}
+
       </Box>
     </Stack>
+
+        </Stack>
+      </Stack>
+
+
   );
 }
 

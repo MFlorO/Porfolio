@@ -13,7 +13,7 @@ function ProyectsCard({p}) {
     <Container maxWidth="sm">
       <h1>{name}</h1>
       <p>{description}</p>
-      <img src={image} alt=""/>
+      {/* <img src={image} alt=""/> */}
         
     </Container>
   )

@@ -47,8 +47,8 @@ const getDesignTokens = (mode) => ({
         : {
         // palette values for dark mode
         primary: {
-          main: "#D0CDD2",
-          dark: "#D0CDD2",  //blando
+          main: "#D0CDD2",  
+          dark: "#D0CDD2",  //blanco
         },
         secondary: {
           main: "#f8bbd0",
@@ -61,8 +61,12 @@ const getDesignTokens = (mode) => ({
           main: "#81c784"  //verde
         },
         text: {
-          primary: "#D0CDD2",  //blando
+          primary: "#D0CDD2",  //blanco
           secondary: "#807D84",  //gris
+        },
+        info:{
+          main:"#E1E1E1",
+          dark:"#E1E1E1"
         },
         background: {
           main: "#999",
@@ -89,7 +93,7 @@ const getDesignTokens = (mode) => ({
         },
         h5:{
           fontFamily:"Raleway",
-          fontWeight: 300,
+          fontWeight: 400,
           fontSize:"2rem",
         },
         h6:{
@@ -104,8 +108,8 @@ const getDesignTokens = (mode) => ({
         },
         body1:{
           fontFamily: "Raleway",
-          fontWeight: 10,
-          fontSize:"",
+          fontWeight: 200,
+          fontSize:"1rem",
         }
       }
 });
