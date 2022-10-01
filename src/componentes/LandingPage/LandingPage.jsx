@@ -38,7 +38,7 @@ function LandingPage({ColorModeContext}) {
     sx={{ 
       width:"100%",
       height:{
-        xs:"100vh",
+        xs:"autp",
         // sm:"150vh",
         // md:"100vh",
         // lg:"100vh",
