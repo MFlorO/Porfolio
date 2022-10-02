@@ -91,7 +91,7 @@ function Proyects() {
         },
         marginTop: {
           xs: "0rem",
-          xl: "5rem",
+          xl: "0rem",
         },
       }}
       // backgroundColor="blue"
@@ -116,7 +116,7 @@ function Proyects() {
           },
         }}
       >  
-        <Typography variant="h1" sx={{fontSize:{xs: "3.5rem", xl: "5rem"}}} color="text.secondary">{t("proyects.titleOne")}</Typography>
+        <Typography variant="h1" sx={{fontSize:{xs: "3.5rem", xl: "5rem"}, color:"text.secondary"}} >{t("proyects.titleOne")}</Typography>
         <Typography variant="h1" sx={{fontSize:{xs: "3.5rem", xl: "5rem"}}} color="secondary.dark">{t("proyects.titletwo")}</Typography>
     
           
