@@ -26,7 +26,6 @@ function Proyects() {
         "Sequelize",
         "Css",
       ],
-      date: "08/2022",
       image: country,
       description:`${t("proyects.descriptionCountries")}`,
       urlGit:"https://github.com/MFlorO/Countries-app-front",
@@ -49,7 +48,6 @@ function Proyects() {
         "Chakra react",
 
       ],
-      date: "09/2022",
       image: henry,
       description: `${t("proyects.descriptionhenry")}`,
       urlGit:"https://github.com/jovanad29/FE-HenryLibrary",
