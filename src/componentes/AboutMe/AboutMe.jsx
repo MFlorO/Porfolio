@@ -128,32 +128,25 @@ function AboutMe() {
           }}
         >
           <Typography variant="body1" marginBottom="1rem">
-            Como te dije, voy a contarte un poco sobre mi para que puedas
-            conocerme.
+          {t("AboutMe.bodyOne")}
           </Typography>
           <Typography variant="body1" marginBottom="1rem">
-            Soy Desarroladora Full Stack. Pero eso no es algo que no
-            te haya dicho antes. Lo que si, soy apasionada por el conocimiento,
-            creo que el interés y la persistencia son la clave para aprender
-            cualquier cosa, y ami me sobra de las dos.
+          {t("AboutMe.bodyTwo")}
           </Typography>
           <Typography variant="body1" marginBottom="1rem" fontWeight={400}>
-            Me apasiona y desafía aprender cosas nuevas.
+          {t("AboutMe.bodyThree")}
           </Typography>
           <Typography variant="body1" marginBottom="1rem">
-            La programacion me genera eso. Mucho interés y curiosidad por el
-            saber. Es un mundo muy amplio en el que constantemente surgen nuevas
-            tecnologías, nuevas versiones o nuevas herramientas. Este constante
-            cambio me mantiene siempre entretenida y con ganas de superarme.
+          {t("AboutMe.bodyFour")}
           </Typography>
           <Typography variant="body1" marginBottom="1rem">
-            No te aseguro que sepa todo, pero lo que si te puedo asegurar es que
-            voy a ser insistente. Voy a preguntar, voy a investigar y no voy a
-            parar hasta aprender lo que necesito.
+          {t("AboutMe.bodyFive")}
           </Typography>
           <Typography variant="body1" marginBottom="1rem">
-            Fuera de la programación, lo que me apasiona es lo social, me gusta
-            compartir momentos con mis amigos y familia. Además, me gusta viajar para desconectarme.
+          {t("AboutMe.bodySix")}
+          </Typography>
+          <Typography variant="body1" marginBottom="1rem">
+          {t("AboutMe.bodySeven")}
           </Typography>
         </Stack>
       </Stack>

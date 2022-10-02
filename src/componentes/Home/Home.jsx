@@ -10,7 +10,7 @@ import styles from "./Home.module.css";
 // import {SiGmail, SiGithub} from "react-icons/si"
 import fondo from "./fondo.jpg"
 import foto from "./fotoPerfil.jpeg"
-
+import Zoom from 'react-reveal/Zoom';
 
 
 function Home() {
@@ -33,7 +33,8 @@ function Home() {
     }}>
      
     
-    <Stack direction="row" alignItems="center" backgroundColor="background.dark"
+    <Stack direction="row" alignItems="center" 
+    backgroundColor="background.main"
     justifyContent="center"
     sx={{
       width: "100%",
@@ -65,38 +66,31 @@ function Home() {
             // backgroundColor="red"
               >
 
+          <Zoom>
           <Stack direction="column" justifyContent="flex-start" alignItems="center"
           color="secondary">
-          <Typography variant="h1" fontSize={{ xs: "4rem", xl: "4rem" }} color="text.secondary" >FLORENCIA</Typography>
-          <Typography variant="h1"fontSize={{ xs: "4rem", xl: "4rem" }} color="secondary.dark">OLDANI</Typography>
+          <Typography variant="h1" fontSize={{ xs: "4rem", xl: "5rem" }} color="text.secondary" >FLORENCIA</Typography>
+          <Typography variant="h1"fontSize={{ xs: "4rem", xl: "5rem" }} color="secondary.dark">OLDANI</Typography>
           <Typography variant='h1' component='h3' color='text.primary' 
         sx={{ 
           fontSize:{
            xs:"3rem",
            xl: "3rem"
          },
+         color:"text.primary",
          lineHeight: "4rem",
-        marginTop: "1.5rem",
-        marginBotton: "0.5rem"
+        marginTop: "3rem",
+        marginBotton: "1rem"
          }}>Developer Full Stack</Typography>
           </Stack>
-          <ContactLink />
-          </Stack>
-            
-
-          {/* <Stack className={styles.wrapper}> */}
-                      {/* <div className={styles.icon}>
-             <div className={styles.tooltip}>floroldani@hotmail.com</div>
-             <span className={styles.span}><SiGmail className="gmail" size="2rem"/></span>
-          </div>
-
-          <div className={styles.icon}>
-             <div className={styles.tooltip}>/MFlorO</div>
-             <span className={styles.span}><SiGithub className="github" size="2rem"/></span>
-          </div> */}
-                   
           
-      {/* </Stack> */}
+          <ContactLink />
+          </Zoom> 
+
+          </Stack>
+
+
+        
       </Stack>
 
     </Stack>

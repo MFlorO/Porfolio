@@ -14,6 +14,11 @@ import {
 } from "@mui/material/";
 
 
+const botonstyled = {
+  "&:active": { backgroundColor: "red" },
+  "&:hover": { backgroundColor: "transparent", color: "text.secondary" },
+  textAlign: "center",
+};
 
 export default function NavBar() {
   const { t } = useTranslation();
@@ -25,9 +30,9 @@ export default function NavBar() {
     <Stack
       direction="row"
       position="fixed"
-      justifyContent={"space-between"}
+      justifyContent="space-between"
       alignItems="center"
-      backgroundColor="background.dark"
+      backgroundColor="background.main"
       sx={{
         width: "100%",
         height: "3.5",
@@ -35,19 +40,13 @@ export default function NavBar() {
       }}
       zIndex={200}
     >
-
-
       <Stack
         sx={{
           width: "20%",
         }}
         marginLeft="1rem"
       >
-        <Typography
-          variant="h1"
-          color="secondary.dark"
-          fontSize="1rem"
-        >
+        <Typography variant="h1" color="secondary.dark" fontSize="1rem">
           {t("navbar.welcome")}
         </Typography>
       </Stack>
@@ -68,38 +67,56 @@ export default function NavBar() {
           fontFamily: "Raleway",
         }}
       >
-        <ListItem disablePadding >
-          <ListItemButton onClick={landingPage}   sx={{"&:hover": {backgroundColor: "text.secondary"}, textAlign:"center",}}>
+        <ListItem disablePadding>
+          <ListItemButton
+            onClick={landingPage}
+            sx={{
+              "&:hover": {
+                backgroundColor: "transparent",
+                color: "text.secondary",
+              },
+              
+            }}
+          >
             <ListItemText primary={t("navbar.started")} />
           </ListItemButton>
         </ListItem>
 
         <ListItem disablePadding>
-          <ListItemButton href="#home"  sx={{"&:active": {backgroundColor: "red"},"&:hover": {backgroundColor: "text.secondary"}, textAlign:"center",}} >
+          <ListItemButton href="#home" sx={botonstyled}>
             <ListItemText primary="Home" />
           </ListItemButton>
         </ListItem>
 
         <ListItem disablePadding>
-          <ListItemButton href="#about" sx={{"&:active": {backgroundColor: "red"},"&:hover": {backgroundColor: "text.secondary"}, textAlign:"center",}}>
+          <ListItemButton href="#about" sx={botonstyled}>
             <ListItemText primary={t("navbar.about")} />
           </ListItemButton>
         </ListItem>
 
         <ListItem disablePadding>
-          <ListItemButton href="#skills" sx={{"&:active": {backgroundColor: "red"},"&:hover": {backgroundColor: "text.secondary"}, textAlign:"center",}}>
+          <ListItemButton
+            href="#skills"
+            sx={botonstyled}
+          >
             <ListItemText primary="Skills" />
           </ListItemButton>
         </ListItem>
 
         <ListItem disablePadding>
-          <ListItemButton href="#proyects" sx={{"&:active": {backgroundColor: "red"},"&:hover": {backgroundColor: "text.secondary"}, textAlign:"center",}}>
+          <ListItemButton
+            href="#proyects"
+            sx={botonstyled}
+          >
             <ListItemText primary={t("navbar.proyects")} />
           </ListItemButton>
         </ListItem>
 
         <ListItem disablePadding>
-          <ListItemButton href="#contact" sx={{"&:active": {backgroundColor: "red"},"&:hover": {backgroundColor: "text.secondary"}, textAlign:"center",}}>
+          <ListItemButton
+            href="#contact"
+            sx={botonstyled}
+          >
             <ListItemText primary={t("navbar.contact")} />
           </ListItemButton>
         </ListItem>

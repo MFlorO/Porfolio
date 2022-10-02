@@ -16,6 +16,8 @@ import {
 
 import validate from "./validate.js";
 
+import Zoom from 'react-reveal/Zoom';
+import ContactLink from "../ContactLink/ContactLink";
 
 
 
@@ -135,17 +137,22 @@ function Contact() {
             },
             height:"6rem",
             marginTop: {
-              xl: "2rem",
+              xl: "5rem",
             },
             
           }}
         >
 
           <Stack direction="column" justifyContent="space-around" alignItems="center"
-          color="secondary" >
+          color="secondary" 
+          marginBottom="2rem">
           <Typography variant="h1" fontSize={{ xs: "4rem", xl: "5rem" }} color="text.secondary">{t("contact.titleOne")}</Typography>
           <Typography variant="h1"fontSize={{ xs: "4rem", xl: "5rem" }} color="secondary.dark">{t("contact.titletwo")}</Typography>
           </Stack>
+          
+          <Zoom> 
+          <ContactLink />
+          </Zoom> 
 
             
         </Stack>

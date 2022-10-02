@@ -17,7 +17,14 @@
     },
     "AboutMe":{
         "titleOne":"ABOUT",
-        "titletwo":"ME"
+        "titletwo":"ME",
+        "bodyOne": "As I told you, I am going to introduce myself.",
+        "bodyTwo": " I am a Full Stack Developer.  But that's not something I haven't told you before. I am passionate about knowledge, I believe that interest and persistence are the key to learning anything, and I have plenty of both.",
+        "bodyThree":"I am passionate and challenged to learn new things.",
+        "bodyFour": "Programming gives me interested and curious to know.  It is a very wide world in which new technologies, new versions or new tools are constantly emerging.  This constant change always keeps me entertained and wanting to improve myself.",
+        "bodyFive": "I can't assure you that I know everything, but what I can assure you is that I will be insistent.  I'm going to ask, I'm going to investigate and I'm not going to stop until I learn what I need.",
+        "bodySix": "I like to work in a team, I feel that in this way there is double teaching, both the one who helps and the one who receives the help learn.",
+        "bodySeven": " Outside of programming, I am a social person, I like to share moments with my friends and family.  Also, I like to travel to disconnect."
     },
     "skills":{
         "titleOne":"ME",

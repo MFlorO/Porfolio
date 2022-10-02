@@ -1,43 +1,48 @@
-
-
 {
-    "landing":{
-            "hellow": "Hola! Soy",
-            "thanks": "Gracias por tu interés en conocerme",
-            "message": "Te invito a que ingreses para seguir conociendome.",
-            "ingresar": "ingresar"
+    "landing": {
+        "hellow": "Hola! Soy",
+        "thanks": "Gracias por tu interés en conocerme",
+        "message": "Te invito a que ingreses para seguir conociendome.",
+        "ingresar": "ingresar"
     },
-    "navbar":{
-        "started":"Inicio",
-        "welcome":"Bienvenido, un gusto conocerte",
+    "navbar": {
+        "started": "Inicio",
+        "welcome": "Bienvenido, un gusto conocerte",
         "about": "Sobre Mi",
-        "proyects":"Proyectos",
-        "contact":"Contacto"     
+        "proyects": "Proyectos",
+        "contact": "Contacto"
     },
-    "home":{
-        "greeting":"Bienvenido al home"
+    "home": {
+        "greeting": "Bienvenido al home"
     },
-    "AboutMe":{
-        "titleOne":"SOBRE",
-        "titletwo":"MI"
+    "AboutMe": {
+        "titleOne": "SOBRE",
+        "titletwo": "MI",
+        "bodyOne": "Como te dije, voy a contarte un poco sobre mi para que puedas conocerme.",
+        "bodyTwo": "Soy Desarroladora Full Stack. Pero eso no es algo que no te haya dicho antes. Lo que si, soy apasionada por el conocimiento, creo que el interés y la persistencia son la clave para aprender cualquier cosa, y ami me sobra de las dos.",
+        "bodyThree":"Me apasiona y desafía aprender cosas nuevas.",
+        "bodyFour": "La programacion me genera eso. Mucho interés y curiosidad por el saber. Es un mundo muy amplio en el que constantemente surgen nuevas tecnologías, nuevas versiones o nuevas herramientas. Este constante cambio me mantiene siempre entretenida y con ganas de superarme.",
+        "bodyFive": "No te aseguro que sepa todo, pero lo que si te puedo asegurar es que voy a ser insistente. Voy a preguntar, voy a investigar y no voy a parar hasta aprender lo que necesito.",
+        "bodySix": "Me gusta trabajar en equipo, siento que de esa forma hay doble enseñanza, aprende tanto el que ayuda como el que recibe la ayuda.",
+        "bodySeven": "Fuera de la programación, lo que me apasiona es lo social, me gusta compartir momentos con mis amigos y familia. Además, me gusta viajar para desconectarme."
     },
-    "skills":{
-        "titleOne":"MI",
-        "titletwo":"SKILLS"
+    "skills": {
+        "titleOne": "MI",
+        "titletwo": "SKILLS"
     },
-    "proyects":{
-        "titleOne":"MIS",
-        "titletwo":"PROYECTOS",
-        "title":"Que hice",
-        "description":"La aplicación tiene como finalidad poder buscar diferentes países del mundo y entrar al detalle para mas información. Además, cuenta con un formulario controlado para crear actividades turísticas y asociarlas a diferentes países. Esta app tiene un CRUD entero con respecto a las actividades turísticas. Se pueden ver, crear, editar y eliminar. Los datos de los países los traigo de una API rest (https://restcountries.com) y los guarde en mi propia base de datos."
+    "proyects": {
+        "titleOne": "MIS",
+        "titletwo": "PROYECTOS",
+        "title": "Que hice",
+        "description": "La aplicación tiene como finalidad poder buscar diferentes países del mundo y entrar al detalle para mas información. Además, cuenta con un formulario controlado para crear actividades turísticas y asociarlas a diferentes países. Esta app tiene un CRUD entero con respecto a las actividades turísticas. Se pueden ver, crear, editar y eliminar. Los datos de los países los traigo de una API rest (https://restcountries.com) y los guarde en mi propia base de datos."
     },
-    "contact":{
-        "name":"Nombre",
-        "message":"Mensaje",
-        "titleOne":"MI",
-        "titletwo":"CONTACTO",
-        "succes":"Email enviado con éxito",
-        "error":"Hubo un error! Intente de nuevo",
-        "contactMe":"Contactame"
+    "contact": {
+        "name": "Nombre",
+        "message": "Mensaje",
+        "titleOne": "MI",
+        "titletwo": "CONTACTO",
+        "succes": "Email enviado con éxito",
+        "error": "Hubo un error! Intente de nuevo",
+        "contactMe": "Contactame"
     }
 }
