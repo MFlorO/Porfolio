@@ -15,8 +15,8 @@ import {
 
 
 const botonstyled = {
-  "&:active": { backgroundColor: "red" },
-  "&:hover": { backgroundColor: "transparent", color: "text.secondary" },
+  color: "text.secondary",
+  "&:hover": { backgroundColor: "transparent", color: "secondary.dark" },
   textAlign: "center",
 };
 
@@ -63,21 +63,11 @@ export default function NavBar() {
             // lg:"100vh",
             xl: "25rem",
           },
-          color: "secondary.dark",
-          fontFamily: "Raleway",
+          fontFamily: "Raleway"
         }}
       >
         <ListItem disablePadding>
-          <ListItemButton
-            onClick={landingPage}
-            sx={{
-              "&:hover": {
-                backgroundColor: "transparent",
-                color: "text.secondary",
-              },
-              
-            }}
-          >
+          <ListItemButton onClick={landingPage} sx={botonstyled}>
             <ListItemText primary={t("navbar.started")} />
           </ListItemButton>
         </ListItem>

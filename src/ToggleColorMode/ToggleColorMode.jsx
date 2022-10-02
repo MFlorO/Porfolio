@@ -21,15 +21,15 @@ export default function ToggleColorMode() {
     [],
   );
 
+
   // Update the theme only if the mode changes
   const theme = useMemo(() => createTheme(getDesignTokens(mode)), [mode])
 
- 
 
   return (
     <ColorModeContext.Provider value={colorMode}>
       <ThemeProvider theme={theme}>
-        <App ColorModeContext={ColorModeContext}/>
+       <App ColorModeContext={ColorModeContext}/> 
       </ThemeProvider>
     </ColorModeContext.Provider>
   );

@@ -134,7 +134,7 @@ function Proyects() {
             xl: "70%"
           },
           marginTop: {
-            xl: "4rem",
+            xl: "2rem",
           },
           gap:{
             xs: "1rem",
@@ -144,9 +144,13 @@ function Proyects() {
       >
         
         
-              {proyects_data.map((p) => (
-        <ProyectsCard p={p} />
-      ))}
+              {proyects_data.map((p,index) => {
+                return(
+                <div key={index}>
+                <ProyectsCard p={p} />
+                </div>
+
+              )})}
         
 
       </Stack>
