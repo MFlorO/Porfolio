@@ -34,7 +34,8 @@
         "titleOne":"ME",
         "titletwo":"PROYECTS",
         "title":"What I Do",
-        "description":"In the application you can search for different countries in the world and enter the details for more information. In addition, it has a controlled form to create tourist activities and associate them with different countries. This application has an entire CRUD regarding tourist activities. It is they can see, create, edit and delete. The country data is brought from a rest API (https://restcountries.com) and stored in my own database"
+        "descriptionCountries":"In the application you can search for different countries in the world and enter the details for more information. In addition, it has a controlled form to create tourist activities and associate them with different countries. This application has an entire CRUD regarding tourist activities. It is they can see, create, edit and delete. The country data is brought from a rest API (https://restcountries.com) and stored in my own database",
+        "descriptionhenry": "It is an ecommerce that allows us to navigate through 3 roles: Guest, User and Admin. As a guest you can browse the entire web, see books and their details but you cannot buy until you are authenticated. As a user you can buy and search for books, access the user panel, leave reviews of the purchased book and save books in fav. As admin you can have control of the entire application through the administrator panel."
     },
     "contact":{
         "name":"Name",

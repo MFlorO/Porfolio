@@ -34,7 +34,8 @@
         "titleOne": "MIS",
         "titletwo": "PROYECTOS",
         "title": "Que hice",
-        "description": "La aplicación tiene como finalidad poder buscar diferentes países del mundo y entrar al detalle para mas información. Además, cuenta con un formulario controlado para crear actividades turísticas y asociarlas a diferentes países. Esta app tiene un CRUD entero con respecto a las actividades turísticas. Se pueden ver, crear, editar y eliminar. Los datos de los países los traigo de una API rest (https://restcountries.com) y los guarde en mi propia base de datos."
+        "descriptionCountries": "La aplicación tiene como finalidad poder buscar diferentes países del mundo y entrar al detalle para mas información. Además, cuenta con un formulario controlado para crear actividades turísticas y asociarlas a diferentes países. Esta app tiene un CRUD entero con respecto a las actividades turísticas. Se pueden ver, crear, editar y eliminar. Los datos de los países los traigo de una API rest (https://restcountries.com) y los guarde en mi propia base de datos.",
+        "descriptionhenry": "Es un eccomerce que nos permite navegar mediante 3 roles: Guest, Usuario y Admin. Como guest podes navegar por toda la web, ver libros y su detalle pero no se puede comprar hasta que este autenticado. Como usuario se puede comprar y buscar libros, acceder al panel de usuario, dejar reviews del libro comprado y guardar libros en fav. Como admin se puede tener un control de toda la aplicacion mediante el panel de administrador."
     },
     "contact": {
         "name": "Nombre",

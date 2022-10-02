@@ -28,7 +28,7 @@ function Proyects() {
       ],
       date: "08/2022",
       image: country,
-      description:`${t("proyects.description")}`,
+      description:`${t("proyects.descriptionCountries")}`,
       urlGit:"https://github.com/MFlorO/Countries-app-front",
       urlLink:"https://countries-flor.netlify.app/"
     },
@@ -51,7 +51,7 @@ function Proyects() {
       ],
       date: "09/2022",
       image: henry,
-      description: "",
+      description: `${t("proyects.descriptionhenry")}`,
       urlGit:"https://github.com/jovanad29/FE-HenryLibrary",
       urlLink:"https://henry-library.netlify.app/"
     },
