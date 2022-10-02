@@ -184,8 +184,8 @@ function Contact() {
             xl: "2em",
           },
           "& .MuiTextField-root": {
-            xs: { m: 1, width: "22rem"},
-            xl: { m: 1, width: "40rem"}
+            xs: { m: 1, width: "22rem", marginBottom:"0.5rem"},
+            xl: { m: 1, width: "40rem", marginBottom:"0.5rem"}
           }
 
         }}

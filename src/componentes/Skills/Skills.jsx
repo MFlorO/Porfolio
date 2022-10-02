@@ -133,11 +133,7 @@ function Skills() {
             },
             marginLeft: {
               xl: "2rem",
-            },
-            // gap:{
-            //   xs:
-            // }
-            
+            }
           }}
         >
           <Zoom>

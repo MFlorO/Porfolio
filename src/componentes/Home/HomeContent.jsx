@@ -44,7 +44,7 @@ function HomeContent({foto}) {
          color:"text.primary",
          lineHeight: "4rem",
          marginTop: "3rem",
-         marginBotton: "1rem"
+         marginBotton: "1rem",
          }}>Developer Full Stack</Typography>
           </Stack>
           

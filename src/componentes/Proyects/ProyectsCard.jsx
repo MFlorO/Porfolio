@@ -1,15 +1,19 @@
 import React from 'react'
 
-//MUI
-import { Stack } from '@mui/material';
 
 //React Reveal
 import Zoom from 'react-reveal/Zoom';
 
+import { Fab, Stack, Link } from "@mui/material";
+import { BsGithub } from "react-icons/bs"
+import {SiWebmoney} from "react-icons/si"
+
+
+
+
 function ProyectsCard({p}) {
 
-  const {name, tecnology, date, image, description} = p
-
+  const {name, tecnology, date, image, description, urlGit, urlLink} = p
   
    return (
     <Zoom>
@@ -39,12 +43,26 @@ function ProyectsCard({p}) {
       backgroundSize: "cover",
       "&:hover": {
         backgroundColor: "red",
-        opacity: "0.5"
-        // `${description}`
+        opacity: "0.5",
       },
     }}>
+
+     <Stack>
+      <Fab color="secondary" >
+      <Link  target="_blank"  rel="noopener noreferrer" href={urlGit}>
+          <BsGithub size="2rem" color='black'/></Link >
+      </Fab>
+    </Stack>
    
-        
+
+    <Stack>
+      <Fab color="secondary" >
+      <Link  target="_blank"  rel="noopener noreferrer" href={urlLink}>
+          <SiWebmoney size="2rem" color='black'/></Link >
+      </Fab>
+    </Stack>
+
+
     </Stack>
     </Zoom>
   )

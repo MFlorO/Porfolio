@@ -38,10 +38,10 @@ function LandingPage({ColorModeContext}) {
     sx={{ 
       width:"100%",
       height:{
-        xs:"autp",
-        // sm:"150vh",
-        // md:"100vh",
-        // lg:"100vh",
+        xs:"100vh",
+        sm:"110vh",
+        md:"100vh",
+        lg:"100vh",
         xl:"100vh"
       },
       backgroundColor:"background.dark"

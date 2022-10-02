@@ -43,7 +43,7 @@ function All({ColorModeContext}) {
       </Stack>
 
       <Stack position="fixed"
-    sx={{
+      sx={{
         position:"fixed",
         bottom:{
           sx:"",
@@ -53,8 +53,8 @@ function All({ColorModeContext}) {
             sx:"",
             xl: "3rem"
         }
-    }}><ButtonNavigateTop />
-    </Stack>
+      }}><ButtonNavigateTop />
+      </Stack>
 
 
      <NavBar />
