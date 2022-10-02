@@ -10,15 +10,12 @@ import Theme from "../Theme/Theme.jsx"
 
 //MUI
 import { Stack } from "@mui/material/";
-import s from"./All.module.css"
 import ButtonNavigateTop from "./ButtonNavigateTop/ButtonNavigateTop.jsx";
 
 
 
 
 function All({ColorModeContext}) {
-
-  
 
   return (
 
@@ -27,7 +24,7 @@ function All({ColorModeContext}) {
     width="100%"
     sx={{
       height: {
-        xs: "100vh",
+        xs: "120vh",
         sm: "100vh",
         md: "100vh",
         lg: "100vh",
@@ -37,22 +34,22 @@ function All({ColorModeContext}) {
     backgroundColor="background.dark"
     >
 
-      <Stack direction="row" position="fixed" marginTop="1rem" alignItems="center" zIndex={300} className={s.extras}>
+      <Stack direction="row" position="fixed" alignItems="center" zIndex={400} width="5rem" height="4rem" right="6rem" top="0.5rem">
       <Language />
       <Theme ColorModeContext={ColorModeContext}/>
       </Stack>
 
-      <Stack position="fixed"
+      <Stack position="fixed" 
       sx={{
-        position:"fixed",
         bottom:{
-          sx:"",
+          xs:"5rem",
           xl: "2rem"
         },
         right:{
-            sx:"",
-            xl: "3rem"
-        }
+            xs:"2rem",
+            xl: "5rem"
+        },
+        // zIndex:"10"
       }}><ButtonNavigateTop />
       </Stack>
 

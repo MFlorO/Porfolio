@@ -15,10 +15,15 @@ import {
 
 
 const botonstyled = {
+  textAlign: "center",
   color: "text.secondary",
   "&:hover": { backgroundColor: "transparent", color: "secondary.dark" },
-  textAlign: "center",
 };
+
+
+
+
+
 
 export default function NavBar() {
   const { t } = useTranslation();
@@ -33,21 +38,35 @@ export default function NavBar() {
       justifyContent="space-between"
       alignItems="center"
       backgroundColor="background.main"
+      zIndex={300}
       sx={{
         width: "100%",
         height: "3.5",
-        marginTop: "1rem",
+        marginTop:{
+          xs:"3rem",
+          lg: "1rem"
+        }
       }}
-      zIndex={200}
     >
       <Stack
         sx={{
-          width: "20%",
+          width:{
+            xs:"30%",
+            lg: "16%"
+          },
+          marginLeft:{
+            xs:"0rem",
+            lg: "1rem"
+          }
         }}
-        marginLeft="1rem"
       >
-        <Typography variant="h1" color="secondary.dark" fontSize="1rem">
-          {t("navbar.welcome")}
+        <Typography variant="h1" color="secondary.dark" fontSize="1rem"
+        sx={{
+          display:{
+            xs:"none",
+            lg: "block"
+          }
+        }}>{t("navbar.welcome")}
         </Typography>
       </Stack>
 
@@ -55,15 +74,23 @@ export default function NavBar() {
         direction="row"
         alignItems="center"
         sx={{
-          width: "40%",
+          width:{
+              xs:"100%",
+              lg: "45%"
+            },
           marginRight: {
-            // xs:"100vh",
+            xs:"15rem",
             // sm:"150vh",
             // md:"100vh",
             // lg:"100vh",
             xl: "25rem",
           },
-          fontFamily: "Raleway"
+          fontSize:{
+            xs:"10rem",
+            lg: "2rem"
+          },
+          fontFamily: "Raleway",
+          // backgroundColor: "red"
         }}
       >
         <ListItem disablePadding>

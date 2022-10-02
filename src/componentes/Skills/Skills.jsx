@@ -40,17 +40,21 @@ function Skills() {
   return (
     <Stack
       direction="column"
-      justifyContent={"center"}
-      alignItems={"center"}
+      justifyContent="space-around"
+      alignItems="center"
       backgroundColor="background.dark"
       sx={{
         width: "100%",
         height: {
-          xs: "100vh",
+          xs: "80vh",
           sm: "100vh",
           md: "100vh",
           lg: "100vh",
           xl: "100vh",
+        },
+        paddingTop: {
+          xs: "2rem",
+          xl: "0rem",
         },
       }}
       // backgroundColor="red"
@@ -63,14 +67,14 @@ function Skills() {
         sx={{
           width: "90%",
           height: {
-            xs: "35rem",
+            xs: "40rem",
             sm: "150vh",
             md: "100vh",
             lg: "100vh",
             xl: "35rem",
           },
           marginTop: {
-            xs: "-12rem",
+            xs: "0rem",
             xl: "4rem",
           },
           marginLeft: {

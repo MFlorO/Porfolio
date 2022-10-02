@@ -61,12 +61,18 @@ function Proyects() {
   return (
     <Stack
     direction="column"
-    justifyContent={"center"}
-    alignItems={"center"}
+    justifyContent="center"
+    alignItems="center"
     backgroundColor="background.dark"
     sx={{
       width: "100%",
-      height: "100vh",
+      height:{
+        xs: "110vh",
+        // sm: "150vh",
+        // md: "100vh",
+        // lg: "100vh",
+        xl: "100vh",
+      },
     }}
     // backgroundColor="red"
   >
@@ -77,13 +83,14 @@ function Proyects() {
       sx={{
         width: "90%",
         height: {
-          xs: "60rem",
+          xs: "70rem",
           // sm: "150vh",
           // md: "100vh",
           // lg: "100vh",
           xl: "38rem",
         },
         marginTop: {
+          xs: "0rem",
           xl: "5rem",
         },
       }}
@@ -97,12 +104,16 @@ function Proyects() {
         alignItems="center"
         sx={{
           width: {
-            xs: "100vh",
+            xs: "30%",
             sm: "150vh",
             md: "100vh",
             lg: "100vh",
             xl: "30%",
-          }
+          },
+          marginBottom: {
+            xs: "3rem",
+            xl: "0rem",
+          },
         }}
       >  
         <Typography variant="h1" sx={{fontSize:{xs: "3.5rem", xl: "5rem"}}} color="text.secondary">{t("proyects.titleOne")}</Typography>
