@@ -240,7 +240,7 @@ function Contact() {
           <FormHelperText error>{error.message}</FormHelperText>
         )}
 
-         <Stack width="40rem"
+         <Stack 
            sx={{
              width: {
              xs: "100%",
@@ -248,6 +248,7 @@ function Contact() {
             // md: "100vh",
             // lg: "100vh",
             xl: "81%",
+            xxl: "64.5%"
             }
           }}
          >
