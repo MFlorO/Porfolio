@@ -49,7 +49,6 @@ export default function NavBar() {
       }}
     >
       <Stack
-            backgroundColor="red"
         sx={{
           width:{
             xs:"100%",
