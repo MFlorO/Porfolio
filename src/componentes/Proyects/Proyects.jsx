@@ -129,7 +129,11 @@ function Proyects() {
         sx={{
           flexDirection:{
             xs: "column",
-            xl: "row"
+            sm: "row",
+            md: "row",
+            lg: "row",
+            xl: "row",
+            xxl: "row"
           },
           justifyContent:{
             xs:"space-around",

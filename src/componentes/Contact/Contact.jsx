@@ -91,6 +91,8 @@ function Contact() {
         width: "100%",
         height: {
           xs: "100vh",
+          sm: "100vh",
+          md: "100vh",
           lg: "100vh",
           xl: "100vh",
           xxl: "100vh"
@@ -101,26 +103,38 @@ function Contact() {
         direction="row"
         justifyContent="space-around"
         alignItems="center"
+        // backgroundColor="red"
         sx={{
           flexDirection:{
             xs: "column",
-            xl: "row"
+            sm: "column",
+            md: "row",
+            lg: "row",
+            xl: "row",
+            xxl: "row"
           },
           width: "90%",
           height: {
             xs: "90vh",
-            sm: "100vh",
-            md: "100vh",
-            lg: "100vh",
+            sm: "90vh",
+            md: "20rem",
+            lg: "20rem",
             xl: "35rem",
             xxl: "35rem",
           },
           marginTop: {
             xs: "0rem",
+            sm: "0rem",
+            md: "1rem",
+            lg: "1rem",
             xl: "1rem",
+            xxl: "1rem",
           },
           marginLeft: {
             xs: "0rem",
+            sm: "0rem",
+            md: "1rem",
+            lg: "1.5rem",
             xl: "1.5rem",
             xxl: "1.5rem",
           },
@@ -144,6 +158,7 @@ function Contact() {
             height:"6rem",
             marginTop: {
               xs: "4rem",
+              sm: "5rem",
               xl: "5rem",
             },
           }}
@@ -165,22 +180,25 @@ function Contact() {
 
         <Stack
           direction="column"
-          justifyContent={"center"}
+          justifyContent="center"
           color="info.dark"
           textAlign="justify"
-          // backgroundColor="red"
           sx={{
             width: {
               xs: "100%",
               sm: "100%",
-              md: "70%",
+              md: "60%",
               lg: "60%",
               xl: "60%",
               xxl: "50%"
             },
             marginTop: {
               xs: "-5rem",
+              sm: "-4rem",
+              md: "4rem",
+              lg: "4rem",
               xl: "4rem",
+              xxl: "4rem",
             }
           }}
         >
@@ -188,11 +206,17 @@ function Contact() {
         component="form"
         sx={{
           marginLeft: {
+            sm: "4rem",
+            md: "1rem",
             xl: "2em",
           },
           "& .MuiTextField-root": {
             xs: { m: 1, width: "22rem", marginBottom:"0.5rem"},
-            xl: { m: 1, width: "40rem", marginBottom:"0.5rem"}
+            sm: { m: 1, width: "30rem", marginBottom:"0.5rem"},
+            md: { m: 1, width: "30rem", marginBottom:"0.5rem"},
+            lg: { m: 1, width: "40rem", marginBottom:"0.5rem"},
+            xl: { m: 1, width: "40rem", marginBottom:"0.5rem"},
+            xxl: { m: 1, width: "40rem", marginBottom:"0.5rem"}
           }
 
         }}
@@ -251,9 +275,9 @@ function Contact() {
            sx={{
              width: {
              xs: "100%",
-             sm: "100%",
-             md: "90%",
-             lg: "85%",
+             sm: "86%",
+             md: "94%",
+             lg: "94%",
              xl: "81%",
              xxl: "78%"
             }
@@ -273,20 +297,12 @@ function Contact() {
           sx={{
             width: {
             xs: "100%",
-            // sm: "100%",
-            // md: "90%",
-            lg: "81%",
+            sm: "86%",
+            md: "94%",
+            lg: "94%",
             xl: "81%",
             xxl: "78%"
            },
-           marginLeft: {
-           xs: "0rem",
-           // sm: "100%",
-           // md: "90%",
-           lg: "0rem",
-           xl: "0rem",
-           xxl: "0rem"
-          },
 
          }} marginTop="1rem" 
         >

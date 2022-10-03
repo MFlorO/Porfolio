@@ -96,13 +96,14 @@ function LandingPage({ColorModeContext}) {
         <Typography variant='h6' component='h1' color='text.secondary'
         sx={{ 
          fontSize:{
-          xs:"3rem",
-          sm:"4rem",
-          md:"5rem",
-          lg: "5rem",
-          xl: "5rem"
+          xs:"2rem",
+          sm:"3rem",
+          md:"3rem",
+          lg: "3.5rem",
+          xl: "3.5rem",
+          xxl: "4rem"
         }
-        }} >{t('landing.hellow')}</Typography>
+        }} >{t('landing.hellow')} Florencia Oldani</Typography>
 
         <Typography variant='h1' component='h3' color='text.primary' 
         sx={{ 
