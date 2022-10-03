@@ -42,7 +42,7 @@
         "name":"Name",
         "message":"Message",
         "titleOne":"CONTACT",
-        "titletwo":"MY",
+        "titletwo":"ME",
         "succes":"Email sent successfully",
         "error":"Ups! the form could not be submited. Try again ",
         "contactMe":"Contact Me"
