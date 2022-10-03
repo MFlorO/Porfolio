@@ -17,7 +17,7 @@
     },
     "AboutMe":{
         "titleOne":"ABOUT",
-        "titletwo":"ME",
+        "titletwo":"MY",
         "bodyOne": "As I told you, I am going to introduce myself.",
         "bodyTwo": " I am a Full Stack Developer.  But that's not something I haven't told you before. I am passionate about knowledge, I believe that interest and persistence are the key to learning anything, and I have plenty of both.",
         "bodyThree":"I am passionate and challenged to learn new things.",
@@ -27,11 +27,11 @@
         "bodySeven": " Outside of programming, I am a social person, I like to share moments with my friends and family.  Also, I like to travel to disconnect."
     },
     "skills":{
-        "titleOne":"ME",
+        "titleOne":"MY",
         "titletwo":"SKILLS"
     },
     "proyects":{
-        "titleOne":"ME",
+        "titleOne":"MY",
         "titletwo":"PROYECTS",
         "title":"What I Do",
         "descriptionCountries":"In the application you can search for different countries in the world and enter the details for more information. In addition, it has a controlled form to create tourist activities and associate them with different countries. This application has an entire CRUD regarding tourist activities. It is they can see, create, edit and delete. The country data is brought from a rest API (https://restcountries.com) and stored in my own database",
