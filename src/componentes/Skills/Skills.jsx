@@ -74,7 +74,8 @@ function Skills() {
             xxl: "35rem",
           },
           marginTop: {
-            xs: "0rem",
+            xs: "5rem",
+            sm: "0rem",
             xl: "4rem",
           },
           marginLeft: {

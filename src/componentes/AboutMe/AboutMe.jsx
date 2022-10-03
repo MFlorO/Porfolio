@@ -82,8 +82,8 @@ function AboutMe() {
               xs: "30%",
               sm: "30%",
               md: "30%",
-              lg: "100vh",
-              xl: "100vh",
+              lg: "30%",
+              xl: "30%",
               xxl: "30%"
             },
             height:{
@@ -91,11 +91,14 @@ function AboutMe() {
               xl:"10rem",
             },
             marginTop: {
-              xs: "0rem",
+              xs: "5rem",
+              sm: "2rem",
               xl: "6rem",
             },
             marginLeft: {
               xs: "6rem",
+              sm: "6rem",
+              xl: "0rem"
             },
             fontSize:"5rem" 
           }}
@@ -124,8 +127,8 @@ function AboutMe() {
           // backgroundColor="red"
           sx={{
             width: {
-              xs: "96%",
-              sm: "150vh",
+              xs: "95%",
+              sm: "95%",
               md: "100vh",
               lg: "100vh",
               xl: "65%",

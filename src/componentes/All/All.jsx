@@ -37,10 +37,14 @@ function All({ColorModeContext}) {
       <Stack direction="row" position="fixed" alignItems="center" zIndex={400} width="5rem" height="4rem" sx={{
         right:{
           xs:"7rem",
+          sm: "6rem",
           xl: "6rem"
         },
         top:{
             xs:"-0.5rem",
+            sm: "3rem",
+            md: "2.5rem",
+            lg: "1rem",
             xl: "0.5rem"
         },
       }}>

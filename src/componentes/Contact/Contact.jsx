@@ -90,7 +90,7 @@ function Contact() {
       sx={{
         width: "100%",
         height: {
-          xs: "100vh",
+          xs: "120vh",
           sm: "100vh",
           md: "100vh",
           lg: "100vh",
@@ -103,7 +103,6 @@ function Contact() {
         direction="row"
         justifyContent="space-around"
         alignItems="center"
-        // backgroundColor="red"
         sx={{
           flexDirection:{
             xs: "column",
@@ -115,7 +114,7 @@ function Contact() {
           },
           width: "90%",
           height: {
-            xs: "90vh",
+            xs: "80vh",
             sm: "90vh",
             md: "20rem",
             lg: "20rem",
@@ -157,7 +156,7 @@ function Contact() {
             },
             height:"6rem",
             marginTop: {
-              xs: "4rem",
+              xs: "2rem",
               sm: "5rem",
               xl: "5rem",
             },
@@ -193,7 +192,7 @@ function Contact() {
               xxl: "50%"
             },
             marginTop: {
-              xs: "-5rem",
+              xs: "-4rem",
               sm: "-4rem",
               md: "4rem",
               lg: "4rem",

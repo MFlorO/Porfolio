@@ -49,10 +49,14 @@ export default function NavBar() {
       }}
     >
       <Stack
+            backgroundColor="red"
         sx={{
           width:{
-            xs:"30%",
-            lg: "16%"
+            xs:"100%",
+            md: "25%",
+            lg: "25%",
+            xl: "16%",
+            xxl: "16%"
           },
           marginLeft:{
             xs:"0rem",
@@ -64,6 +68,7 @@ export default function NavBar() {
         sx={{
           display:{
             xs:"none",
+            md: "block",
             lg: "block"
           }
         }}>{t("navbar.welcome")}
@@ -76,21 +81,22 @@ export default function NavBar() {
         sx={{
           width:{
               xs:"100%",
-              lg: "45%"
+              md: "55%",
+              lg: "50%"
             },
           marginRight: {
-            xs:"15rem",
-            // sm:"150vh",
-            // md:"100vh",
-            // lg:"100vh",
-            xl: "25rem",
+            xs:"0rem",
+            sm:"8rem",
+            md:"13rem",
+            lg:"15rem",
+            xl: "18rem",
+            xxl: "20rem"
           },
           fontSize:{
-            xs:"10rem",
+            xs:"4rem",
             lg: "2rem"
           },
           fontFamily: "Raleway",
-          // backgroundColor: "red"
         }}
       >
         <ListItem disablePadding>
@@ -99,11 +105,11 @@ export default function NavBar() {
           </ListItemButton>
         </ListItem>
 
-        <ListItem disablePadding>
+        {/* <ListItem disablePadding>
           <ListItemButton href="#home" sx={botonstyled}>
             <ListItemText primary="Home" />
           </ListItemButton>
-        </ListItem>
+        </ListItem> */}
 
         <ListItem disablePadding>
           <ListItemButton href="#about" sx={botonstyled}>
