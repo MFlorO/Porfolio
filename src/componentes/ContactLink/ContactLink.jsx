@@ -21,7 +21,7 @@ function ContactLink() {
         </IconButton>
 
         <IconButton>
-          <Link  target="_blank"  rel="noopener noreferrer" href="https://www.linkedin.com/in/florencia-oldani-a59647157/" sx={styles}>
+          <Link  target="_blank"  rel="noopener noreferrer" href="https://www.linkedin.com/in/florencia-oldani/" sx={styles}>
             <BsLinkedin size="2rem"/></Link >
         </IconButton>
         
