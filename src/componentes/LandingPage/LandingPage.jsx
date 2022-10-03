@@ -39,10 +39,11 @@ function LandingPage({ColorModeContext}) {
       width:"100%",
       height:{
         xs:"100vh",
-        sm:"110vh",
+        sm:"100vh",
         md:"100vh",
         lg:"100vh",
-        xl:"100vh"
+        xl:"100vh",
+        xxl: "100vh"
       },
       backgroundColor:"background.dark"
     }}
@@ -71,7 +72,8 @@ function LandingPage({ColorModeContext}) {
               sm:"30rem",
               md:"24rem",
               lg:"24rem",
-              xl:"24rem"
+              xl:"24rem",
+              xxl: "30rem"
             },
             marginLeft:{
               xs:"5rem",

@@ -20,9 +20,9 @@ function All({ColorModeContext}) {
   return (
 
     <Stack  display="flex"
-    direction="column" 
-    width="100%"
+    direction="column"
     sx={{
+      width:"100%",
       height: {
         xs: "120vh",
         sm: "100vh",
@@ -34,7 +34,16 @@ function All({ColorModeContext}) {
     backgroundColor="background.dark"
     >
 
-      <Stack direction="row" position="fixed" alignItems="center" zIndex={400} width="5rem" height="4rem" right="6rem" top="0.5rem">
+      <Stack direction="row" position="fixed" alignItems="center" zIndex={400} width="5rem" height="4rem" sx={{
+        right:{
+          xs:"7rem",
+          xl: "6rem"
+        },
+        top:{
+            xs:"-0.5rem",
+            xl: "0.5rem"
+        },
+      }}>
       <Language />
       <Theme ColorModeContext={ColorModeContext}/>
       </Stack>
@@ -42,14 +51,15 @@ function All({ColorModeContext}) {
       <Stack position="fixed" 
       sx={{
         bottom:{
-          xs:"5rem",
-          xl: "2rem"
+          xs:"4rem",
+          md: "4rem",
+          xl: "4rem",
+          xxl: "5.5rem"
         },
         right:{
-            xs:"2rem",
+            xs:"3rem",
             xl: "5rem"
         },
-        // zIndex:"10"
       }}><ButtonNavigateTop />
       </Stack>
 

@@ -12,12 +12,40 @@ function HomeContent({foto}) {
     <>
         <Stack backgroundColor="secondary.dark"
              sx={{
-              width: "21%",
+              backgroundColor:{
+                xs: "background.main",
+                sm: "secondary.dark",
+                md: "secondary.dark",
+                lg: "secondary.dark",
+                xl: "secondary.dark",
+                xxl: "secondary.dark"
+              },
+              width:{
+                xs: "21%",
+                sm: "21%",
+                md: "21%",
+                lg: "21%",
+                xl: "21%",
+                xxl: "21%"
+              },
               height:{
-                lg: "70%"
-              }}}
-              marginLeft="4rem"
-          >
+                xs: "50%",
+                sm: "50%",
+                md: "50%",
+                lg: "60%",
+                xl: "70%",
+                xxl: "55%"
+              },
+              marginLeft:{
+                xs: "-3rem",
+                sm: "1rem",
+                md: "2rem",
+                lg: "4rem",
+                xl: "4rem",
+                xxl: "4rem"
+              },
+            }}
+            >
             <img  src={foto} alt="" className={styles.foto}/>
           </Stack>
 
@@ -25,20 +53,25 @@ function HomeContent({foto}) {
               sx={{
                 width: "55%",
                 height:{
-                  lg: "40%"
-                }}}
-            // backgroundColor="red"
+                  xs: "40%",
+                  sm: "40%",
+                  md: "40%",
+                  lg: "40%",
+                  xl: "40%",
+                  xxl: "50%"
+                },
+              }}
               >
 
           <Zoom>
           <Stack direction="column" justifyContent="flex-start" alignItems="center"
           color="secondary">
-          <Typography variant="h1" fontSize={{ xs: "4rem", xl: "5rem" }} color="text.secondary" >FLORENCIA</Typography>
-          <Typography variant="h1"fontSize={{ xs: "4rem", xl: "5rem" }} color="secondary.dark">OLDANI</Typography>
+          <Typography variant="h1" fontSize={{ xs: "3.8rem", xl: "5rem", xxl:"7rem" }} color="text.secondary" >FLORENCIA</Typography>
+          <Typography variant="h1"fontSize={{ xs: "3.8rem", xl: "5rem", xxl:"7rem" }} color="secondary.dark">OLDANI</Typography>
           <Typography variant='h1' component='h3' color='text.primary' 
         sx={{ 
           fontSize:{
-           xs:"3rem",
+           xs:"2rem",
            xl: "3rem"
          },
          color:"text.primary",
