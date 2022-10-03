@@ -37,7 +37,7 @@ function HomeContent({foto}) {
                 xxl: "55%"
               },
               marginLeft:{
-                xs: "-3rem",
+                xs: "-5rem",
                 sm: "1rem",
                 md: "2rem",
                 lg: "4rem",

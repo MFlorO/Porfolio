@@ -84,14 +84,18 @@ function Contact() {
 
     <Stack
       direction="column"
-      justifyContent={"center"}
-      alignItems={"center"}
+      justifyContent="center"
+      alignItems="center"
       backgroundColor="background.dark"
       sx={{
         width: "100%",
-        height: "100vh"
+        height: {
+          xs: "100vh",
+          lg: "100vh",
+          xl: "100vh",
+          xxl: "100vh"
+        }
       }}
-      // backgroundColor="red"
     >
       <Stack
         direction="row"
@@ -104,22 +108,23 @@ function Contact() {
           },
           width: "90%",
           height: {
-            xs: "35rem",
-            sm: "150vh",
+            xs: "90vh",
+            sm: "100vh",
             md: "100vh",
             lg: "100vh",
             xl: "35rem",
+            xxl: "35rem",
           },
           marginTop: {
-            xs: "-12rem",
+            xs: "0rem",
             xl: "1rem",
           },
           marginLeft: {
             xs: "0rem",
             xl: "1.5rem",
+            xxl: "1.5rem",
           },
         }}
-        // backgroundColor="blue"
       >
 
 
@@ -130,16 +135,17 @@ function Contact() {
           sx={{
             width: {
               xs: "30%",
-              // sm: "150vh",
-              // md: "100vh",
-              // lg: "100vh",
+              sm: "30%",
+              md: "30%",
+              lg: "30%",
               xl: "30%",
+              xxl: "50%"
             },
             height:"6rem",
             marginTop: {
+              xs: "4rem",
               xl: "5rem",
             },
-            
           }}
         >
 
@@ -166,13 +172,14 @@ function Contact() {
           sx={{
             width: {
               xs: "100%",
-              // sm: "150vh",
-              // md: "100vh",
-              // lg: "100vh",
+              sm: "100%",
+              md: "70%",
+              lg: "60%",
               xl: "60%",
+              xxl: "50%"
             },
             marginTop: {
-              xs: "0rem",
+              xs: "-5rem",
               xl: "4rem",
             }
           }}
@@ -244,11 +251,11 @@ function Contact() {
            sx={{
              width: {
              xs: "100%",
-             // sm: "150vh",
-            // md: "100vh",
-            // lg: "100vh",
-            xl: "81%",
-            xxl: "64.5%"
+             sm: "100%",
+             md: "90%",
+             lg: "85%",
+             xl: "81%",
+             xxl: "78%"
             }
           }}
          >
@@ -262,7 +269,27 @@ function Contact() {
         </Stack>
 
         {!alertSucces && 
-        (<Stack width="40rem"  marginTop="1rem" marginLeft="0.5rem">
+        (<Stack 
+          sx={{
+            width: {
+            xs: "100%",
+            // sm: "100%",
+            // md: "90%",
+            lg: "81%",
+            xl: "81%",
+            xxl: "78%"
+           },
+           marginLeft: {
+           xs: "0rem",
+           // sm: "100%",
+           // md: "90%",
+           lg: "0rem",
+           xl: "0rem",
+           xxl: "0rem"
+          },
+
+         }} marginTop="1rem" 
+        >
           <Alert variant="outlined" severity="success">{t("contact.succes")}</Alert>
         </Stack>
         )}
