@@ -76,7 +76,7 @@ function LandingPage({ColorModeContext}) {
               xxl: "30rem"
             },
             marginLeft:{
-              xs:"5rem",
+              xs:"4rem",
               sm:"2rem",
               md:"4rem",
               lg: "6rem",
@@ -127,7 +127,7 @@ function LandingPage({ColorModeContext}) {
          
         <Typography variant='h5' color='secondary.dark'sx={{ 
           marginTop:{
-           xs:"3rem",
+           xs:"2rem",
            sm:"3rem",
            md:"3rem",
            lg: "4rem",
@@ -158,7 +158,7 @@ function LandingPage({ColorModeContext}) {
           xl: "-3.5rem"
         }, 
          marginLeft:{
-          xs:"7rem",
+          xs:"6rem",
           sm:"4rem",
           md:"5rem",
           lg: "6rem",

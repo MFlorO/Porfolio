@@ -18,10 +18,11 @@
     "AboutMe": {
         "titleOne": "SOBRE",
         "titletwo": "MI",
+        "download":"DESCARGAR",
         "bodyOne": "Como te dije, voy a contarte un poco sobre mi para que puedas conocerme.",
         "bodyTwo": "Soy Desarrolladora Full Stack. Pero eso no es algo que no te haya dicho antes. Lo que si, soy apasionada por el conocimiento, creo que el interés y la persistencia son la clave para aprender cualquier cosa, y a mi me sobra de las dos.",
         "bodyThree":"Me apasiona y desafía aprender cosas nuevas.",
-        "bodyFour": "La programación me genera eso. Mucho interés y curiosidad por el saber. Es un mundo muy amplio en el que constantemente surgen nuevas tecnologías, nuevas versiones o nuevas herramientas. Este constante cambio me mantiene siempre entretenida y con ganas de superarme.",
+        "bodyFour": "La programación me genera eso. Mucho interés y curiosidad por el saber. Es un mundo muy amplio en el que constantemente surgen nuevas tecnologías, nuevas versiones o nuevas herramientas. Este constante cambio me mantiene siempre centrada y con ganas de superarme.",
         "bodyFive": "No te aseguro que sepa todo, pero lo que sí te puedo asegurar es que voy a ser insistente. Voy a preguntar, voy a investigar y no voy a parar hasta aprender lo que necesito.",
         "bodySix": "Me gusta trabajar en equipo, siento que de esa forma hay doble enseñanza, aprende tanto el que ayuda como el que recibe la ayuda.",
         "bodySeven": "Fuera de la programación, lo que me apasiona es lo social, me gusta compartir momentos con mis amigos y familia. Además, me gusta viajar para desconectarme."

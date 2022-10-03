@@ -110,7 +110,7 @@ function AboutMe() {
 
           <Zoom><Stack marginTop="2rem">
             <a style={{textDecoration:"none"}} href="MFlorenciaOldaniDeveloperFullStackCV.pdf" download="MFlorenciaOldaniDeveloperFullStackCV.pdf">
-              <Button variant="outlined" color="secondary">Descargar CV</Button>
+              <Button variant="outlined" color="secondary">{t("AboutMe.titleOne")} CV</Button>
             </a>
           </Stack></Zoom>
             
