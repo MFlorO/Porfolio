@@ -18,44 +18,56 @@ function AboutMe() {
   return (
     <Stack
       direction="column"
-      justifyContent={"center"}
-      alignItems={"center"}
+      justifyContent="center"
+      alignItems="center"
       backgroundColor="background.dark"
       sx={{
         width: "100%",
         height: {
-          xs: "110vh",
-          // sm: "100vh",
-          // md: "100vh",
-          // lg: "100vh",
+          xs: "130vh",
+          sm: "100vh",
+          md: "100vh",
+          lg: "100vh",
           xl: "100vh",
         },
       }}
-      // backgroundColor="red"
     >
       <Stack
-        // direction="row"
         justifyContent="space-around"
         alignItems="center"
         marginRight="5.5rem"
         sx={{
-          width: "90%",
+          width: {
+            xs: "100%",
+            sm: "100%",
+            md: "100%",
+            lg: "90%",
+            xl: "90%",
+          },
           flexDirection:{
             xs:"column",
-            // lg:"row",
+            md: "row",
+            lg:"row",
             xl:"row"
           },
           height: {
             xs: "45rem",
-            // sm: "100vh",
-            // md: "100vh",
-            // lg: "100vh",
+            sm: "45rem",
+            md: "40rem",
+            lg: "35rem",
             xl: "35rem",
           },
           marginTop: {
-            xs: "2rem",
+            xs: "9rem",
+            md: "2rem",
             xl: "1rem",
           },
+          marginRight:{
+            xs: "5rem",
+            md: "3rem",
+            lg: "5.5rem",
+            xl: "4rem",
+          }
         }}
         // backgroundColor="blue"
       >
@@ -68,10 +80,11 @@ function AboutMe() {
           sx={{
             width: {
               xs: "30%",
-              sm: "150vh",
-              md: "100vh",
+              sm: "30%",
+              md: "30%",
               lg: "100vh",
-              xl: "30%",
+              xl: "100vh",
+              xxl: "30%"
             },
             height:{
               xs:"5rem",
