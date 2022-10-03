@@ -65,14 +65,13 @@ function Proyects() {
     sx={{
       width: "100%",
       height:{
-        xs: "110vh",
+        xs: "120vh",
         sm: "110vh",
         md: "100vh",
         lg: "100vh",
         xl: "100vh",
       },
     }}
-    // backgroundColor="red"
   >
     <Stack
       direction="column"
@@ -81,14 +80,14 @@ function Proyects() {
       sx={{
         width: "90%",
         height: {
-          xs: "70rem",
-          // sm: "150vh",
-          // md: "100vh",
-          // lg: "100vh",
+          xs: "50rem",
+          sm: "40rem",
+          md: "40rem",
+          lg: "38rem",
           xl: "38rem",
         },
         marginTop: {
-          xs: "0rem",
+          xs: "7rem",
           xl: "0rem",
         },
       }}
@@ -100,6 +99,7 @@ function Proyects() {
         direction="column"
         justifyContent="center"
         alignItems="center"
+        // backgroundColor="green"
         sx={{
           width: {
             xs: "30%",
@@ -122,7 +122,7 @@ function Proyects() {
 
       <Stack
         direction="row"
-        // justifyContent="center"
+        justifyContent="center"
         alignContent="center"
         // backgroundColor="red"
         color="info.dark"
@@ -137,20 +137,20 @@ function Proyects() {
           },
           width: {
             xs: "100%",
-            sm: "150vh",
-            md: "100vh",
-            lg: "100vh",
+            sm: "100%",
+            md: "100%",
+            lg: "100%",
             xl: "100%",
           },
           height:{
-            xs: "80%",
+            xs: "90%",
             xl: "70%"
           },
           marginTop: {
             xl: "2rem",
           },
           gap:{
-            xs: "1rem",
+            xs: "0rem",
             xl: "5rem"
           }
         }}

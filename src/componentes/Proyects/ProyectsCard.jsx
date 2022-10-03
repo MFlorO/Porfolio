@@ -23,32 +23,33 @@ function ProyectsCard({ p }) {
           </Typography>
           <span>{tecnology.join(", ")}</span>
 
-          <Stack className={s.button}>
+       
+        </Stack>
+
+        <Stack backgroundColor="background.main" className={s.overview}>
+          <Typography component="p" 
+            sx={{ 
+              color:"info.dark",
+              fontSize:{
+               xs:"12px",
+               xl: "20px"
+             }
+             }}>{description}</Typography>
+
+
+        <Stack className={s.button}>
             <Fab color="secondary">
               <Link target="_blank" rel="noopener noreferrer" href={urlGit}>
-                <BsGithub size="2rem" color="black" />
+                <BsGithub size="1.5rem" color="black" />
               </Link>
             </Fab>
             <Fab color="secondary">
               <Link target="_blank" rel="noopener noreferrer" href={urlLink}>
-                <SiWebmoney size="2rem" color="black" />
+                <SiWebmoney size="1.5rem" color="black" />
               </Link>
             </Fab>
           </Stack>
-        </Stack>
 
-        <Stack      sx={{ 
-          color:"info.dark",
-          fontSize:{
-           xs:"3rem",
-           xl: "3rem"
-         },
-          backgroundColor:"background.main" ,
-          // "&:hover":{
-          //   backgroundColor:"red" 
-          // }
-         }} className={s.overview}>
-          <Typography component="p" >{description}</Typography>
         </Stack>
       </Stack>
     </Zoom>
@@ -57,4 +58,3 @@ function ProyectsCard({ p }) {
 
 export default ProyectsCard;
 
-// style={(width = "100%")}

@@ -36,15 +36,6 @@
     margin-bottom: 0.5rem;
   }
   
-  .button{
-    display: flex;
-    flex-direction: row !important;
-    justify-content: space-around;
-    width: 40%;
-    height: 30%;
-    margin-bottom: 0.5rem;
-  }
-
   .overview {
     padding: 2rem;
     position: absolute;
@@ -59,11 +50,82 @@
   }
   
   .proyects:hover .overview {
-    /* background-color: black; */
     transform: translateY(0) !important;
     text-align: center;
   }
 
-  .proyects:hover .button {
-    display: none;
+  .button{
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-around;
+    width: 50%;
+    height: 20%;
+    margin-left: 7rem;
+    margin-top: 1rem;
   }
+
+
+  /* .proyects:hover .button {
+    display: none;
+  } */
+
+
+
+  
+@media screen and (max-width: 2600px) {
+
+
+}
+
+  
+@media screen and (max-width: 1400px) {
+
+
+
+
+}
+
+
+@media screen and (max-width: 980px) {
+
+  .proyects {
+    width: 20rem;
+    height: 20rem;
+  }
+ 
+  
+  .h3 {
+    font-size: 25px;
+  }
+  
+  .proyectsInfo span {
+    font-size: 13px;
+  }
+  
+
+  .overview {
+    padding: 2rem;
+    position: absolute;
+    font-weight: bold;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    max-height: 100%;
+    transform: translateY(101%);
+    overflow-y: auto;
+    transition: transform 0.3s ease-in;
+  }
+  
+  .button{
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-around;
+    width: 50%;
+    height: 20%;
+    margin-left: 4rem;
+    margin-top: 1rem;
+  }
+
+
+
+}
