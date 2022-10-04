@@ -32,7 +32,7 @@ function HomeContent({foto}) {
                 xs: "50%",
                 sm: "50%",
                 md: "50%",
-                lg: "60%",
+                lg: "45%",
                 xl: "70%",
                 xxl: "55%"
               },
