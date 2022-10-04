@@ -1,5 +1,5 @@
 import React from 'react'
-import ContactLink from "../ContactLink/ContactLink";
+import ContactLink from "../../ContactLink/ContactLink";
 
 
 import Zoom from 'react-reveal/Zoom';

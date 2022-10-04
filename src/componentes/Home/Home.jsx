@@ -6,7 +6,7 @@ import React from "react";
 import {  Stack } from "@mui/material/";
 import fondo from "./fondo.jpg"
 import foto from "./fotoPerfil.jpg"
-import HomeContent from "./HomeContent";
+import HomeContent from "./HomeContent/HomeContent.jsx";
 
 
 
