@@ -8,6 +8,7 @@ import { useTranslation } from "react-i18next";
 //React Reveal
 import Zoom from 'react-reveal/Zoom';
 
+import {styleConteiner, stylesSubConteiner, stylesConteinerItems, stytlesItem } from "./aboutMe.styles"
 
 
 
@@ -21,55 +22,13 @@ function AboutMe() {
       justifyContent="center"
       alignItems="center"
       backgroundColor="background.dark"
-      sx={{
-        width: "100%",
-        height: {
-          xs: "130vh",
-          sm: "100vh",
-          md: "100vh",
-          lg: "100vh",
-          xl: "100vh",
-        },
-      }}
+      sx={styleConteiner}
     >
       <Stack
         justifyContent="space-around"
         alignItems="center"
         marginRight="5.5rem"
-        sx={{
-          width: {
-            xs: "100%",
-            sm: "100%",
-            md: "100%",
-            lg: "90%",
-            xl: "90%",
-          },
-          flexDirection:{
-            xs:"column",
-            md: "row",
-            lg:"row",
-            xl:"row"
-          },
-          height: {
-            xs: "45rem",
-            sm: "45rem",
-            md: "40rem",
-            lg: "35rem",
-            xl: "35rem",
-          },
-          marginTop: {
-            xs: "9rem",
-            md: "2rem",
-            xl: "1rem",
-          },
-          marginRight:{
-            xs: "5rem",
-            md: "3rem",
-            lg: "5.5rem",
-            xl: "4rem",
-          }
-        }}
-        // backgroundColor="blue"
+        sx={stylesSubConteiner}
       >
 
 
@@ -77,32 +36,7 @@ function AboutMe() {
           direction="column"
           justifyContent="space-around"
           alignItems="center"
-          sx={{
-            width: {
-              xs: "30%",
-              sm: "30%",
-              md: "30%",
-              lg: "30%",
-              xl: "30%",
-              xxl: "30%"
-            },
-            height:{
-              xs:"5rem",
-              xl:"10rem",
-            },
-            marginTop: {
-              xs: "5rem",
-              sm: "2rem",
-              xl: "6rem",
-            },
-            marginLeft: {
-              xs: "6rem",
-              sm: "6rem",
-              xl: "0rem"
-            },
-            fontSize:"5rem" 
-          }}
-          // backgroundColor="green"
+          sx={stylesConteinerItems}
         >
 
           <Stack direction="column" justifyContent="space-around" alignItems="center"
@@ -115,7 +49,8 @@ function AboutMe() {
             <a style={{textDecoration:"none"}} href="MFlorenciaOldaniDeveloperFullStackCV.pdf" download="MFlorenciaOldaniDeveloperFullStackCV.pdf">
               <Button variant="outlined" color="secondary">{t("AboutMe.download")} CV</Button>
             </a>
-          </Stack></Zoom>
+            </Stack>
+          </Zoom>
             
         </Stack>
 
@@ -124,46 +59,15 @@ function AboutMe() {
           justifyContent="center"
           color="info.dark"
           textAlign="justify"
-          // backgroundColor="red"
-          sx={{
-            width: {
-              xs: "95%",
-              sm: "95%",
-              md: "100vh",
-              lg: "100vh",
-              xl: "65%",
-            },
-            marginTop: {
-              xs:"5rem",
-              xl: "4rem",
-            },
-            marginLeft: {
-              xs:"5rem",
-              // xl: "4rem",
-            },
-          }}
-        >
-          <Typography variant="body1" marginBottom="1rem">
-          {t("AboutMe.bodyOne")}
-          </Typography>
-          <Typography variant="body1" marginBottom="1rem">
-          {t("AboutMe.bodyTwo")}
-          </Typography>
-          <Typography variant="body1" marginBottom="1rem" fontWeight={400}>
-          {t("AboutMe.bodyThree")}
-          </Typography>
-          <Typography variant="body1" marginBottom="1rem">
-          {t("AboutMe.bodyFour")}
-          </Typography>
-          <Typography variant="body1" marginBottom="1rem">
-          {t("AboutMe.bodyFive")}
-          </Typography>
-          <Typography variant="body1" marginBottom="1rem">
-          {t("AboutMe.bodySix")}
-          </Typography>
-          <Typography variant="body1" marginBottom="1rem">
-          {t("AboutMe.bodySeven")}
-          </Typography>
+          sx={stytlesItem}>
+
+          <Typography variant="body1" marginBottom="1rem">{t("AboutMe.bodyOne")}</Typography>
+          <Typography variant="body1" marginBottom="1rem">{t("AboutMe.bodyTwo")}</Typography>
+          <Typography variant="body1" marginBottom="1rem" fontWeight={400}>{t("AboutMe.bodyThree")}</Typography>
+          <Typography variant="body1" marginBottom="1rem">{t("AboutMe.bodyFour")}</Typography>
+          <Typography variant="body1" marginBottom="1rem">{t("AboutMe.bodyFive")}</Typography>
+          <Typography variant="body1" marginBottom="1rem">{t("AboutMe.bodySix")}</Typography>
+          <Typography variant="body1" marginBottom="1rem">{t("AboutMe.bodySeven")}</Typography>
         </Stack>
       </Stack>
 

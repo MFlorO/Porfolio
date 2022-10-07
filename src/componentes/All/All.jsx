@@ -21,32 +21,17 @@ function All({ColorModeContext}) {
 
     <Stack  display="flex"
     direction="column"
+    backgroundColor="background.dark"
     sx={{
       width:"100%",
-      height: {
-        xs: "120vh",
-        sm: "100vh",
-        md: "100vh",
-        lg: "100vh",
-        xl: "100vh",
-      },
+      height: {xs: "120vh", sm: "100vh", md: "100vh", lg: "100vh", xl: "100vh" },
     }}
-    backgroundColor="background.dark"
+
     >
 
       <Stack direction="row" position="fixed" alignItems="center" zIndex={400} width="5rem" height="4rem" sx={{
-        right:{
-          xs:"10rem",
-          sm: "6rem",
-          xl: "6rem"
-        },
-        top:{
-            xs:"-0.5rem",
-            sm: "3rem",
-            md: "2.5rem",
-            lg: "1rem",
-            xl: "0.5rem"
-        },
+        right:{ xs:"10rem", sm: "6rem", xl: "6rem" },
+        top:{ xs:"-0.5rem", sm: "3rem", md: "2.5rem", lg: "1rem", xl: "0.5rem" },
       }}>
       <Language />
       <Theme ColorModeContext={ColorModeContext}/>
@@ -54,39 +39,19 @@ function All({ColorModeContext}) {
 
       <Stack position="fixed" 
       sx={{
-        bottom:{
-          xs:"4rem",
-          md: "4rem",
-          xl: "4rem",
-          xxl: "5.5rem"
-        },
-        right:{
-            xs:"3rem",
-            xl: "5rem"
-        },
+        bottom:{ xs:"4rem", md: "4rem", xl: "4rem", xxl: "5.5rem" },
+        right:{ xs:"3rem", xl: "5rem" },
       }}><ButtonNavigateTop />
       </Stack>
 
 
      <NavBar />
-      
-      
 
-      <section id="home">
-        <Home />
-      </section>
-      <section id="about">
-        <AboutMe />
-      </section>
-      <section id="skills">
-        <Skills />
-      </section>
-      <section id="proyects">
-        <Proyects />
-      </section>
-      <section id="contact">
-        <Contact />
-      </section>
+      <section id="home"><Home /></section>
+      <section id="about"><AboutMe /></section>
+      <section id="skills"><Skills /></section>
+      <section id="proyects"><Proyects /></section>
+      <section id="contact"><Contact /></section>
       
     </Stack>
 

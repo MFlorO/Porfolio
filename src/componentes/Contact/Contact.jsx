@@ -13,7 +13,7 @@ import {
   Stack,
   Typography
 } from "@mui/material";
-
+import {stylesConteiner, stylesSubConteiner, stylesConteinerItems, stylesContact, stylesForm } from "./styles.contact.js"
 import validate from "./validate.js";
 
 import Zoom from 'react-reveal/Zoom';
@@ -39,7 +39,7 @@ function Contact() {
   const [alertError, setAlertError] = useState(true);
 
   const handleChange = (event) => {
-    // setValue(event.target.value);
+
     setValue({
       ...value,
       [event.target.name]: event.target.value,
@@ -57,12 +57,7 @@ function Contact() {
     e.preventDefault();
 
     emailjs
-      .sendForm(
-        "service_7a9uzy5",
-        "template_ar9zzxx",
-        form.current,
-        "l6i2ljgBExD7eyapF"
-      )
+      .sendForm( "service_7a9uzy5", "template_ar9zzxx", form.current, "l6i2ljgBExD7eyapF" )
       .then(
         (result) => {
           console.log(result.text);
@@ -87,57 +82,13 @@ function Contact() {
       justifyContent="center"
       alignItems="center"
       backgroundColor="background.dark"
-      sx={{
-        width: "100%",
-        height: {
-          xs: "120vh",
-          sm: "100vh",
-          md: "100vh",
-          lg: "100vh",
-          xl: "100vh",
-          xxl: "100vh"
-        }
-      }}
+      sx={ stylesConteiner }
     >
       <Stack
         direction="row"
         justifyContent="space-around"
         alignItems="center"
-        sx={{
-          flexDirection:{
-            xs: "column",
-            sm: "column",
-            md: "row",
-            lg: "row",
-            xl: "row",
-            xxl: "row"
-          },
-          width: "90%",
-          height: {
-            xs: "80vh",
-            sm: "90vh",
-            md: "20rem",
-            lg: "20rem",
-            xl: "35rem",
-            xxl: "35rem",
-          },
-          marginTop: {
-            xs: "0rem",
-            sm: "0rem",
-            md: "1rem",
-            lg: "1rem",
-            xl: "1rem",
-            xxl: "1rem",
-          },
-          marginLeft: {
-            xs: "0rem",
-            sm: "0rem",
-            md: "1rem",
-            lg: "1.5rem",
-            xl: "1.5rem",
-            xxl: "1.5rem",
-          },
-        }}
+        sx={ stylesSubConteiner }
       >
 
 
@@ -145,22 +96,7 @@ function Contact() {
           direction="column"
           justifyContent="space-around"
           alignItems="center"
-          sx={{
-            width: {
-              xs: "30%",
-              sm: "30%",
-              md: "30%",
-              lg: "30%",
-              xl: "30%",
-              xxl: "50%"
-            },
-            height:"6rem",
-            marginTop: {
-              xs: "2rem",
-              sm: "5rem",
-              xl: "5rem",
-            },
-          }}
+          sx={ stylesConteinerItems }
         >
 
           <Stack direction="column" justifyContent="space-around" alignItems="center"
@@ -182,41 +118,13 @@ function Contact() {
           justifyContent="center"
           color="info.dark"
           textAlign="justify"
-          sx={{
-            width: {
-              xs: "100%",
-              sm: "100%",
-              md: "60%",
-              lg: "60%",
-              xl: "60%",
-              xxl: "50%"
-            },
-            marginTop: {
-              xs: "-4rem",
-              sm: "-4rem",
-              md: "4rem",
-              lg: "4rem",
-              xl: "4rem",
-              xxl: "4rem",
-            }
-          }}
+          sx={ stylesContact }
         >
         <Box
         component="form"
         sx={{
-          marginLeft: {
-            sm: "4rem",
-            md: "1rem",
-            xl: "2em",
-          },
-          "& .MuiTextField-root": {
-            xs: { m: 1, width: "22rem", marginBottom:"0.5rem"},
-            sm: { m: 1, width: "30rem", marginBottom:"0.5rem"},
-            md: { m: 1, width: "30rem", marginBottom:"0.5rem"},
-            lg: { m: 1, width: "40rem", marginBottom:"0.5rem"},
-            xl: { m: 1, width: "40rem", marginBottom:"0.5rem"},
-            xxl: { m: 1, width: "40rem", marginBottom:"0.5rem"}
-          }
+          marginLeft: { sm: "4rem", md: "1rem", xl: "2em" },
+          "& .MuiTextField-root": stylesForm
 
         }}
         noValidate
@@ -271,16 +179,7 @@ function Contact() {
         )}
 
          <Stack 
-           sx={{
-             width: {
-             xs: "100%",
-             sm: "86%",
-             md: "94%",
-             lg: "94%",
-             xl: "81%",
-             xxl: "78%"
-            }
-          }}
+           sx={{ width: { xs: "100%", sm: "86%", md: "94%", lg: "94%", xl: "81%", xxl: "78%" }}}
          >
           <Button type="submit" value="Send" variant="contained" color="secondary" 
           disabled={
@@ -293,17 +192,8 @@ function Contact() {
 
         {!alertSucces && 
         (<Stack 
-          sx={{
-            width: {
-            xs: "100%",
-            sm: "86%",
-            md: "94%",
-            lg: "94%",
-            xl: "81%",
-            xxl: "78%"
-           },
-
-         }} marginTop="1rem" 
+          marginTop="1rem" 
+          sx={{width: { xs: "100%", sm: "86%", md: "94%", lg: "94%", xl: "81%", xxl: "78%" }}} 
         >
           <Alert variant="outlined" severity="success">{t("contact.succes")}</Alert>
         </Stack>
