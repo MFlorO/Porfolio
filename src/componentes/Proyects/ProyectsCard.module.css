@@ -64,11 +64,10 @@
     margin-top: 1rem;
   }
 
-
-  /* .proyects:hover .button {
-    display: none;
-  } */
-
+ 
+ .buttonTwo:hover{
+  transform: scale(1.1);
+ }
 
 
   

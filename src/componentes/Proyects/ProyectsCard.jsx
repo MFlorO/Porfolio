@@ -38,12 +38,12 @@ function ProyectsCard({ p }) {
 
 
         <Stack className={s.button}>
-            <Fab color="secondary">
+            <Fab color="secondary" className={s.buttonTwo}>
               <Link target="_blank" rel="noopener noreferrer" href={urlGit}>
                 <BsGithub size="1.5rem" color="black" />
               </Link>
             </Fab>
-            <Fab color="secondary">
+            <Fab color="secondary" className={s.buttonTwo}>
               <Link target="_blank" rel="noopener noreferrer" href={urlLink}>
                 <SiWebmoney size="1.5rem" color="black" />
               </Link>
