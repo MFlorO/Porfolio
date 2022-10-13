@@ -18,10 +18,9 @@ function App({ColorModeContext}) {
       <Routes> {/*Reemplaza el Swich de React-Router-Dom v5. Tampoco se ponen mas los exact*/}
 
         <Route path="/" element={<LandingPage ColorModeContext={ColorModeContext}/>} />
-        {/* <Route path="/" element={<Theme  />} /> */}
+     
         <Route path="/all" element={<All ColorModeContext={ColorModeContext}/>} />
-
-        {/* <Route path="*" component={Error} /> */}
+        
 
       </Routes>
 
