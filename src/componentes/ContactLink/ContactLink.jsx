@@ -10,20 +10,23 @@ const styles = {
   color:"secondary.dark"
 }
 
+
+
 function ContactLink() {
 
+  const contact = (href, icon) => {
+    return (
+      <IconButton>
+        <Link  target="_blank"  rel="noopener noreferrer" href={href} sx={styles}> {icon} </Link >
+      </IconButton>
+    )
+  }
 
   return (
     <Stack direction="row">
-        <IconButton>
-          <Link  target="_blank"  rel="noopener noreferrer" href="https://github.com/MFlorO?tab=repositories" sx={styles}>
-          <BsGithub size="2rem" /></Link >
-        </IconButton>
 
-        <IconButton>
-          <Link  target="_blank"  rel="noopener noreferrer" href="https://www.linkedin.com/in/florencia-oldani/" sx={styles}>
-            <BsLinkedin size="2rem"/></Link >
-        </IconButton>
+        {contact("https://github.com/MFlorO?tab=repositories", <BsGithub size="2rem" />)}
+        {contact("https://www.linkedin.com/in/florencia-oldani/", <BsLinkedin size="2rem"/>)}
         
     </Stack>
   )
