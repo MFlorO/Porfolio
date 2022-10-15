@@ -9,7 +9,7 @@ export const styleOne = {
     },
   }
 
-export const styleTwo = {
+export const stylesTwo = {
     width: "100%",
     height: {
       xs: "40vh",

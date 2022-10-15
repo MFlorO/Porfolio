@@ -11,6 +11,7 @@ import Theme from "../Theme/Theme.jsx"
 //MUI
 import { Stack } from "@mui/material/";
 import ButtonNavigateTop from "./ButtonNavigateTop/ButtonNavigateTop.jsx";
+import { stylesOne, stylesTwo, stylesThree } from "./All.styles.js";
 
 
 
@@ -19,33 +20,19 @@ function All({ColorModeContext}) {
 
   return (
 
-    <Stack  display="flex"
-    direction="column"
-    backgroundColor="background.dark"
-    sx={{
-      width:"100%",
-      height: {xs: "120vh", sm: "100vh", md: "100vh", lg: "100vh", xl: "100vh" },
-    }}
+    <Stack  display="flex" direction="column" backgroundColor="background.dark" sx={stylesOne} >
 
-    >
-
-      <Stack direction="row" position="fixed" alignItems="center" zIndex={400} width="5rem" height="4rem" sx={{
-        right:{ xs:"10rem", sm: "6rem", xl: "6rem" },
-        top:{ xs:"-0.5rem", sm: "3rem", md: "2.5rem", lg: "1rem", xl: "0.5rem" },
-      }}>
+      <Stack direction="row" alignItems="center" zIndex={400} width="5rem" height="4rem" sx={stylesTwo}>
       <Language />
+
       <Theme ColorModeContext={ColorModeContext}/>
       </Stack>
 
-      <Stack position="fixed" 
-      sx={{
-        bottom:{ xs:"4rem", md: "4rem", xl: "4rem", xxl: "5.5rem" },
-        right:{ xs:"3rem", xl: "5rem" },
-      }}><ButtonNavigateTop />
+      <Stack position="fixed" sx={stylesThree}>
+        <ButtonNavigateTop />
       </Stack>
-
-
-     <NavBar />
+     
+      <NavBar />
 
       <section id="home"><Home /></section>
       <section id="about"><AboutMe /></section>
@@ -54,7 +41,6 @@ function All({ColorModeContext}) {
       <section id="contact"><Contact /></section>
       
     </Stack>
-
 
   );
 }
