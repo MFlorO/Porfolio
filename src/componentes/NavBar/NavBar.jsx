@@ -5,13 +5,8 @@ import { useNavigate } from "react-router";
 import { useTranslation } from "react-i18next";
 
 //MUI
-import {
-  Stack,
-  ListItem,
-  ListItemButton,
-  ListItemText,
-  Typography,
-} from "@mui/material/";
+import { Stack, ListItem, ListItemButton, ListItemText, Typography } from "@mui/material/";
+import { styleOne, styleThree, styleTwo } from "./styles.NavBar";
 
 
 const botonstyled = {
@@ -22,126 +17,45 @@ const botonstyled = {
 
 
 
-
-
-
 export default function NavBar() {
   const { t } = useTranslation();
   const navigate = useNavigate();
 
   const landingPage = () => navigate("/");
 
+
+  const menuItems = ( href, nombre) => {
+      return (
+        <ListItem disablePadding>
+        <ListItemButton href={href} sx={botonstyled}>
+          {nombre === "Skills" ? ( <ListItemText primary={nombre} />) : ( <ListItemText primary={t(`navbar.${nombre}`)} /> )}
+        </ListItemButton>
+        </ListItem>
+        )
+  }
+
   return (
-    <Stack
-      direction="row"
-      position="fixed"
-      justifyContent="space-between"
-      alignItems="center"
-      backgroundColor="background.main"
-      zIndex={300}
-      sx={{
-        width: "100%",
-        height: "3.5",
-        marginTop:{
-          xs:"3rem",
-          lg: "1rem"
-        }
-      }}
-    >
-      <Stack
-        sx={{
-          width:{
-            xs:"100%",
-            md: "25%",
-            lg: "25%",
-            xl: "16%",
-            xxl: "16%"
-          },
-          marginLeft:{
-            xs:"0rem",
-            lg: "1rem"
-          }
-        }}
-      >
-        <Typography variant="h1" color="secondary.dark" fontSize="1rem"
-        sx={{
-          display:{
-            xs:"none",
-            md: "block",
-            lg: "block"
-          }
-        }}>{t("navbar.welcome")}
-        </Typography>
+    <Stack direction="row" position="fixed" justifyContent="space-between" alignItems="center" backgroundColor="background.main" zIndex={300} sx={styleOne}>
+      
+      <Stack sx={styleTwo}>
+        <Typography variant="h1" color="secondary.dark" fontSize="1rem" sx={{ display:{ xs:"none", md: "block", lg: "block" } }}>{t("navbar.welcome")}</Typography>
       </Stack>
 
-      <Stack
-        direction="row"
-        alignItems="center"
-        sx={{
-          width:{
-              xs:"100%",
-              md: "55%",
-              lg: "50%"
-            },
-          marginRight: {
-            xs:"0rem",
-            sm:"8rem",
-            md:"13rem",
-            lg:"15rem",
-            xl: "18rem",
-            xxl: "20rem"
-          },
-          fontSize:{
-            xs:"4rem",
-            lg: "2rem"
-          },
-          fontFamily: "Raleway",
-        }}
-      >
+      <Stack direction="row" alignItems="center" sx={styleThree} >
         <ListItem disablePadding>
           <ListItemButton onClick={landingPage} sx={botonstyled}>
             <ListItemText primary={t("navbar.started")} />
           </ListItemButton>
         </ListItem>
+        
+        {menuItems("#about", "about" )}
 
-        {/* <ListItem disablePadding>
-          <ListItemButton href="#home" sx={botonstyled}>
-            <ListItemText primary="Home" />
-          </ListItemButton>
-        </ListItem> */}
+        {menuItems("#skills", "Skills" )}
+       
+        {menuItems("#proyects", "proyects" )}
 
-        <ListItem disablePadding>
-          <ListItemButton href="#about" sx={botonstyled}>
-            <ListItemText primary={t("navbar.about")} />
-          </ListItemButton>
-        </ListItem>
+        {menuItems("#contact", "contact" )}
 
-        <ListItem disablePadding>
-          <ListItemButton
-            href="#skills"
-            sx={botonstyled}
-          >
-            <ListItemText primary="Skills" />
-          </ListItemButton>
-        </ListItem>
-
-        <ListItem disablePadding>
-          <ListItemButton
-            href="#proyects"
-            sx={botonstyled}
-          >
-            <ListItemText primary={t("navbar.proyects")} />
-          </ListItemButton>
-        </ListItem>
-
-        <ListItem disablePadding>
-          <ListItemButton
-            href="#contact"
-            sx={botonstyled}
-          >
-            <ListItemText primary={t("navbar.contact")} />
-          </ListItemButton>
-        </ListItem>
       </Stack>
     </Stack>
   );
