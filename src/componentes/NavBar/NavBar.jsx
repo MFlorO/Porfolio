@@ -6,7 +6,7 @@ import { useTranslation } from "react-i18next";
 
 //MUI
 import { Stack, ListItem, ListItemButton, ListItemText, Typography } from "@mui/material/";
-import { styleOne, styleThree, styleTwo } from "./styles.NavBar";
+import { styleOne, styleThree, styleTwo, styleFour } from "./styles.NavBar";
 
 
 const botonstyled = {
@@ -35,13 +35,13 @@ export default function NavBar() {
   }
 
   return (
-    <Stack direction="row" position="fixed" justifyContent="space-between" alignItems="center" backgroundColor="background.main" zIndex={300} sx={styleOne}>
+    <Stack direction="row" position="fixed" justifyContent="space-around" alignItems="center" backgroundColor="background.main" zIndex={300} sx={styleOne}>
       
       <Stack sx={styleTwo}>
-        <Typography variant="h1" color="secondary.dark" fontSize="1rem" sx={{ display:{ xs:"none", md: "block", lg: "block" } }}>{t("navbar.welcome")}</Typography>
+        <Typography variant="h1" color="secondary.dark" fontSize="1rem" sx={styleThree}>{t("navbar.welcome")}</Typography>
       </Stack>
 
-      <Stack direction="row" alignItems="center" sx={styleThree} >
+      <Stack direction="row" alignItems="center" sx={styleFour} >
         <ListItem disablePadding>
           <ListItemButton onClick={landingPage} sx={botonstyled}>
             <ListItemText primary={t("navbar.started")} />

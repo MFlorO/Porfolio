@@ -9,7 +9,9 @@ export const styleTwo = {
     marginLeft:{ xs:"0rem", lg: "1rem" }
   }
 
-export const styleThree = {
+export const styleThree = { display:{ xs:"none", md: "block", lg: "block" } }
+
+export const styleFour = {
     width:{ xs:"100%", md: "55%", lg: "50%" },
     marginRight: { xs:"0rem", sm:"8rem", md:"13rem", lg:"15rem", xl: "18rem", xxl: "20rem" },
     fontSize:{ xs:"4rem", lg: "2rem" },
