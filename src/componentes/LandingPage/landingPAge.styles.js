@@ -1,7 +1,7 @@
 export const stylesOne = { 
     width:"100%",
     height:{
-      xs:"100vh",
+      xs:"110vh",
       sm:"100vh",
       md:"100vh",
       lg:"100vh",
