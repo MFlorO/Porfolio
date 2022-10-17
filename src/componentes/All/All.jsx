@@ -22,7 +22,7 @@ function All({ColorModeContext}) {
 
     <Stack  display="flex" direction="column" backgroundColor="background.dark" sx={stylesOne} >
 
-      <Stack direction="row" alignItems="center" zIndex={400} width="5rem" height="4rem" sx={stylesTwo}>
+      <Stack direction="row" alignItems="center" zIndex={400} width="5rem" height="4.5rem" sx={stylesTwo}>
       <Language />
 
       <Theme ColorModeContext={ColorModeContext}/>

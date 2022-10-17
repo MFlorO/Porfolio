@@ -1,6 +1,6 @@
 export const styleOne = { 
     width: "100%",
-    height: "3.5",
+    height: "3.5rem",
     marginTop:{ xs:"3rem", lg: "1rem" }
   }
 
