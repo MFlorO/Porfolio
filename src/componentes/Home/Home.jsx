@@ -5,7 +5,6 @@ import React from "react";
 //MUI-CSS-ICONS
 import {  Stack } from "@mui/material/";
 import fondo from "./fondo.jpg"
-import foto from "./fotoPerfil.jpg"
 import HomeContent from "./HomeContent/HomeContent.jsx";
 import { styleOne, stylesTwo } from "./home.style";
 
@@ -19,7 +18,7 @@ function Home() {
      
       <Stack direction="row" alignItems="center" backgroundColor="background.main" justifyContent="center" sx={stylesTwo}>
 
-      {foto && <HomeContent foto={foto}/> } {/*  Solo me cargue la pagina cuando ya este la foto   */}
+      <HomeContent/>  {/*  Solo me cargue la pagina cuando ya este la foto   */}
 
       </Stack>
 

@@ -6,13 +6,13 @@ import Zoom from 'react-reveal/Zoom';
 import {  Stack, Typography } from "@mui/material/";
 import styles from "./HomeContent.module.css";
 import { styleOne, styleThree, styleTwo } from './homeContent.style';
+import foto from "./fotoPerfil.jpg"
 
 
-
-function HomeContent({foto}) {
+function HomeContent() {
   return (
     <>
-      <Stack backgroundColor="secondary.dark" sx={styleOne} ><img  src={foto} alt="" className={styles.foto}/> </Stack>
+      <Stack sx={styleOne} ><img  src={foto} alt="" className={styles.foto}/> </Stack>
 
         <Stack direction="column" justifyContent="space-around" alignItems="center" sx={styleTwo} >
 
