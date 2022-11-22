@@ -19,14 +19,5 @@ export const stylesConteinerItems = {
 
 export const stylesContact = {
   width: { xs: "100%", sm: "100%", md: "60%", lg: "60%", xl: "60%", xxl: "50%" },
-  marginTop: { xs: "-4rem", sm: "-4rem", md: "4rem", lg: "4rem", xl: "4rem", xxl: "4rem" }
-}
-
-export const stylesForm = {
-  xs: { m: 1, width: "30rem", marginBottom:"0.5rem"},
-  sm: { m: 1, width: "30rem", marginBottom:"0.5rem"},
-  md: { m: 1, width: "30rem", marginBottom:"0.5rem"},
-  lg: { m: 1, width: "40rem", marginBottom:"0.5rem"},
-  xl: { m: 1, width: "40rem", marginBottom:"0.5rem"},
-  xxl: { m: 1, width: "40rem", marginBottom:"0.5rem"}
+  height: '25rem' 
 }

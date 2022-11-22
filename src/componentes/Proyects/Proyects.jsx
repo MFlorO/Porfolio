@@ -98,19 +98,7 @@ function Proyects() {
         direction="column"
         justifyContent="center"
         alignItems="center"
-        sx={{
-          width: {
-            xs: "30%",
-            sm: "150vh",
-            md: "100vh",
-            lg: "100vh",
-            xl: "30%",
-          },
-          marginBottom: {
-            xs: "3rem",
-            xl: "0rem",
-          },
-        }}
+        sx={{ width: { xs: "30%", sm: "150vh", md: "100vh", lg: "100vh", xl: "30%" }, marginBottom: { xs: "3rem", xl: "0rem" } }}
       >  
         <Typography variant="h1" sx={{fontSize:{xs: "3.5rem", xl: "5rem"}, color:"text.secondary"}} >{t("proyects.titleOne")}</Typography>
         <Typography variant="h1" sx={{fontSize:{xs: "3.5rem", xl: "5rem"}}} color="secondary.dark">{t("proyects.titletwo")}</Typography>
@@ -122,39 +110,11 @@ function Proyects() {
         direction="row"
         justifyContent="center"
         alignContent="center"
-        // backgroundColor="red"
         color="info.dark"
         sx={{
-          flexDirection:{
-            xs: "column",
-            sm: "row",
-            md: "row",
-            lg: "row",
-            xl: "row",
-            xxl: "row"
-          },
-          justifyContent:{
-            xs:"space-around",
-            xl:"center"
-          },
-          width: {
-            xs: "100%",
-            sm: "100%",
-            md: "100%",
-            lg: "100%",
-            xl: "100%",
-          },
-          height:{
-            xs: "90%",
-            xl: "70%"
-          },
-          marginTop: {
-            xl: "2rem",
-          },
-          gap:{
-            xs: "0rem",
-            xl: "5rem"
-          }
+          flexDirection:{ xs: "column", sm: "row", md: "row", lg: "row", xl: "row", xxl: "row" }, justifyContent: {xs:"space-around", xl:"center" },
+          width: { xs: "100%", sm: "100%", md: "100%",lg: "100%", xl: "100%" }, height:{xs: "90%", xl: "70%" },  marginTop: {xl: "2rem" },
+          gap:{xs: "0rem",xl: "5rem"}
         }}
       >
         

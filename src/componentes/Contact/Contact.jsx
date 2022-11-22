@@ -8,12 +8,11 @@ import {
   FormHelperText,
   TextField,
   Button,
-  Box,
   Alert,
   Stack,
   Typography
 } from "@mui/material";
-import {stylesConteiner, stylesSubConteiner, stylesConteinerItems, stylesContact, stylesForm } from "./styles.contact.js"
+import {stylesConteiner, stylesSubConteiner, stylesConteinerItems, stylesContact } from "./styles.contact.js"
 import validate from "./validate.js";
 
 import Zoom from 'react-reveal/Zoom';
@@ -113,26 +112,19 @@ function Contact() {
             
         </Stack>
 
-        <Stack
-          direction="column"
-          justifyContent="center"
-          color="info.dark"
-          textAlign="justify"
-          sx={ stylesContact }
-        >
-        <Box
-        component="form"
-        sx={{
-          marginLeft: { sm: "4rem", md: "1rem", xl: "2em" },
-          "& .MuiTextField-root": stylesForm
 
-        }}
+        <Stack
+        component="form"
         noValidate
         autoComplete="off"
         ref={form}
         onSubmit={sendEmail}
         display='flex'
-        flexDirection='column'
+        direction="column"
+        justifyContent="space-around"
+        color="info.dark"
+        textAlign="justify"
+        sx={ stylesContact }
       >
         <TextField
           id="outlined-multiline-flexible"
@@ -144,9 +136,7 @@ function Contact() {
           onChange={handleChange}
           color="secondary"
         />
-        {error.user_name && (
-          <FormHelperText error>{error.user_name}</FormHelperText>
-        )}
+        {error.user_name && <FormHelperText error>{error.user_name}</FormHelperText>}
 
         <TextField
           id="outlined-multiline-flexible"
@@ -159,9 +149,7 @@ function Contact() {
           color="secondary"
           onChange={handleChange}
         />
-        {error.user_email && (
-          <FormHelperText error>{error.user_email}</FormHelperText>
-        )}
+        {error.user_email && <FormHelperText error>{error.user_email}</FormHelperText>}
 
         <TextField
           id="outlined-multiline-static"
@@ -174,39 +162,24 @@ function Contact() {
           color="secondary"
           onChange={handleChange}
         />
-        {error.message && (
-          <FormHelperText error>{error.message}</FormHelperText>
-        )}
+        {error.message && <FormHelperText error>{error.message}</FormHelperText>}
 
-         <Stack 
-           sx={{ width: { xs: "100%", sm: "86%", md: "94%", lg: "94%", xl: "81%", xxl: "78%" }}}
-         >
-          <Button type="submit" value="Send" variant="contained" color="secondary" 
+ 
+        <Button type="submit" value="Send" variant="contained" color="secondary" 
           disabled={
                  JSON.stringify(error) === "{}" && 
                  value.user_name.trim() && value.user_email.trim() && value.message.trim()? false : true
                 }>
              {t("contact.contactMe")}
-          </Button>
-        </Stack>
+        </Button>
 
-        {!alertSucces && 
-        (<Stack 
-          marginTop="1rem" 
-          sx={{width: { xs: "100%", sm: "86%", md: "94%", lg: "94%", xl: "81%", xxl: "78%" }}} 
-        >
-          <Alert variant="outlined" severity="success">{t("contact.succes")}</Alert>
-        </Stack>
-        )}
+
+        {!alertSucces && <Alert variant="outlined" severity="success">{t("contact.succes")}</Alert> }
         
-        {!alertError && (
-        <Stack width="40rem"  marginTop="1rem" marginLeft="0.5rem">
-          <Alert variant="outlined" severity="error" width="40rem">{t("contact.error")}</Alert>
-        </Stack>
-        )}
+        {!alertError && <Alert variant="outlined" severity="error" width="40rem">{t("contact.error")}</Alert> }
 
-      </Box>
-    </Stack>
+      </Stack>
+
 
         </Stack>
       </Stack>
