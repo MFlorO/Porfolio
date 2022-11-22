@@ -1,10 +1,10 @@
 export const styleOne = { 
     width: "100%",
     height: "3.5rem",
-    marginTop:{ xs:"3rem", lg: "1rem" },
-    // position: "sticky",
-    // top: 0,
-    // '&::WebkitScrollbar': { width: 0, display:'none' }
+    marginTop:{ xs:"4rem", lg: "0rem" },
+    position: { xs:"absolute", md: "fixed" },
+    overflow:'auto',
+    '&::WebkitScrollbar': { width: 0, display:'none' }
   }
 
 export const styleTwo = {
