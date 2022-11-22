@@ -16,7 +16,7 @@ import { stylesOne, stylesTwo, stylesThree } from "./All.styles.js";
 
 
 
-function All({ColorModeContext}) {
+function All() {
 
   return (
 
@@ -25,7 +25,7 @@ function All({ColorModeContext}) {
       <Stack direction="row" alignItems="center" zIndex={400} width="5rem" height="4.5rem" sx={stylesTwo}>
       <Language />
 
-      <Theme ColorModeContext={ColorModeContext}/>
+      <Theme />
       </Stack>
 
       <Stack position="fixed" sx={stylesThree}>

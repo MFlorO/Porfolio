@@ -5,28 +5,19 @@ import All from "./componentes/All/All";
 
 
 
-
-function App({ColorModeContext}) {
-
+function App() {
 
   return (
-
     <React.Fragment>
-
-
 
       <Routes> {/*Reemplaza el Swich de React-Router-Dom v5. Tampoco se ponen mas los exact*/}
 
-        <Route path="/" element={<LandingPage ColorModeContext={ColorModeContext}/>} />
-     
-        <Route path="/all" element={<All ColorModeContext={ColorModeContext}/>} />
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/all" element={<All />} />
         
-
       </Routes>
 
-
     </React.Fragment>
-
   );
 }
 

@@ -8,10 +8,11 @@ import IconButton from "@mui/material/IconButton";
 
 //MUI-EFECTS
 import { Stack } from "@mui/material/";
+import { ColorModeContext } from "../../ToggleColorMode/ToggleColorMode";
 
 
 
-function Theme({ColorModeContext}) {
+function Theme() {
 
   const theme = useTheme();
 

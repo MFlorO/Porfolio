@@ -13,12 +13,12 @@ import videoPorfolio from "./videoPorfolio.mp4"
 import compuNegra from "./compuNegra.png"
 import s from "./LandingPage.module.css"
 import { stylesFive, stylesFour, stylesOne, stylesSix, stylesThree, stylesTwo } from "./landingPAge.styles.js";
+import { ColorModeContext } from "../../ToggleColorMode/ToggleColorMode.jsx"; //Manejo el modo claro/oscuro
 
 
 
 
-
-function LandingPage({ColorModeContext}) {
+function LandingPage() {
 
   const navigate = useNavigate();
   const { t } = useTranslation();
@@ -26,8 +26,6 @@ function LandingPage({ColorModeContext}) {
   const [text] = useTypewriter({
     words: [`${t('landing.thanks')}`, `${t('landing.message')}`],
   })
-
-  const login = () => navigate("/all")
 
 
   return (
@@ -61,7 +59,7 @@ function LandingPage({ColorModeContext}) {
       </Stack>
 
       <Stack sx={stylesSix} >
-        <Button variant="outlined" size="large" color="secondary" onClick={login}>{t("landing.ingresar")}</Button></Stack>
+        <Button variant="outlined" size="large" color="secondary" onClick={() => navigate("/all")}>{t("landing.ingresar")}</Button></Stack>
       </Stack>
   );
 }

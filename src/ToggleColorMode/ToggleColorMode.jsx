@@ -5,7 +5,7 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 
 //THEME
 import getDesignTokens from "./theme.js"
-const ColorModeContext = React.createContext({ toggleColorMode: () => {} });
+export const ColorModeContext = React.createContext({ toggleColorMode: () => {} });
 
 
 export default function ToggleColorMode() {
@@ -29,7 +29,7 @@ export default function ToggleColorMode() {
   return (
     <ColorModeContext.Provider value={colorMode}>
       <ThemeProvider theme={theme}>
-       <App ColorModeContext={ColorModeContext}/> 
+       <App /> 
       </ThemeProvider>
     </ColorModeContext.Provider>
   );
