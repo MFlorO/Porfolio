@@ -1,12 +1,15 @@
 export const styleOne = { 
     width: "100%",
     height: "3.5rem",
-    marginTop:{ xs:"3rem", lg: "1rem" }
+    marginTop:{ xs:"3rem", lg: "1rem" },
+    // position: "sticky",
+    // top: 0,
+    // '&::WebkitScrollbar': { width: 0, display:'none' }
   }
 
 export const styleTwo = {
     width:{ xs:"100%", md: "25%", lg: "25%", xl: "16%", xxl: "16%" },
-    marginLeft:{ xs:"0rem", lg: "1rem" }
+    marginLeft:{ xs:"0rem", lg: "1rem" },
   }
 
 export const styleThree = { display:{ xs:"none", md: "block", lg: "block" } }

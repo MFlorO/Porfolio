@@ -90,6 +90,9 @@ function Proyects() {
           xs: "7rem",
           xl: "0rem",
         },
+        marginLeft: {
+          xs: "6rem",
+        },
       }}
       // backgroundColor="blue"
     >
@@ -111,6 +114,9 @@ function Proyects() {
           marginBottom: {
             xs: "3rem",
             xl: "0rem",
+          },
+          marginRight: {
+            xs: "6rem",
           },
         }}
       >  

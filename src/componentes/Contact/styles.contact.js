@@ -23,7 +23,7 @@ export const stylesContact = {
 }
 
 export const stylesForm = {
-  xs: { m: 1, width: "22rem", marginBottom:"0.5rem"},
+  xs: { m: 1, width: "30rem", marginBottom:"0.5rem"},
   sm: { m: 1, width: "30rem", marginBottom:"0.5rem"},
   md: { m: 1, width: "30rem", marginBottom:"0.5rem"},
   lg: { m: 1, width: "40rem", marginBottom:"0.5rem"},
