@@ -13,13 +13,11 @@ import { styleOne, stylesTwo } from "./home.style";
 function Home() {
 
   return (
-    <Stack direction="column" justifyContent={"center"} alignItems={"center"}  sx={styleOne}
+    <Stack width='100%' direction="column" justifyContent={"center"} alignItems={"center"}  sx={styleOne}
     style={{backgroundImage:`url(${fondo})`, backgroundRepeat:"no-repeat", backgroundSize:"cover"}}>
      
       <Stack direction="row" alignItems="center" backgroundColor="background.main" justifyContent="center" sx={stylesTwo}>
-
-      <HomeContent/>  {/*  Solo me cargue la pagina cuando ya este la foto   */}
-
+        <HomeContent/>  
       </Stack>
 
     </Stack>

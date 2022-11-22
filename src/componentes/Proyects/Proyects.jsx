@@ -90,11 +90,7 @@ function Proyects() {
           xs: "7rem",
           xl: "0rem",
         },
-        marginLeft: {
-          xs: "6rem",
-        },
       }}
-      // backgroundColor="blue"
     >
 
 
@@ -102,7 +98,6 @@ function Proyects() {
         direction="column"
         justifyContent="center"
         alignItems="center"
-        // backgroundColor="green"
         sx={{
           width: {
             xs: "30%",
@@ -114,9 +109,6 @@ function Proyects() {
           marginBottom: {
             xs: "3rem",
             xl: "0rem",
-          },
-          marginRight: {
-            xs: "6rem",
           },
         }}
       >  

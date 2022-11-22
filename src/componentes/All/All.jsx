@@ -27,18 +27,18 @@ function All() {
 
       <Theme />
       </Stack>
+     
+      <NavBar />
+
+      <Stack id="home"><Home /></Stack>
+      <Stack id="about"><AboutMe /></Stack>
+      <Stack id="skills"><Skills /></Stack>
+      <Stack id="proyects"><Proyects /></Stack>
+      <Stack id="contact"><Contact /></Stack>
 
       <Stack position="fixed" sx={stylesThree}>
         <ButtonNavigateTop />
       </Stack>
-     
-      <NavBar />
-
-      <section id="home"><Home /></section>
-      <section id="about"><AboutMe /></section>
-      <section id="skills"><Skills /></section>
-      <section id="proyects"><Proyects /></section>
-      <section id="contact"><Contact /></section>
       
     </Stack>
 
