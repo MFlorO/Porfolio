@@ -17,7 +17,7 @@ function ProyectsCard({ p }) {
         <img src={image} alt={name} />
 
         <Stack color="title.primary" className={s.proyectsInfo}>
-          <Typography variant="h3" sx={{fontSize:{xs: "2rem", xl: "2.5rem"}}}
+          <Typography variant="h3" sx={{fontSize:{xs: "2rem", xl: "2.3rem"}}}
           className={s.h3}>
             {name}
           </Typography>
@@ -28,13 +28,7 @@ function ProyectsCard({ p }) {
 
         <Stack backgroundColor="background.main" className={s.overview}>
           <Typography component="p" 
-            sx={{ 
-              color:"info.dark",
-              fontSize:{
-               xs:"12px",
-               xl: "20px"
-             }
-             }}>{description}</Typography>
+            sx={{ color:"info.dark", fontSize:{ xs:"12px", xl: "18px" }}}>{description}</Typography>
 
 
         <Stack className={s.button}>
