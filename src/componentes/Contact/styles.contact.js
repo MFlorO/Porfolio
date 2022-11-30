@@ -5,10 +5,10 @@ export const stylesConteiner = {
 
 export const stylesSubConteiner = {
   flexDirection:{ xs: "column", sm: "column", md: "row", lg: "row", xl: "row", xxl: "row" },
-  width: "90%",
+  width: "80%",
   height: { xs: "80vh", sm: "90vh", md: "20rem", lg: "20rem", xl: "35rem", xxl: "35rem" },
   marginTop: { xs: "0rem", sm: "0rem", md: "1rem", lg: "1rem", xl: "1rem", xxl: "1rem" },
-  marginLeft: { xs: "0rem", sm: "0rem", md: "1rem", lg: "1.5rem", xl: "1.5rem", xxl: "1.5rem" },
+  marginLeft: { xs: "0rem", sm: "0rem", md: "0.5rem", lg: "0.5rem", xl: "0.5rem", xxl: "1rem" },
 } 
 
 export const stylesConteinerItems = {
