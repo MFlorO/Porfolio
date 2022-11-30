@@ -8,7 +8,7 @@ export const stylesSubConteiner = {
   width: "80%",
   height: { xs: "80vh", sm: "90vh", md: "20rem", lg: "20rem", xl: "35rem", xxl: "35rem" },
   marginTop: { xs: "0rem", sm: "0rem", md: "1rem", lg: "1rem", xl: "1rem", xxl: "1rem" },
-  marginLeft: { xs: "0rem", sm: "0rem", md: "0.5rem", lg: "0.5rem", xl: "0.5rem", xxl: "1rem" },
+  marginLeft: { xs: "0rem", sm: "0rem", md: "0.5rem", lg: "0.5rem", xl: "0rem", xxl: "0rem" },
 } 
 
 export const stylesConteinerItems = {
