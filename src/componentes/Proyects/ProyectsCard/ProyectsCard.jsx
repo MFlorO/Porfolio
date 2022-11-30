@@ -9,12 +9,16 @@ import { SiWebmoney } from "react-icons/si";
 import s from "./ProyectsCard.module.css";
 
 function ProyectsCard({ p }) {
-  const { name, tecnology, image, description, urlGit, urlLink } = p;
+  const { name, tecnology, image, video, description, urlGit, urlLink } = p;
 
   return (
     <Zoom>
       <Stack borderColor="secondary.dark" className={s.proyects}>
-        <img src={image} alt={name} />
+        {image !== "" ? <img src={image} alt={name} /> :
+        // {/* {video !== ""
+        (<video autoPlay loop muted>
+          <source src={video} type="video/mp4"/>
+        </video>)}
 
         <Stack color="title.primary" className={s.proyectsInfo}>
           <Typography variant="h3" sx={{fontSize:{xs: "2rem", xl: "2.3rem"}}}
@@ -37,11 +41,13 @@ function ProyectsCard({ p }) {
                 <BsGithub size="1.5rem" color="black" />
               </Link>
             </Fab>
-            <Fab color="secondary" className={s.buttonTwo}>
+            {urlLink !== "" && 
+            (<Fab color="secondary" className={s.buttonTwo}>
               <Link target="_blank" rel="noopener noreferrer" href={urlLink}>
                 <SiWebmoney size="1.5rem" color="black" />
               </Link>
-            </Fab>
+            </Fab>)
+            } 
           </Stack>
 
         </Stack>

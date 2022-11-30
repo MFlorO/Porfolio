@@ -7,30 +7,29 @@ import ArrowForwardIosRoundedIcon from '@mui/icons-material/ArrowForwardIosRound
 const Pagination = ({copia, currentPage , setCurrentPage, itemsPerPage}) => {
 
 	const total = copia.length / itemsPerPage
-
+	
 	const page = currentPage === 0 ? currentPage + 1 : (currentPage / itemsPerPage) + 1
 
+
+	const disabledNext = total !== page  //Creo una variable para despues utilizarla en el estilo del boton disabled
+	const disabledPreviuos = page !== 1
+
 	const previuos = () =>{
-	   ( page !== 1) && setCurrentPage(currentPage - itemsPerPage)
+		disabledPreviuos && setCurrentPage(currentPage - itemsPerPage)
 	}
 
 	const next = () =>{
-		(total !== page) && setCurrentPage(currentPage + itemsPerPage)
+		disabledNext && setCurrentPage(currentPage + itemsPerPage)
 	}
-
-	console.log('total', total)
-	console.log('page', page)
-	console.log('currentPage', currentPage)
-
 
 
 	return (
 	<Stack direction='row' alignItems='center' justifyContent='space-around'  sx={{ width:{ xs:"40%", xl: "20%" }}}>
-		<IconButton  onClick={previuos}><ArrowBackIosNewRoundedIcon  color="primary.main" /></IconButton >
+		<IconButton  onClick={previuos} disabled={!disabledPreviuos}><ArrowBackIosNewRoundedIcon  color={!disabledPreviuos? "grey" : "primary.main"} /></IconButton >
 
 		<Typography fontSize='15px' color="primary.main">{page}</Typography>
 
-		<IconButton  onClick={next} ><ArrowForwardIosRoundedIcon color="primary.main" /></IconButton >
+		<IconButton  onClick={next} disabled={!disabledNext}><ArrowForwardIosRoundedIcon color={!disabledNext? "grey" : "primary.main"} /></IconButton >
 	</Stack>
 	);
 };
