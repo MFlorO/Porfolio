@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 
 import emailjs from "@emailjs/browser";
+import { serviceId, templateId, userId } from "./env.js";
 
 import { useTranslation } from "react-i18next";
 
@@ -56,7 +57,7 @@ function Contact() {
     e.preventDefault();
 
     emailjs
-      .sendForm( "service_7a9uzy5", "template_ar9zzxx", form.current, "l6i2ljgBExD7eyapF" )
+      .sendForm( serviceId, templateId , form.current, userId )
       .then(
         (result) => {
           console.log(result.text);
