@@ -10,6 +10,7 @@ import "./componentes/Language/i18n.js"
 
 
 
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <Suspense fallback={null}>

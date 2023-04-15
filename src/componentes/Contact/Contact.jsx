@@ -53,6 +53,7 @@ function Contact() {
     );
   };
 
+
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -60,7 +61,6 @@ function Contact() {
       .sendForm( serviceId, templateId , form.current, userId )
       .then(
         (result) => {
-          console.log(result.text);
           setAlertSucces(false);
           setValue({
             user_name: "",
@@ -69,7 +69,6 @@ function Contact() {
           });
         },
         (error) => {
-          console.log(error.text);
           setAlertError(false);
         }
       );

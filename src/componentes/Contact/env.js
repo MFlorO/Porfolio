@@ -1,3 +1,3 @@
-export const serviceId = import.meta.env.VITE_SERVICE_ID;
-export const templateId = import.meta.env.VITE_TEMPLATE_ID;
-export const userId = import.meta.env.VITE_USER_ID;
+export const serviceId = process.env.REACT_APP_SERVICE_ID;
+export const templateId = process.env.REACT_APP_TEMPLATE_ID;
+export const userId = process.env.REACT_APP_USER_ID;
