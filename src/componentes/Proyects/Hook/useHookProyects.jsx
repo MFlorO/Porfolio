@@ -2,6 +2,7 @@ import { useState } from "react";
 
 //img - video
 import emirat from "./assets/Emiratpropiedades.png"
+import country from "./assets/countryApp.png"
 import henry from "./assets/libreriaHenry.png"
 import electronics from "./assets/Electronics.mp4"
 import starWars from "./assets/StarWars.mp4"
