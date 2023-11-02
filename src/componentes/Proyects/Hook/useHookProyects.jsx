@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 //img - video
-import country from "./assets/countryApp.png"
+import emirat from "./assets/Emiratpropiedades.png"
 import henry from "./assets/libreriaHenry.png"
 import electronics from "./assets/Electronics.mp4"
 import starWars from "./assets/StarWars.mp4"
@@ -12,31 +12,28 @@ import { useTranslation } from "react-i18next";
 
 
 
-
 function useHookProyects() {
 
   const { t } = useTranslation();
-
-  
+ 
   
 const proyects_data = [
   {
     id: 1,
-    name: "CountriesApp",
+    name: "EMIRAT propiedades",
     tecnology: [
       "Javascript",
-      "Express js",
+      "Next js",
       "React js",
-      "Redux",
-      "Postgres sql",
-      "Sequelize",
+      "Next js",
+      "Google maps",
       "Css",
     ],
-    image: country,
+    image: emirat,
     video: "",
-    description:`${t("proyects.descriptionCountries")}`,
-    urlGit:"https://github.com/MFlorO/Countries-app-front",
-    urlLink:"https://countries-flor.netlify.app/"
+    description:`${t("proyects.descriptionEmirat")}`,
+    urlGit:"https://github.com/MFlorO/emirat-web",
+    urlLink:"https://emirat-web.vercel.app/"
   },
   {
     id: 2,
@@ -63,6 +60,24 @@ const proyects_data = [
   },
   {
     id: 3,
+    name: "CountriesApp",
+    tecnology: [
+      "Javascript",
+      "Express js",
+      "React js",
+      "Redux",
+      "Postgres sql",
+      "Sequelize",
+      "Css",
+    ],
+    image: country,
+    video: "",
+    description:`${t("proyects.descriptionCountries")}`,
+    urlGit:"https://github.com/MFlorO/Countries-app-front",
+    urlLink:"https://countries-flor.netlify.app/"
+  },
+  {
+    id: 4,
     name: "Electronics",
     tecnology: [
       "Javascript",
@@ -78,7 +93,7 @@ const proyects_data = [
     urlLink:""
   },
   {
-    id: 4,
+    id: 5,
     name: "StarWars",
     tecnology: [
       "Next Js",
@@ -100,7 +115,6 @@ const proyects_data = [
   const [currentPage, setCurrentPage] = useState(0) //Estado para manejar la pagina
 	
 	const itemsPerPage = 2
-
 
   const proyectsSlice = () =>  copia.slice(currentPage, currentPage + itemsPerPage) 
 

@@ -9,6 +9,7 @@ import { SiWebmoney } from "react-icons/si";
 import s from "./ProyectsCard.module.css";
 
 function ProyectsCard({ p }) {
+  
   const { name, tecnology, image, video, description, urlGit, urlLink } = p;
 
   return (
