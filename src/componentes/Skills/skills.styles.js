@@ -18,7 +18,7 @@ export const styleThree = {
 }
 
 export const styleFour = {
-    height: { xs: "24rem", xl: "20rem" },
+    height: { xs: "30rem", xl: "20rem" },
     width: { xs: "90%", sm: "90%", md: "80%", lg: "70%", xl: "65%" },
     marginLeft: { xs:"-3rem", sm:"2rem", xl: "2rem"}
   }

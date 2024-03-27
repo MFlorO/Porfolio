@@ -16,7 +16,7 @@ import { stylesOne, stylesThree } from "./All.styles.js";
 function All() {
 
   return (
-    <Stack  display="flex" direction="column" backgroundColor="background.dark" sx={stylesOne} >
+    <Stack  display="flex" direction="column" backgroundColor="background.dark" sx={stylesOne}>
 
       <NavBar />
 

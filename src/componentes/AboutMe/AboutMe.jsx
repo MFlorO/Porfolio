@@ -39,13 +39,13 @@ function AboutMe() {
           sx={stylesConteinerItems}
         >
 
-          <Stack direction="column" justifyContent="space-around" alignItems="center"
-          color="secondary" >
-          <Typography variant="h1" color="text.secondary">{t("AboutMe.titleOne")}</Typography>
-          <Typography variant="h1" color="secondary.dark">{t("AboutMe.titletwo")}</Typography>
+          <Stack direction="column" justifyContent="space-around" alignItems="center" color="secondary" >
+            <Typography variant="h1" color="text.secondary">{t("AboutMe.titleOne")}</Typography>
+            <Typography variant="h1" color="secondary.dark">{t("AboutMe.titletwo")}</Typography>
           </Stack>
 
-          <Zoom><Stack marginTop="2rem">
+          <Zoom>
+            <Stack>
             <a style={{textDecoration:"none"}} href="MFlorenciaOldaniDeveloperFullStackCV.pdf" download="MFlorenciaOldaniDeveloperFullStackCV.pdf">
               <Button variant="outlined" color="secondary">{t("AboutMe.download")} CV</Button>
             </a>

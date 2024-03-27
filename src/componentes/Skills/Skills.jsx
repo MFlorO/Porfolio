@@ -40,7 +40,7 @@ function Skills() {
           <Typography variant="h1" color="secondary.dark">{t("skills.titletwo")}</Typography>
         </Stack>
 
-        <Stack flexWrap="wrap" justifyContent="center" alignItems="center" color="info.dark" textAlign="justify" gap="2rem" sx={styleFour}>
+        <Stack flexWrap="wrap" justifyContent="center" alignItems="center" color="info.dark" textAlign="justify" mt='1rem' gap="2rem" sx={styleFour}>
           <Zoom>
           {skillsAll.map( skills => {
             const {id,icon,text} = skills

@@ -1,6 +1,6 @@
 export const stylesOne = {
     width:"100%",
-    height: {xs: "120vh", sm: "100vh", md: "100vh", lg: "100vh", xl: "100vh" },
+    height: '100vh',
   }
 
 export const stylesTwo = {
