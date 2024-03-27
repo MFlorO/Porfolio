@@ -1,13 +1,13 @@
 export const styleConteiner = {
     width: "100%",
-    height: { xs: "120vh", sm: "100vh"},
+    height: { xs: "130vh", sm: "100vh"},
   };
 
 
 export const stylesSubConteiner = {
     width: { xs: "100%", sm: "100%", md: "100%", lg: "90%", xl: "90%" },
     flexDirection:{ xs:"column", md: "row", lg:"row", xl:"row" },
-    height: { xs: "45rem", sm: "45rem", md: "40rem", lg: "35rem", xl: "35rem" },
+    height: { xs: "60rem", sm: "45rem", md: "40rem", lg: "35rem", xl: "35rem" },
     marginTop: { xs: "-3rem", md: "2rem", xl: "1rem"},
     marginRight:{ xs: "5rem", md: "3rem", lg: "5.5rem", xl: "4rem" },
     gap: 2

@@ -33,14 +33,14 @@ function Skills() {
 
   return (
     <Stack direction="column" justifyContent="space-around" alignItems="center" backgroundColor="background.dark" sx={styleOne}>
-      <Stack direction="column" justifyContent="space-around" alignItems="center" marginRight="5.5rem" sx={styleTwo} >
+      <Stack direction="column" justifyContent="space-around" alignItems="center" marginRight="5.5rem" sx={styleTwo}>
 
         <Stack direction="column" justifyContent="space-around" alignItems="center" sx={styleThree}>
           <Typography variant="h1" color="text.secondary">{t("skills.titleOne")}</Typography>
           <Typography variant="h1" color="secondary.dark">{t("skills.titletwo")}</Typography>
         </Stack>
 
-        <Stack flexWrap="wrap" justifyContent="center" alignItems="center" color="info.dark" textAlign="justify" mt='1rem' gap="2rem" sx={styleFour}>
+        <Stack flexWrap="wrap" justifyContent="center" alignItems="center" color="info.dark" textAlign="justify" mt='5rem' gap="2rem" sx={styleFour}>
           <Zoom>
           {skillsAll.map( skills => {
             const {id,icon,text} = skills
