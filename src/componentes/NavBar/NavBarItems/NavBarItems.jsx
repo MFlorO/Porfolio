@@ -11,12 +11,13 @@ import {styleFour } from "../styles.NavBar";
 const botonstyled = {
 	textAlign: "center",
 	color: "text.secondary",
+	width: 'max-content',
 	"&:hover": { backgroundColor: "transparent", color: "secondary.dark" },
-  };
+};
 
-  
 
 const NavBarItems = () => {
+
 	const { t } = useTranslation();
 	const navigate = useNavigate();
 
@@ -33,7 +34,7 @@ const NavBarItems = () => {
 
 	
 	return (
-		<Stack direction="row" alignItems="center" sx={styleFour} >
+		<Stack with='max-content' direction="row" alignItems="center" className='holi' sx={styleFour} >
         <ListItem disablePadding>
           <ListItemButton onClick={() => navigate("/")} sx={botonstyled}>
             <ListItemText primary={t("navbar.started")} />

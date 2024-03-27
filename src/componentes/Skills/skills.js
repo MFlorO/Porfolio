@@ -1,9 +1,9 @@
 //React Icons
 import { CgFigma } from "react-icons/cg"
-import {SiCss3, SiChakraui, SiHtml5, SiRedux, SiMaterialui, SiSequelize, SiPostgresql, SiTrello, SiJavascript} from "react-icons/si"
-import { FaReact } from "react-icons/fa"
+import { SiCss3, SiChakraui, SiHtml5, SiRedux, SiMaterialui, SiSequelize, SiPostgresql, SiTrello, SiJavascript, SiGraphql, SiMongodb, SiPrisma } from "react-icons/si"
+import { FaReact, FaJira, } from "react-icons/fa"
+import { TbBrandNextjs, TbBrandReactNative } from "react-icons/tb";
 import {DiNodejs} from "react-icons/di"
-
 
 
 
@@ -71,6 +71,36 @@ import {DiNodejs} from "react-icons/di"
         id: 12,
         icon: <SiTrello />,
         text: "TRELLO"
+    },
+    {
+        id: 13,
+        icon: <FaJira />,
+        text: "JIRA"
+    },
+    {
+        id: 14,
+        icon: <TbBrandNextjs />,
+        text: "NEXT JS"
+    },
+    {
+        id: 15,
+        icon: <SiGraphql />,
+        text: "GRAPHQL"
+    },
+    {
+        id: 16,
+        icon: <SiMongodb />,
+        text: "MONGO DB"
+    },
+    {
+        id: 17,
+        icon: <SiPrisma />,
+        text: "PRISMA"
+    },
+    {
+        id: 18,
+        icon: <TbBrandReactNative />,
+        text: "REACT NATIVE"
     },
 
  ]

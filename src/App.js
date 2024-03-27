@@ -4,7 +4,6 @@ import LandingPage from "./componentes/LandingPage/LandingPage";
 import All from "./componentes/All/All";
 
 
-
 function App() {
 
   return (

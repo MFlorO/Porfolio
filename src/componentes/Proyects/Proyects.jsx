@@ -32,7 +32,6 @@ function Proyects() {
       sx={{ width: "90%", height: { xs: "50rem", sm: "40rem", md: "40rem", lg: "45rem" }, marginTop: { xs: "7rem", xl: "3rem" }}}
     >
 
-
       <Stack
         direction="column"
         justifyContent="center"
@@ -40,14 +39,12 @@ function Proyects() {
         sx={{ width: { xs: "30%", sm: "150vh", md: "100vh", lg: "100vh", xl: "30%" }, marginBottom: { xs: "3rem", xl: "2rem" } }}
       >  
         <Typography variant="h1" sx={{fontSize:{xs: "3.5rem", xl: "5rem"}, color:"text.secondary"}} >{t("proyects.titleOne")}</Typography>
-        <Typography variant="h1" sx={{fontSize:{xs: "3.5rem", xl: "5rem"}}} color="secondary.dark">{t("proyects.titletwo")}</Typography>
-    
-          
+        <Typography variant="h1" sx={{fontSize:{xs: "3.5rem", xl: "5rem"}}} color="secondary.dark">{t("proyects.titletwo")}</Typography>    
       </Stack>
 
-      {/* <Stack> */}
-        <Pagination copia={copia} currentPage={currentPage} setCurrentPage={setCurrentPage} itemsPerPage={itemsPerPage}/>
-      {/* </Stack> */}
+
+      <Pagination copia={copia} currentPage={currentPage} setCurrentPage={setCurrentPage} itemsPerPage={itemsPerPage}/>
+
 
       <Stack
         direction="row"
