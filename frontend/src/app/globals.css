@@ -1,0 +1,96 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --color-accent-dark: #f8bbd0;
+  --color-accent-light: #a52c55;
+  --color-bg-dark: #151012;
+  --color-bg-light: #F8F9FA;
+  --color-text-dark: #f6f6f6;
+  --color-text-light: #151012;
+  --color-title-dark: #f6f6f6;
+  --color-title-light: #151012;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Scrollbar personalizado */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ff4f8b;
+  border-radius: 9999px; 
+}
+
+::-webkit-scrollbar-track {
+  background: #1e1e1e; 
+}
+
+
+/* BUTTON */
+.spinner {
+  width: 18px;
+  height: 18px;
+  border: 3px solid #ff44aa;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} 
+
+
+
+/* TYPING LOADER */
+@keyframes bounce-loader {
+  0%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-8px);
+  }
+}
+
+.animate-bounce-loader {
+  animation: bounce-loader 1s infinite ease-in-out;
+}
+
+
+
+/* SWIPPER */
+
+.swiper-pagination {
+  position: absolute !important;
+  bottom: 2px !important; 
+  z-index: 2;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+  background-color: #FF4F8B !important; 
+}
+
+.swiper-button-prev{
+  color: #f777a2ab !important; 
+}
+.swiper-button-next{
+  color: #FF4F8B !important; 
+}
+
