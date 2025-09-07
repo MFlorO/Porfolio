@@ -51,9 +51,9 @@ export class HttpProjectRepository implements ProjectRepository {
     return res.json();
   }
 
-  async getProjectByTitle(title: string): Promise<Project | null> {
+  async getProjectByTitle(title: string): Promise<Project[] | null> {
     try {
-      return await http<Project>(`/projects/search?title=${title}`);
+      return await http<Project[]>(`/projects/search?title=${title}`);
     } catch (error) {
       console.error(`Error fetching projects that contains the word ${title}:`, error);
       return null;

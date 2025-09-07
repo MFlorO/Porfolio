@@ -22,7 +22,7 @@ export class ProjectService {
     return await this.projectRepository.getProjectById(id);
   }
 
-  async searchProjectByTitle(id: string): Promise<Project | null> {
+  async searchProjectByTitle(id: string): Promise<Project[] | null> {
     return await this.projectRepository.getProjectByTitle(id);
   }
 }

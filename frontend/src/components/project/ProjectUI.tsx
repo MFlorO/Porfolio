@@ -28,12 +28,12 @@ const ProjectUI = () => {
     dispatch(fetchProjectsThunk())
   }, [dispatch]);
 
-  const basesStyles = "w-full min-h-[400px] h-max-[700px] pt-4 pb-10 flex flex-col gap-8 lg:h-max-[100vh] h-min-[100vh] text-[var(--color-text-light)] dark:text-[var(--color-text-dark)]"
+  const basesStyles = "w-full min-h-[200px] h-max-[400px] pt-4 pb-10 flex flex-col gap-8 lg:h-max-[70vh] h-min-[600px] text-[var(--color-text-light)] dark:text-[var(--color-text-dark)]"
 
   return (
     <section className={clsx(
       basesStyles,
-      projects.length === 0 ? "h-auto" : "h-[100%]"
+      projects.length === 0 ? "h-auto" : "h-[80vh]"
     )} id={Seccion.PROYECTOS}
     >
       
@@ -49,7 +49,7 @@ const ProjectUI = () => {
         ? <p className='h-1/2 text-[var(--color-text-light)] dark:text-[var(--color-text-dark)]'>{t('loading')}</p>
         : projects.length === 0
           ? <p>{t('empty')}</p>
-          : <div className='flex w-full h-full justify-center items-center'>
+          : <div className='flex w-full h-[80%] lg:h-[90%] justify-center items-center bg-yellow-500'>
             <Swiper
               modules={[Pagination]}
               pagination={{ clickable: true }}
@@ -61,9 +61,8 @@ const ProjectUI = () => {
                 768: { slidesPerView: 2 }, 
                 1024: { slidesPerView: 3 },
               }}
-              className="w-full h-full"
             >
-              {projects?.map((project: Project, index: number) => <SwiperSlide key={index} className="flex justify-center items-center h-full"><ProjectCard {...project} /></SwiperSlide>)}
+              {projects?.map((project: Project, index: number) => <SwiperSlide key={index} className="flex justify-center items-center h-[90%] w-[400px] bg-red-600"><ProjectCard {...project} /></SwiperSlide>)}
           </Swiper>
           </div>
       }

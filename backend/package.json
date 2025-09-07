@@ -5,6 +5,7 @@
     "scripts": {
         "dev": "nodemon --watch './**/*.ts' --exec npx ts-node src/app.ts",
         "start": "ts-node app.ts",
+        "seed": "ts-node src/data/seed/index.ts",
         "build": "tsc -p ."
     },
     "dependencies": {

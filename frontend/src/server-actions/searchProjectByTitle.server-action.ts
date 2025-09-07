@@ -7,7 +7,7 @@ import { Project } from "@/domain/entities/Project";
 const repository = new HttpProjectRepository();
 const projectService = new ProjectService(repository);
 
-export const searchProjects = async (title:string): Promise<Project | null> => {
+export const searchProjects = async (title:string): Promise<Project[] | null> => {
   noStore();
   return await projectService.searchProjectByTitle(title);
 };

@@ -16,7 +16,7 @@ const AIMessage = ({ text }: Props) => {
       </div>
 
       {/* Contenido */}
-      <div className="flex flex-col bg-white/10 dark:bg-black/50 p-3 rounded-xl shadow-md 
+      <div className="flex flex-col bg-black/50 p-3 rounded-xl shadow-md 
         max-w-[calc(100%-60px)] break-words">
         <span className="text-[10px] font-semibold text-[var(--color-accent-light)] dark:text-[var(--color-accent-dark)] mb-1">
           AI
