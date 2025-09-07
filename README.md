@@ -41,9 +41,12 @@ Este proyecto es un **portfolio personal** donde se pueden:
 3. Instalar las dependencias con ``` npm install ```.
 4. Correr las migraciones de Prisma ``` npx prisma migrate dev ```
 5. Correr el comando ``` npx prisma generate ``` que actualiza el cliente de Prisma (@prisma/client) y genera los enums como tipos TypeScript que podés importar.
-6. Ejecutar seed ``` npm run seed ``` (cargar el seed de prueba a la base de datos).
-7. Levantar el back, en la carpeta api. ```npm run dev``` para levantarlo con nodemon.
-8. Accedé a ```http://localhost:3001/api-docs``` para ver la documentación de la API generada con Swagger.
+7. ```docker build -t portfolio-backend```.
+8. ```docker run -p 3001:3001 portfolio-backend```.
+9. ```docker compose up -d```.Y para reconstruir después de cambios en el código ```docker compose up -d --build```.
+10. Ejecutar seed ``` npm run seed ``` (cargar el seed de prueba a la base de datos).
+11. Levantar el back, en la carpeta api. ```npm run dev``` para levantarlo con nodemon.
+12. Accedé a ```http://localhost:3001/api-docs``` para ver la documentación de la API generada con Swagger.
 
 # Levantar el frontend
 3. Instalar las dependencias con ``` npm install ```.
@@ -72,7 +75,7 @@ Este proyecto es un **portfolio personal** donde se pueden:
 - cookie-parser
 - Body-parser
 - ts-node
-- Arquitectura **Database → Service → Controller**
+- Arquitectura: **Database → Service → Controller**
 
 **Infraestructura**
 - [Axios](https://axios-http.com/) (Http Client)
@@ -82,7 +85,9 @@ Este proyecto es un **portfolio personal** donde se pueden:
 
 
 # ☁️ Deploy
-- **Railway** para backend
+- **Fly.io** para backend. Comando útiles:
+   - ```.\src\tools\flyctl.exe deploy```.
+   - ```.\tools\flyctl.exe secrets list```.
 - **Vercel** para frontend
 
 

@@ -34,5 +34,5 @@ app.use('/api-docs', swaggerUI.serve, swaggerUI.setup(swaggerSpec));
 app.use(errorHandler);
 
 app.listen(CONFIG.PORT || 3000, () => {
-  console.log(`✅ API corriendo en http://localhost:${CONFIG.PORT || 3000}`);
+  console.log(`✅ API corriendo en http://localhost:${CONFIG.PORT || 3001}`);
 });
