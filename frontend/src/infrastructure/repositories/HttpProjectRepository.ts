@@ -16,14 +16,7 @@ export class HttpProjectRepository implements ProjectRepository {
       return null;
     }
   }
-
-  // async createProject(project: Project, authKey: string): Promise<Project> {
-  //   return await http<Project>(`/projects?authKey=${authKey}`, {
-  //     method: "POST",
-  //     body: JSON.stringify(project),
-  //   });
-  // }
-
+  
   async createProject(project: Project, authKey: string): Promise<Project> {
 
     const formData = new FormData();
@@ -53,7 +46,9 @@ export class HttpProjectRepository implements ProjectRepository {
 
   async getProjectByTitle(title: string): Promise<Project[] | null> {
     try {
-      return await http<Project[]>(`/projects/search?title=${title}`);
+      const result = await http<Project[]>(`/projects/search?title=${title}`);
+      console.log(result)
+      return result;
     } catch (error) {
       console.error(`Error fetching projects that contains the word ${title}:`, error);
       return null;

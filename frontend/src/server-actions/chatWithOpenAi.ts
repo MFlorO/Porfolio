@@ -1,36 +1,41 @@
 "use server";
-import { NEXT_PUBLIC_API_BASE_URL_BACKEND } from "../../env";
+import { http } from "@/lib/httpClient";
 
-export async function askAI(question: string){
+interface AskAIResult {
+  code: number;
+  message?: string | null;
+  data?: string | null
+}
 
-  const res = await fetch(`${NEXT_PUBLIC_API_BASE_URL_BACKEND}/chatai`, { 
-    method: "POST", 
-    headers: { "Content-Type": "application/json" }, 
-    body: JSON.stringify({ prompt: question }),
-    cache: "no-store"
-  }); 
+export async function askAI(question: string) {
 
-  if (!res || !res.ok) {
+  try{
+
+    const result = await http<AskAIResult>("/chatai", {
+      method: "POST",
+      body: JSON.stringify({ prompt: question }),
+    });
+    
+    if (!result || (result.code && result.code !== 200)) {
+      return {
+        data: null,
+        error: "Error al consultar el servidor",
+        code: result.code ?? 400,
+      };
+    }
     return {
-      data: null,
-      error: "Error al consultar el backend",
-      code: 400,
-    };
-  }
-
-  const result = await res.json(); 
-
-  if (!result || result?.code && result.code !== 200) {
-    return {
-      data: null,
-      error: result.message || "Error al consultar el backend",
+      data: result.data,
+      error: null,
       code: result.code,
     };
+  
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  }catch(error){
+    return {
+      data: null,
+      error: "Intente de nuevo más tarde",
+      code: 400 
+    };
   }
 
-  return {
-    data: result,
-    error: null,
-    code: result.code,
-  };
 }

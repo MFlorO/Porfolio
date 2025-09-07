@@ -7,7 +7,7 @@ import { Seccion } from "@/interfaces";
 import { useTranslations } from 'next-intl';
 import TryGetForm from "./TryGetForm";
 
-const initialState: Project[] | null = null;
+const initialState: Project[] | null | [] = null;
 
 const TryMyBackend = () => {
 
@@ -16,13 +16,13 @@ const TryMyBackend = () => {
   const [errorMessage, setErrorMessage] = useState<null | string>(null);
   const [state, formAction, isPending] = useActionState<Project[] | null, FormData>(handleSubmit, initialState);
 
-  async function handleSubmit(_state: Project[] | null, formData: FormData): Promise<Project[] | null> {
+  async function handleSubmit(_state: Project[] | null | [], formData: FormData): Promise<Project[] | null> {
     try {
       const title = formData.get("title"); 
       
       if (!title || typeof title !== "string") {
         setErrorMessage(t('messageError1')); 
-        return null;
+        return [];
       }
 
       setInputData(title);
@@ -30,11 +30,9 @@ const TryMyBackend = () => {
     } catch (error) {
       console.error("Error en handleSubmit on Try my backend:", error);
       setErrorMessage(t('messageError2')); 
-      return null;
+      return [];
     }
   }
-
-  console.log('state: ', state,isPending, JSON.stringify(state, null, 2))
 
   return (
     <section className="w-full lg:w-[48%] h-max-[850px] h-[750px] lg:h-full lg:h-max-full flex flex-col bg-gray-800 p-6 rounded-xl text-sm space-y-4 text-white/90 dark:text-white/60" id={Seccion.BACKEND}>

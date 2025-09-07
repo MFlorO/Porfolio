@@ -2,6 +2,7 @@ import { ProjectRepository } from "@/domain/repositories/ProjectRepository";
 import { Project } from "@/domain/entities/Project";
 
 export class ProjectService {
+  
   constructor(private projectRepository: ProjectRepository) {}
 
   async createProject(project: Project, authKey: string): Promise<Project> {

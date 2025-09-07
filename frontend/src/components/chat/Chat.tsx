@@ -30,6 +30,7 @@ const ChatPage = () => {
   useEffect(() => {
     scrollToBottom();
   }, [messages, isLoading]);
+  
 
   const handlePost = async (text: string) => {
 
@@ -42,7 +43,7 @@ const ChatPage = () => {
 
       const response = await askAI(text);
 
-      if(response?.error){
+      if(!response || response?.error){
         console.error('Error: ', response.error);
         setMessages((prev) => [
           ...prev,
@@ -51,10 +52,10 @@ const ChatPage = () => {
         return
       }
 
-      setMessages((prev) => [...prev, { text: response.data, isAI: true }]);
+      setMessages((prev) => [...prev, { text: response?.data ?? 'No hay respuesta', isAI: true }]);
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     } catch (error:any) {
-      console.error('Error: Chat with AI. ',error);
+      console.log('Error: Chat with AI. ',error);
       setMessages((prev) => [
         ...prev,
         { text: error?.message || "Ocurrió un error al generar la respuesta.", isAI: true },
@@ -74,8 +75,8 @@ const ChatPage = () => {
         {
           messages.map((message, index) =>
             message.isAI 
-            ? <AIMessage key={index} text={message.text} />
-            : <UserMessage key={index} text={message.text} />
+            ? <AIMessage key={index} text={message?.text} />
+            : <UserMessage key={index} text={message?.text} />
           )
         }
 

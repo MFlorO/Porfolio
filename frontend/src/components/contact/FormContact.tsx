@@ -1,11 +1,11 @@
 "use client";
-import { useRef, useState } from "react";
+import { useState } from "react";
 import { validateFormContact } from "@/utils/validateFormContact";
 import emailjs from "@emailjs/browser";
 import LinkContact from "./LinkContact";
 import { NEXT_PUBLIC_SERVICE_ID_EMAIL_JS, NEXT_PUBLIC_TEMPLATE_ID_EMAIL_JS, NEXT_PUBLIC_USER_ID_EMAIL_JS } from "../../../env";
-import { Seccion, StatusForm, TypeStatusForm } from "@/interfaces";
-import { useTranslations } from 'next-intl';
+import { Seccion, StatusForm } from "@/interfaces";
+import { useTranslations } from "next-intl";
 import { Button, FormInput, Title } from "../ui";
 
 export interface FormContactData {
@@ -14,58 +14,70 @@ export interface FormContactData {
   message: string;
 }
 
+const formInitialData: FormContactData = {
+  user_name: "",
+  user_email: "",
+  message: "",
+};
+
 export default function FormContact() {
 
-  const t = useTranslations('contact');
-  const form = useRef<HTMLFormElement>(null);
+  const t = useTranslations("contact");
 
-  const [value, setValue] = useState({
-    user_name: "",
-    user_email: "",
-    message: "",
-  });
-
+  const [value, setValue] = useState<FormContactData>(formInitialData);
   const [error, setError] = useState<Partial<FormContactData>>({});
-
-  const [statusForm, setStatusForm] = useState<TypeStatusForm>(StatusForm.IDLE);
+  const [statusForm, setStatusForm] = useState<StatusForm>(StatusForm.IDLE);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setValue({ ...value, [e.target.name]: e.target.value });
-    setError(validateFormContact({ ...value, [e.target.name]: e.target.value }));
+    const newValue = { ...value, [e.target.name]: e.target.value };
+    setValue(newValue);
+    setError(validateFormContact(newValue));
   };
 
-  const sendEmail = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
+  const isDisabled =
+    statusForm === StatusForm.SENDING ||
+    JSON.stringify(error) !== "{}" ||
+    !value.user_name ||
+    !value.user_email ||
+    !value.message;
 
-    if (!form.current) return setStatusForm(StatusForm.ERROR);
-    if (!NEXT_PUBLIC_SERVICE_ID_EMAIL_JS || !NEXT_PUBLIC_TEMPLATE_ID_EMAIL_JS || !NEXT_PUBLIC_USER_ID_EMAIL_JS) {
-      return setStatusForm(StatusForm.ERROR);
-    }
+  const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
 
     setStatusForm(StatusForm.SENDING);
 
     try {
-      await emailjs.sendForm(NEXT_PUBLIC_SERVICE_ID_EMAIL_JS, NEXT_PUBLIC_TEMPLATE_ID_EMAIL_JS, form.current, NEXT_PUBLIC_USER_ID_EMAIL_JS);
+      await emailjs.send(
+        NEXT_PUBLIC_SERVICE_ID_EMAIL_JS!,
+        NEXT_PUBLIC_TEMPLATE_ID_EMAIL_JS!,
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        value as any,
+        NEXT_PUBLIC_USER_ID_EMAIL_JS!
+      );
+
+      setStatusForm(StatusForm.SUCCESS);
+      setValue(formInitialData);
+    } catch (err) {
+      console.error("Error sending email:", err);
       setStatusForm(StatusForm.ERROR);
-      setValue({ user_name: "", user_email: "", message: "" });
-    } catch (error) {
-      setStatusForm(StatusForm.ERROR);
-      console.log('Error in contact form: ', error)
     }
   };
 
-  const isDisabled = statusForm === StatusForm.SENDING || JSON.stringify(error) !== "{}" || !value.user_name || !value.user_email || !value.message;
-
   return (
-    <div className="w-full min-h-screen flex flex-col justify-center items-center gap-8 px-12 md:px-28 bg-white dark:bg-[#ffabc84f]" id={Seccion.CONTACTO}>
+    <div
+      className="w-full min-h-screen flex flex-col justify-center items-center gap-8 px-12 md:px-28 bg-white dark:bg-[#ffabc84f]"
+      id={Seccion.CONTACTO}
+    >
+      <Title className="flex w-full justify-center">{t("title")}</Title>
 
-      <Title className="flex w-full justify-center">{t('title')}</Title>
-        
-      <form onSubmit={sendEmail} className="flex flex-col w-full md:w-2/3 gap-4">
+      <form
+        onSubmit={onSubmit}
+        className="flex flex-col w-full md:w-2/3 gap-4"
+      >
         <FormInput
           type="text"
           name="user_name"
-          placeholder={t('placeholderName')}
+          placeholder={t("placeholderName")}
           value={value.user_name}
           onChange={handleChange}
           error={error.user_name}
@@ -82,7 +94,7 @@ export default function FormContact() {
 
         <textarea
           name="message"
-          placeholder={t('placeholderMessage')}
+          placeholder={t("placeholderMessage")}
           value={value.message}
           onChange={handleChange}
           rows={4}
@@ -106,12 +118,16 @@ export default function FormContact() {
             disabled={isDisabled}
             variant="solid"
           >
-            {statusForm === StatusForm.SENDING ? t('sending') : t('button')}
+            {statusForm === StatusForm.SENDING ? t("sending") : t("button")}
           </Button>
-          {statusForm === StatusForm.SUCCESS && <p className="text-green-500 font-semibold mt-2">{t('messageSuccess')}</p>}
-          {statusForm === StatusForm.ERROR && <p className="text-red-500 font-semibold mt-2">{t('messageError')}</p>}
-        </div>
 
+          {statusForm === StatusForm.SUCCESS && (
+            <p className="text-green-500 font-medium mt-2">{t("messageSuccess")}</p>
+          )}
+          {statusForm === StatusForm.ERROR && (
+            <p className="text-red-500 font-medium mt-2">{t("messageError")}</p>
+          )}
+        </div>
       </form>
 
       <LinkContact />

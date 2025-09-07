@@ -3,7 +3,7 @@ import createNextIntlPlugin from 'next-intl/plugin';
 
 const nextConfig: NextConfig = {
   images: {
-    domains: ['i.pinimg.com', 'tse4.mm.bing.net'], 
+    domains: ['res.cloudinary.com', 'localhost'], 
   },
 };
 

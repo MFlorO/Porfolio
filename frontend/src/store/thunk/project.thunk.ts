@@ -26,7 +26,18 @@ export const createProjectThunk = createAsyncThunk<
 );
 
 
-export const fetchProjectsThunk = createAsyncThunk<Project[],void>(
+export const fetchProjectsThunk = createAsyncThunk<Project[], void, { rejectValue: string }>(
   "projects/fetchprojects",
-  async () => {return await projectService.listProjects()}
+  async (_, { rejectWithValue }) => {
+    try {
+      const result = await projectService.listProjects();
+      console.log('result.project: ', result); 
+      return result;
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    } catch (error: any) {
+      return rejectWithValue(
+        error?.response?.data?.error || error.message || "Error cargando proyectos"
+      );
+    }
+  }
 );

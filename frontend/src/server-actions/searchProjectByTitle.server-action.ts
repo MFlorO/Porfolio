@@ -7,7 +7,14 @@ import { Project } from "@/domain/entities/Project";
 const repository = new HttpProjectRepository();
 const projectService = new ProjectService(repository);
 
-export const searchProjects = async (title:string): Promise<Project[] | null> => {
+export const searchProjects = async (title: string): Promise<Project[] | null> => {
   noStore();
-  return await projectService.searchProjectByTitle(title);
+  try {
+    const result = await projectService.searchProjectByTitle(title);
+    return result;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  } catch (err: any) {
+    console.error("Error en searchProjects:", err);
+    return [];
+  }
 };
