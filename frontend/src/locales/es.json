@@ -1,0 +1,73 @@
+{
+  "frontPage": {
+    "title": "Hola! Soy",
+    "role": "Desarrolladora",
+    "button": "Mirá mi trabajo"
+  },
+  "aboutMe": {
+    "title": "Sobre mí",
+    "intro": "Soy",
+    "intro1": "Desarrolladora Full Stack",
+    "intro2": "con orientación al",
+    "intro3": "frontend,",
+    "intro4": "con más de 3 años de experiencia, brindando soluciones tecnológicas integrales.",
+    "stack":  "Mi stack principal incluye",
+    "stack1": "React, Next.js, TypeScript",
+    "stack2": "en el frontend y",
+    "stack3": "Node.js",
+    "stack4": "en el backend, con experiencia trabajando en equipos ágiles y proyectos end-to-end.",
+    "learning": "Me apasiona el aprendizaje constante y la innovación tecnológica. Soy persistente, curiosa y disfruto asumir desafíos que me permitan superarme cada día. Lo más seguro es que no lo sepa todo, pero puedo asegurar que voy a investigar y preguntar hasta saberlo.",
+    "motto": "Creo que el interés y la persistencia son la clave para aprender cualquier cosa.",
+    "teamwork": "Me gusta trabajar en equipo, compartir conocimientos y construir soluciones escalables que generen valor real a los usuarios. Estoy convencida de que en un equipo todos aprenden: tanto quien recibe ayuda como quien la brinda.",
+    "personal": "Fuera de la programación, lo que me apasiona es lo social, me gusta compartir momentos con mis amigos y familia. Además, me gusta viajar para desconectarme.",
+    "cvButton": "Descargar CV"
+  },
+  "projects": {
+    "title": "Proyectos",
+    "button": "Crear Nuevo Proyecto",
+    "loading": "Cargando proyectos...",
+    "empty": "No existen proyectos"
+  },
+  "projectCreated": {
+    "proyectCreatedButtonCancel": "Cancelar",
+    "proyectCreatedButtonCreate": "Crear",
+    "title": "Crear Nuevo Proyecto",
+    "titleInput": "Título",
+    "titleInputError": "El título es obligatorio",
+    "summaryInput": "Descripción",
+    "summaryInputError": "La descripción es obligatorio",
+    "stackInput": "Stack de tecnologías",
+    "stackPlaceholder": "Seleccionar tecnología",
+    "stackInputError": "Es obligatorio al menos una tecnología",
+    "urlRespositoryInput": "URL del repositorio",
+    "urlInputError": "La URL del repo es obligatoria",
+    "urlDemoInput": "Url del la demo (opcional)",
+    "imageInput": "Imágenes del Proyecto",
+    "imageTextDrop": "Haz clic o arrastra imágenes aquí",
+    "imageCount": "máx. 4 imágenes",
+    "imagesCount2": "imágenes agregadas",
+    "imagesDelete": "Delete",
+    "error:": "Error desconocido"
+  },
+    "chat": {
+    "title": "Chatea con Flor (con IA)",
+    "presentation": "Hola, soy Flor. ¿Quieres saber más sobre mí, mis proyectos o experiencia?."
+  },
+    "backend": {
+    "title": "Prueba mi backend",
+    "subtitle": "Testea un endpoint. Escribe un título y recibe la respuesta.",
+    "placeholder": "Busca por título",
+    "button": "PROBAR",
+    "messageError1": "Complete el campo",
+    "messageError2": "Ocurrió un error. Intenta nuevamente."
+  },
+    "contact": {
+    "title": "Formulario de Contacto",
+    "placeholderName": "Nombre",
+    "placeholderMessage": "Escriba el mensaje",
+    "sending": "Enviando...",
+    "button": "CONTACTAME",
+    "messageSuccess": "Mensaje enviado con éxito!",
+    "messageError": "Ocurrió un error. Intenta nuevamente."
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "frontPage": {
+    "title": "Hello! I am",
+    "role": "Developer",
+    "button": "See my work"
+  },
+  "aboutMe": {
+    "title": "About me",
+    "intro": "I am a",
+    "intro1": "Full Stack Developer",
+    "intro2": "focused on",
+    "intro3": "frontend,",
+    "intro4": "with over 3 years of experience, development while providing comprehensive technological solutions.",
+    "stack": "My main stack includes",
+    "stack1": "React, Next.js, TypeScript",
+    "stack2": "on the frontend, and",
+    "stack3": "Node.js",
+    "stack4": "on the backend, with experience working in agile teams and end-to-end projects.",
+    "learning": "I am passionate about continuous learning and technological innovation. I am persistent, curious, and enjoy taking on challenges that help me grow every day. I may not know everything, but I can assure you that I will research, ask, and learn until I do.",
+    "motto": "I believe that interest and persistence are the key to learning anything.",
+    "teamwork": "I enjoy working in teams, sharing knowledge, and building scalable solutions that deliver real value to users. I am convinced that in a team, everyone learns: both the one who receives help and the one who provides it.",
+    "personal": "Outside of programming, I am passionate about social life, spending time with friends and family. I also enjoy traveling as a way to disconnect.",
+    "cvButton": "Download CV"
+  },
+  "projects": {
+    "title": "Project",
+    "button": "Create New Project",
+    "loading": "Loading projects...",
+    "empty": "No projects found"
+  },
+  "projectCreated": {
+    "proyectCreatedButtonCancel": "Cancel",
+    "proyectCreatedButtonCreate": "Create",
+    "title": "Create New Project",
+    "titleInput": "Title",
+    "titleInputError": "The title is required",
+    "summaryInput": "Summary",
+    "summaryInputError": "The summary is required",
+    "stackInput": "Technology stack",
+    "stackPlaceholder": "Select technology",
+    "stackInputError": "At least one technology is required",
+    "urlRespositoryInput": "Repository URL",
+    "urlInputError": "The repository URL is required",
+    "urlDemoInput": "Demo URL (optional)",
+    "imageInput": "Project image",
+    "imageTextDrop": "Click or drag images here",
+    "imageCount": "Max. 4 images",
+    "imagesCount2": "images added",
+    "imagesDelete": "Eliminar",
+    "error": "Unknown error"
+  },
+    "chat": {
+    "title": "Chat with Flor (with AI)",
+    "presentation": "Hi, I’m Flor. Would you like to know more about me, my projects, or my experience?"
+  },
+    "backend": {
+    "title": "Try my backend",
+    "subtitle": "Test an endpoint. Write a title and receive the response.",
+    "placeholder": "Search by title",
+    "button": "TRY",
+    "messageError1": "Complete the file",
+    "messageError2": "Something went wrong. Try again."
+  },
+    "contact": {
+    "title": "Contact Form",
+    "placeholderName": "Name",
+    "placeholderMessage": "Write your message",
+    "sending": "Sending...",
+    "button": "CONTACT ME",
+    "messageSuccess": "Message successfully sent!",
+    "messageError": "Something went wrong. Try again."
+
+  }
+  
+}

@@ -1,0 +1,89 @@
+{
+  "perfil": {
+    "nombre": "Florencia Oldani",
+    "titulo": "Desarrolladora Full Stack - React | Node",
+    "resumen": "Desarrolladora Full Stack con más de 3 años de experiencia, especializada en Frontend con React y con sólidos conocimientos de backend con Node.js. Me destaco por la atención al detalle, el enfoque en buenas prácticas de desarrollo y la comunicación efectiva con equipos multidisciplinarios en entornos ágiles.",
+    "busqueda_laboral": "Busco oportunidades como Frontend o Full Stack Developer en equipos colaborativos y orientados a buenas prácticas.",
+    "contacto": {
+      "ubicacion": "Argentina",
+      "email": "floroldani@hotmail.com",
+      "linkedin": "https://www.linkedin.com/in/florencia-oldani",
+      "github": "https://github.com/MFlorO"
+    }
+  },
+  "habilidades": {
+    "lenguajes": [
+      "HTML",
+      "JAVASCRIPT",
+      "TYPESCRIPT",
+      "CSS"
+    ],
+    "librerias_frameworks": [
+      "REACT",
+      "NEXT.JS",
+      "REDUX/ZUSTAND",
+      "REACT NATIVE",
+      "EXPRESS (NODE)",
+      "SASS",
+      "STYLED COMPONENTS",
+      "MATERIAL UI",
+      "GRAPHQL",
+      "CHAKRA UI",
+      "TAILWIND CSS"
+    ],
+    "bases_de_datos": [
+      "SQL",
+      "MONGO DB",
+      "FIREBASE"
+    ],
+    "otros": [
+      "FIGMA",
+      "AWS",
+      "ADOBE",
+      "JEST",
+      "DOCKER",
+      "Git y GitHub",
+      "Jira"
+    ]
+  },
+  "experiencia_profesional": [
+    {
+      "periodo": "06-2023 - ACTUALIDAD",
+      "puesto": "SSR. REACT DEVELOPER",
+      "empresa": "AVATAR WORLD GROUP",
+      "resumen_responsabilidades": "Participación activa en pruebas, debugging y colaboración en el desarrollo de productos. Migración completa de aplicaciones de Angular a React/Next.js. Desarrollo frontend con tecnologías como Next.js (App Router y API Routes), React, Redux Toolkit, Chakra UI, SCSS, GraphQL, Apollo y JavaScript. Gestión e integración de contenido mediante CMS y consultas a bases de datos con GraphQL. Integración de APIs externas (Firebase) y servicios internos. Desarrollo en entornos serverless con las API Routes de Next.js y contenedores con Docker. Trabajo bajo metodologías ágiles (Scrum) con Jira y GitHub."
+    },
+    {
+      "periodo": "08-2022 - ACTUALIDAD",
+      "puesto": "FULL STACK DEVELOPER",
+      "empresa": "FREELANCER",
+      "resumen_responsabilidades": "Desarrollo y diseño de sitios web a medida utilizando React y Node."
+    },
+    {
+      "periodo": "08-2022 - 12/2022",
+      "puesto": "FULL STACK DEVELOPER",
+      "empresa": "GESPRENDER",
+      "resumen_responsabilidades": "Desarrollo de componentes front-end con HTML, CSS, JavaScript, React, y Boostrap. Soporte en el backend con Express js. Colaboración en pruebas y debugging."
+    }
+  ],
+  "proyectos_destacados": [
+    {
+      "nombre": "Motor de Encuestas para la UBA",
+      "puesto": "DEVELOPER FULL STACK",
+      "tecnologias": "Next.js, Express, Prisma, PostgreSQL, Chakra UI",
+      "descripcion": "Desarrollo de un sistema completo para la creación y gestión de encuestas institucionales. Incluye un backend con Express, un ORM Prisma para la base de datos, y un frontend en Next.js con una UI moderna e intuitiva. Tiene lógica condicional avanzada y funcionalidades CRUD completas."
+    },
+    {
+      "nombre": "Cabañas Villa Melisa",
+      "puesto": "DEVELOPER FRONT END",
+      "tecnologias": "React/Next.js, Chakra.js, Figma, Google Reviews, Email.js",
+      "descripcion": "Creación de la página web desde el diseño en Figma hasta el código. Cuenta con una landing page, secciones de la empresa, un formulario de contacto dinámico y un listado de las cabañas con sección de detalle."
+    },
+    {
+      "nombre": "Emirat Propiedades",
+      "puesto": "DEVELOPER FRONT END",
+      "tecnologias": "React/Next.js, Squidex (CMS), Chakra.js, Figma, Google Maps, GraphQL, Email.js",
+      "descripcion": "Creación de la página web para una inmobiliaria desde el diseño en Figma hasta el código. La web tiene un diseño moderno e intuitivo, y cuenta con listado de inmuebles con ordenamientos y filtros."
+    }
+  ]
+}
