@@ -24,7 +24,6 @@ const ProjectUI = () => {
   const { items:projects, loading} = useAppSelector((state: RootState) => state.projects);
   const [isModal, setIsModal] = useState<boolean>(false);
 
-  console.log(projects)
   useEffect(() => {
     dispatch(fetchProjectsThunk())
   }, [dispatch]);

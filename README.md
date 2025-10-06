@@ -1,21 +1,34 @@
 ## 🚀 Portfolio App
 
-Aplicación fullstack para gestionar y mostrar proyectos de un portfolio.  
+Este es el backend para mi porfolio, desarrollado con **Node.js**, **Express**, **TypeScript** y **Prisma** como ORM para PostgreSQL. Incluye documentación de API mediante **Swagger**. 
 Incluye arquitectura basada en principios **SOLID** y **Clean Architecture**, con separación de responsabilidades clara.
 
 ---
 
-## 📖 Tabla de Contenidos
-- [Descripción](#-descripción)
-- [ScriptsDisponibles](#-scriptsDisponibles)
-- [Tecnologías](#-tecnologías)
-- [Arquitectura](#-arquitectura)
-  - [Estructura de carpetas](#estructura-de-carpetas)
-  - [Explicación de carpetas](#explicación-de-carpetas)
-- [Instalación](#-instalación)
-- [Scripts disponibles](#-scripts-disponibles)
-- [Prácticas aplicadas](#-prácticas-aplicadas)
+## 📖 Índice
+1. [🚀 Portfolio App](#-portfolio-app)
+2. [📌 Descripción](#-descripción)
+3. [📜 Scripts disponibles](#-scripts-disponibles)
+   * [Correr en desarrollo](#correr-en-desarrollo)
+   * [Levantar el backend](#levantar-el-backend)
+   * [Levantar el frontend](#levantar-el-frontend)
+4. [🛠 Tecnologías](#-tecnologías)
 
+   * [Frontend](#frontend)
+   * [Backend](#backend)
+   * [Infraestructura](#infraestructura)
+5. [☁️ Deploy](#-deploy)
+6. [🔌 Endpoints del Backend](#-endpoints)
+7. [🧠 Integración con IA](#-ia)
+8. [🌐 Configuración CORS](#-cors)
+9. [🏗 Arquitectura del Proyecto en el frontend](#-arquitectura-del-proyecto)
+   * [Estructura de carpetas](#estructura-de-carpetas)
+   * [Explicación de carpetas en el frontend](#explicación-de-carpetas)
+10. [🧩 Prácticas aplicadas en frontend](#-prácticas-aplicadas)
+11. [🔄 Flujo de datos (UI → API) del backend](#-flujo)
+12. [⚙️ Tecnologías del Frontend](#frontend)
+
+---
 ---
 
 # 📌 Descripción
@@ -53,9 +66,7 @@ Este proyecto es un **portfolio personal** donde se pueden:
 2. Levantar el back, en la carpeta api. ```npm run dev``` para levantarlo con nodemon.
 
 
-
-
-## 🛠 Tecnologías
+# 🛠 Tecnologías
 **Frontend**
 - [Next.js](https://nextjs.org/) (React Framework)
 - [TypeScript](https://www.typescriptlang.org/)
@@ -108,17 +119,16 @@ Este proyecto es un **portfolio personal** donde se pueden:
 # 🧠 IA
 Usa Gemini con un prompt que te representa.
 
+----------------------------------------------------------------
 
 # 🌐 CORS
 Configurable con `CORS_ORIGIN` para permitir tu frontend en Next.js.
 
 
-----------------------------------------------------------------------------------------------------------------
+-----------------------
 ## FRONTEND
-El proyecto aplica **Clean Architecture** y **Domain Driven Design (DDD)**.  
-Esto asegura que el código sea modular, escalable y fácil de mantener.
 
-### Estructura de carpetas
+# Estructura de carpetas
 ```bash
 src/
  ├── app/                # Páginas y rutas Next.js
@@ -128,7 +138,7 @@ src/
  │   ├── entities/       # Entidades de negocio (ej: Project.ts)
  │   ├── repositories/   # Interfaces de repositorios (ej: ProjectRepository.ts)
  │   └── services/       # Reglas de negocio sobre entidades. Ejemplo: ProjectService valida que un proyecto tenga nombre antes de guardarlo.
- │   └── value-objects/  # Objetos inmutables que representan conceptos del dominio que tienen reglas propias. Garantizan que los datos sean     
+ │   └── value-objects/  # Objetos inmutables que representan conceptos del dominio que tienen reglas propias. Garantizan que los datos      
  │                       # válidos y consistentes en toda la aplicación. Ej. En ProjectId nunca vas a tener un ID inválido.
  ├── infrastructure/     # Implementaciones técnicas
  │   └── repositories/   # Repositorios concretos (ej: HttpProjectRepository.ts)
@@ -137,7 +147,7 @@ src/
 ```
 
 
-🧩 Prácticas aplicadas
+# 🧩 Prácticas aplicadas
 
 - SOLID principles (responsabilidad única, inversión de dependencias, etc.)
 - Clean Architecture (separación de capas: dominio, infraestructura, aplicación)
@@ -165,3 +175,5 @@ httpClient <- aquí se hace el fetch a la API
    |
    v
 API / Base de Datos
+
+# Tecnologías del frontend
